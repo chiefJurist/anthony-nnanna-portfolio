@@ -11,7 +11,7 @@ module.exports ={
         extend: {
             //Custom font
             fontFamily: {
-                custom: ['Nunito']
+                nunito: ['Nunito']
             }
         }
     },

@@ -9,6 +9,6 @@
     display: none;
 } */
 
-/* .links{
-    @apply cursor-pointer dar
-} */
+nav-links{
+    @apply cursor-pointer active:text-indigo-600;
+}

@@ -1,30 +1,42 @@
+<script>
+    export default{
+        name: 'Home',
+    }
+</script>
+
 <template>
-    <div>
-        <!--Links-->
-        <div>
-            <div><ion-icon name="logo-github"></ion-icon></div>
-            <div><ion-icon name="logo-twitter"></ion-icon></div>
-        </div>
-
-        <!--Image-->
-        <div>
-            <div></div>
-        </div>
-
-        <!--Summary-->
-        <div>
-            <div>Hi, I'm Anthony Nnanna</div>
-            <div>Full-Stack Web Developer</div>
-            <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quas impedit veniam quod ex expedita modi vel consequuntur aperiam eveniet!
+    <div class="bg-white dark:bg-slate-800">
+        <div class="bg-white dark:bg-slate-800 relative z-0 w-2/3 mx-auto py-32 font-nunito flex flex-wrap justify-center lg:justify-around items-center">
+            <!--Links-->
+            <div class=" order-1 pr-4 lg:pr-0">
+                <div>
+                    <ion-icon name="logo-github" class="text-indigo-700 text-2xl"></ion-icon>
+                </div>
+                <div>
+                    <ion-icon name="logo-twitter" class="text-indigo-700 text-2xl"></ion-icon>
+                </div>
             </div>
 
-            <div>
-                <span>Contact Me</span>
-                <span><ion-icon name="send-outline"></ion-icon></span>
+            <!--Image-->
+            <div class=" order-2 lg:order-3">
+                <img src="../../public/img/tony-img.jpg" alt="tony" class=" rounded-full w-48 sm:w-64">
+            </div>
+
+            <!--Summary-->
+            <div class=" order-3 lg:order-2 pt-10">
+                <div class="text-4xl font-bold dark:text-white">Hi, I'm Anthony Nnanna</div>
+                <div class="font-bold text-xl text-gray-600 dark:text-white mt-8 max-w-80">Full-Stack Web Developer</div>
+                <div class=" text-gray-600 dark:text-white text-lg mt-4 mb-8 max-w-80">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe repellat facere blanditiis sit asperiores culpa aut atque sed, perspiciatis dolores?
+                </div>
+
+                <div class=" text-white bg-indigo-700 w-40 text-center py-4 rounded-lg font-semibold flex justify-evenly items-center">
+                    <span>Contact Me</span>
+                    <span>
+                        <ion-icon name="paper-plane-outline" class=" text-2xl"></ion-icon>
+                    </span>
+                </div>
             </div>
         </div>
-
-        <div></div>
     </div>
-</template>
+</template> 
