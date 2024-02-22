@@ -1,0 +1,6 @@
+{
+  "recommendations": [
+    "Vue.vscode-typescript-vue-plugin",
+    "bradlc.vscode-tailwindcss"
+  ]
+}
