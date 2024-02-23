@@ -9,6 +9,12 @@
     display: none;
 } */
 
-nav-links{
+.nav-link{
     @apply cursor-pointer active:text-indigo-600;
+}
+.body-con{
+    @apply bg-white dark:bg-slate-800 pt-32 font-nunito;
+}
+.body-subcon{
+    @apply w-2/3 mx-auto;
 }
