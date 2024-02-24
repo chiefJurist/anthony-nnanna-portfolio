@@ -13,8 +13,23 @@
     @apply cursor-pointer active:text-indigo-600;
 }
 .body-con{
-    @apply bg-white dark:bg-slate-800 pt-32 font-nunito;
+    @apply bg-white dark:bg-slate-800 pt-36 -mt-2 font-nunito;
 }
 .body-subcon{
     @apply w-2/3 mx-auto;
 }
+.icon{
+    @apply text-indigo-700 text-2xl cursor-pointer;
+}
+.skills{
+    @apply max-w-80 pb-8 w-full;
+}
+.skills-header{
+    @apply flex justify-between items-center;
+}
+.skills-text{
+    @apply text-base sm:text-xl font-bold text-start;
+}
+/* .skills-body{
+    @apply ;
+} */

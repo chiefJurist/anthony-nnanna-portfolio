@@ -7,6 +7,8 @@ module.exports ={
         "src/components/Header.vue",
         "src/components/Home.vue",
         "src/components/About.vue",
+        "src/components/Skills.vue",
+
     ],
     theme: {
         extend: {

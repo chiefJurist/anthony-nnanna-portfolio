@@ -1,5 +1,5 @@
 <template>
-    <div class="body-con -mt-2">
+    <div class="body-con" id="about">
         <div class="body-subcon">
             <!--Header-->
             <div class="text-center">
@@ -17,7 +17,7 @@
                 <!--Details-->
                 <div class=" pt-4">
                     <div class="text-gray-500 dark:text-white text-lg max-w-96 font-semibold">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint a consectetur saepe optio laudantium similique asperiores accusamus inventore fugit, culpa veritatis laborum nobis iure aliquid animi officiis odit pariatur provident doloribus sunt error doloremque numquam. Ut ex itaque inventore numquam quo maxime, qui est necessitatibus facilis, possimus mollitia aut perspiciatis.
+                        I possess a self-motivated attitude, thriving in dynamic environments, and am also deeply passionate about learning new skills that facilitate my growth and development. Additionally, my proficiency in leadership and collaboration within teams enables me to excel collectively. Currently, I am actively seeking a competitive position to further enhance my skills
                     </div>
                     <div class=" max-w-96 flex justify-around gap-5 text-gray-500 dark:text-white font-semibold pt-8 text-center">
                         <div>

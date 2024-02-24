@@ -2,9 +2,10 @@
     import Header from './components/Header.vue';
     import Home from './components/Home.vue';
     import About from './components/About.vue';
+    import Skills from './components/Skills.vue';
 
     export default{
-        components: { Header, Home, About },
+        components: { Header, Home, About, Skills },
 
         data () {
             return {
@@ -33,5 +34,6 @@
         <Header :mode="darkmode" @change="toggleDarkMode"></Header>
         <Home></Home>
         <About></About>
+        <Skills></Skills>
     </div>
 </template>
