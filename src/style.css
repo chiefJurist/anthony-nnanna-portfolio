@@ -27,8 +27,14 @@
 .skills-header{
     @apply flex justify-between items-center;
 }
+.skills-icon{
+    @apply basis-1/12 mr-2;
+}
 .skills-text{
-    @apply text-base sm:text-xl font-bold text-start;
+    @apply text-base sm:text-xl font-bold text-start basis-10/12;
+}
+.skills-display{
+    @apply basis-1/12 text-right;
 }
 /* .skills-body{
     @apply ;
