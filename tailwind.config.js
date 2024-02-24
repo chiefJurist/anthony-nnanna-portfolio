@@ -8,7 +8,13 @@ module.exports ={
         "src/components/Home.vue",
         "src/components/About.vue",
         "src/components/Skills.vue",
-
+        "src/components/Skills/ProgrammingLanguages.vue",
+        "src/components/Skills/Frameworks.vue",
+        "src/components/Skills/InfrastructuralTools.vue",
+        "src/components/Skills/DevelopmentTools.vue",
+        "src/components/Skills/TestingFrameworks.vue",
+        "src/components/Skills/DesignTools.vue",
+        "src/components/Skills/DeploymentPlatforms.vue",
     ],
     theme: {
         extend: {
