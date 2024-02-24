@@ -22,7 +22,7 @@
     @apply text-indigo-700 text-2xl cursor-pointer;
 }
 .skills{
-    @apply max-w-80 pb-8 w-full;
+    @apply  pb-8 w-72;
 }
 .skills-header{
     @apply flex justify-between items-center w-full cursor-pointer;
