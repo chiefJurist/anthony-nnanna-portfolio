@@ -3,10 +3,10 @@
     import Home from './components/Home.vue';
     import About from './components/About.vue';
     import Skills from './components/Skills.vue';
-    import Experience from './components/Experience.vue';
+    import Qualification from './components/Qualification.vue';
 
     export default{
-        components: { Header, Home, About, Skills, Experience },
+        components: { Header, Home, About, Skills, Qualification },
 
         data () {
             return {
@@ -36,6 +36,6 @@
         <Home></Home>
         <About></About>
         <Skills></Skills>
-        <Experience></Experience>
+        <Qualification></Qualification>
     </div>
 </template>
