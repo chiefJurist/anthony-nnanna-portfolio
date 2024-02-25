@@ -11,9 +11,9 @@
 </script>
 
 <template>
-    <div class=" hidden sm:block">
+    <div class=" hidden md:block">
         <div class=" px-8 flex justify-around items-center py-5 w-full h-16 z-20 bg-white fixed top-0 text-gray-700 dark:bg-slate-800 dark:text-white">
-            <div class=" basis-1/4 text-center">ANTHONY NNANNA</div>
+            <div class=" basis-1/4 text-center font-serif font-bold">ANTHONY NNANNA</div>
 
             <div class=" basis-3/4 flex justify-around font-semibold">
                 <div>
@@ -24,6 +24,9 @@
                 </div>
                 <div>
                     <a href="#skills" class="nav-link">Skills</a>
+                </div>
+                <div>
+                    <a href="#experience" class="nav-link">Experience</a>
                 </div>
                 <div>
                     <a href="#qualication" class="nav-link">Qualification</a>

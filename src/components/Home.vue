@@ -1,9 +1,3 @@
-<script>
-    export default{
-        name: 'Home',
-    }
-</script>
-
 <template>
     <div class="body-con" id="home">
         <div class="body-subcon flex flex-wrap justify-center lg:justify-around items-center">
