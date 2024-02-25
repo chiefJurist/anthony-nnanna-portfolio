@@ -13,9 +13,9 @@
 <template>
     <div class=" hidden md:block">
         <div class=" px-8 flex justify-around items-center py-5 w-full h-16 z-20 bg-white fixed top-0 text-gray-700 dark:bg-slate-800 dark:text-white">
-            <div class=" basis-1/4 text-center font-serif font-bold">ANTHONY NNANNA</div>
+            <div class=" basis-1/3 text-center font-serif font-bold">ANTHONY NNANNA</div>
 
-            <div class=" basis-3/4 flex justify-around font-semibold">
+            <div class=" basis-2/3 flex justify-around font-semibold text-sm">
                 <div>
                     <a href="#home" class="nav-link">Home</a>
                 </div>
