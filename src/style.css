@@ -13,7 +13,7 @@
     @apply cursor-pointer active:text-indigo-600;
 }
 .body-con{
-    @apply bg-white dark:bg-slate-800 pt-36 -mt-2 font-nunito;
+    @apply bg-slate-50 dark:bg-slate-800 pt-36 -mt-2 font-nunito;
 }
 .body-subcon{
     @apply w-5/6 lg:w-2/3 mx-auto;
