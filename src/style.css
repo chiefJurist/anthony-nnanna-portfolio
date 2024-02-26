@@ -10,7 +10,7 @@
 } */
 
 .nav-link{
-    @apply cursor-pointer active:text-indigo-600;
+    @apply cursor-pointer active:text-indigo-700;
 }
 .body-con{
     @apply bg-slate-50 dark:bg-slate-800 pt-36 -mt-2 font-nunito;
@@ -53,4 +53,8 @@
 }
 .progress{
     @apply shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-indigo-500;
+}
+/*QUALIFICATION*/
+.qualification-header{
+    @apply text-black dark:text-white font-bold font-sans;
 }
