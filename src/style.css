@@ -56,5 +56,5 @@
 }
 /*QUALIFICATION*/
 .qualification-header{
-    @apply text-black dark:text-white font-bold font-sans pt-4;
+    @apply text-black dark:text-white font-semibold font-sans pt-4;
 }

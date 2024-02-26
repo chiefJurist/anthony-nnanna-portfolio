@@ -16,8 +16,8 @@
                     <span class=" text-indigo-700 text-2xl font-bold">Work Experience</span>
                 </div>
 
-                <div class=" bg-white rounded-xl shadow-lg py-10 px-5 grid grid-cols-2 gap-0">
-                    <div class="border-r-2 border-indigo-700">
+                <div class=" bg-white rounded-xl shadow-lg py-10 grid grid-cols-2 gap-0">
+                    <div class="pl-5 border-r border-indigo-700 relative">
                         <div class="qualification-header">Sourcedware</div>
                         <div class="text-sm">Full-stack and front-end web development</div>
                         <div class=" flex justify-between w-fit items-center gap-2">
@@ -28,10 +28,14 @@
                                 2023 - Present
                             </span>
                         </div>
+                        <div class="absolute -top-2 right-0 transform translate-x-1/2 translate-y-1/2 bg-indigo-700 w-3 h-3 rounded-full"></div>
+                        <div class="absolute bottom-0 right-0 transform translate-x-1/2 translate-y-1/2 bg-indigo-700 w-3 h-3 rounded-full"></div>
                     </div>
-                    <div class=""></div>
-                    <div class="border-r-2 border-indigo-700"></div>
-                    <div class="">
+                    <div></div>
+                    <div class="border-r border-indigo-700 relative">
+                        <div class="absolute bottom-0 right-0 transform translate-x-1/2 translate-y-1/2 bg-indigo-700 w-3 h-3 rounded-full"></div>
+                    </div>
+                    <div class="pl-5">
                         <div class="qualification-header">Gigabyte Developers</div>
                         <div class="text-sm">Back-end development and engineering</div>
                         <div class=" flex justify-between w-fit items-center gap-2">
