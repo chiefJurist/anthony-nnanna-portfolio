@@ -62,7 +62,7 @@
                         </div>
                         <div class="view-more-con">
                             <span class="view-more">View More</span>
-                            <iconify-icon icon="uil:arrow-right"></iconify-icon>
+                            <span class="icon icon-[uil--arrow-right]"></span>
                         </div>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
                         </div>
                         <div class="view-more-con">
                             <span class="view-more">View More</span>
-                            <iconify-icon icon="uil:arrow-right" class="icon"></iconify-icon>
+                            <span class="icon icon-[uil--arrow-right]"></span>
                         </div>
                         <div class="progress-circle -top-2"></div>
                         <div class="progress-circle bottom-0"></div>
@@ -118,7 +118,7 @@
                         </div>
                         <div class="view-more-con">
                             <span class="view-more">View More</span>
-                            <iconify-icon icon="uil:arrow-right" class="icon"></iconify-icon>
+                            <span class="icon icon-[uil--arrow-right]"></span>
                         </div>
                     </div>
 
@@ -136,7 +136,7 @@
                         </div>
                         <div class="view-more-con">
                             <span class="view-more">View More</span>
-                            <iconify-icon icon="uil:arrow-right" class="icon"></iconify-icon>
+                            <span class="icon icon-[uil--arrow-right]"></span>
                         </div>
                         <div class="progress-circle -top-2"></div>
                         <div class="progress-circle bottom-0"></div>
