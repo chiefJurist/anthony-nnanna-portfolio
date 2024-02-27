@@ -112,7 +112,7 @@
                             <span>
                                 <span class="icon-[solar--calendar-outline]"></span>
                             </span>
-                            <span>
+                            <span class="text-xs">
                                 2019
                             </span>
                         </div>
@@ -130,7 +130,7 @@
                             <span>
                                 <span class="icon-[solar--calendar-outline]"></span>
                             </span>
-                            <span class="text-sm">
+                            <span class="text-xs">
                                 2020
                             </span>
                         </div>
