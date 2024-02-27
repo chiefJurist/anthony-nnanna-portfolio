@@ -31,7 +31,7 @@
             </div>
 
             <!--Details-->
-            <div class="block sm:grid md:grid-cols-2 gap-12 mx-auto w-fit">
+            <div class="block sm:grid md:grid-cols-2 gap-12 mx-auto w-full">
                 <!--Programming Languages-->
                 <div class="skills">
                     <!--Programming Languages Header-->
@@ -60,7 +60,7 @@
                     <!--Frameworks Header-->
                     <div class="skills-header" @click="frameworks = !frameworks">
                         <div class="skills-icon">
-                            <span class="icon icon-[fa-solid--pencil-ruler]"></span>
+                            <span class="icon icon-[mingcute--pencil-ruler-line]"></span>
                         </div>
                         <div class="skills-text">Frameworks</div>
                         <div class="skills-display">
