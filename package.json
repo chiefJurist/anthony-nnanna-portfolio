@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@iconify-json/uil": "^1.1.8",
     "vue": "^3.3.11"
   },
   "devDependencies": {
