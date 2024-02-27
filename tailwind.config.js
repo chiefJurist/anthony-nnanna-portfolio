@@ -17,6 +17,11 @@ module.exports ={
         "src/components/Skills/TestingFrameworks.vue",
         "src/components/Skills/DesignTools.vue",
         "src/components/Skills/DeploymentPlatforms.vue",
+        "src/components/Qualification/Sourcedware.vue",
+        "src/components/Qualification/Gigabyte.vue",
+        "src/components/Qualification/University.vue",
+        "src/components/Qualification/Bootcamp.vue",
+        "src/components/Qualification/Training.vue",
     ],
     theme: {
         extend: {

@@ -1,6 +1,17 @@
+<script>
+    import Sourcedware from './Qualification/Sourcedware.vue';
+    import Gigabyte from './Qualification/Gigabyte.vue';
+    import University from './Qualification/University.vue';
+    import Bootcamp from './Qualification/Bootcamp.vue';
+    import TrainingVue from './Qualification/Training.vue';
+
+    export default{
+        components: { Sourcedware, Gigabyte, University, Bootcamp, TrainingVue }
+    }
+</script>
 <template>
     <div id="qualification" class="body-con">
-        <div class=" w-11/12 sm:w-5/6 lg:w-2/3 mx-auto text-gray-500 dark:text-white">
+        <div class="body-subcon text-gray-500 dark:text-white">
             <!--Title-->
             <div class=" text-center">
                 <div class=" text-4xl font-bold text-black dark:text-white">Qualification</div>
