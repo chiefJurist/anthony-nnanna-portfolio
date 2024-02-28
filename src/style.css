@@ -63,7 +63,7 @@
     @apply bg-white dark:bg-slate-800 rounded-xl shadow-lg py-10 grid grid-cols-2 gap-0;
 }
 .qualification-con{
-    @apply pl-5 border-r border-indigo-700 relative;
+    @apply pl-8 border-r border-indigo-700 relative;
 }
 .qualification-description{
     @apply text-sm font-semibold w-5/6 py-1;
