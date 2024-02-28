@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-indigo-700 dark:bg-gray-950 text-white pt-20">
+    <div class="bg-indigo-700 dark:bg-gray-950 text-white pt-20 font-nunito">
         <div class="body-subcon">
             <div class="md:flex justify-between items-center">
                 <div>

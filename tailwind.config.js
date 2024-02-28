@@ -13,6 +13,8 @@ module.exports ={
         "src/components/Projects.vue",
         "src/components/Message.vue",
         "src/components/Footer.vue",
+        "src/components/PhoneHeader.vue",
+        "src/components/PhoneNav.vue",
         "src/components/Skills/ProgrammingLanguages.vue",
         "src/components/Skills/Frameworks.vue",
         "src/components/Skills/InfrastructuralTools.vue",
