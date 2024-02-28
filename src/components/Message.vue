@@ -42,26 +42,22 @@
 
                 <!--Second Part-->
                 <div>
-                    <a href="tel:+2347010028679">
-                        <div class="contact-right-con">
-                            <div>Name</div>
-                            <input type="text" class="contact-right-input">
-                        </div>
-                    </a>
+                    <div class="contact-right-con">
+                        <div>Name</div>
+                        <input type="text" class="contact-right-input">
+                    </div>
 
-                    <a href="mailto:nnnnnwosu@gmail.com">
-                        <div class="contact-right-con">
-                            <div>Email</div>
-                            <input type="email" class="contact-right-input">
-                        </div>
-                    </a>
+                    <div class="contact-right-con">
+                        <div>Email</div>
+                        <input type="email" class="contact-right-input">
+                    </div>
 
                     <div class="contact-right-con">
                         <div>Message</div>
                         <textarea cols="30" rows="10" class="contact-right-input"></textarea>
                     </div>
 
-                    <a href="mailto:nnnnnwosu@gmail.com">
+                    <a href="mailto:anthonynnanna001@gmail.com">
                         <div class="text-white bg-indigo-700 w-40 text-center py-4 rounded-lg font-semibold flex justify-evenly items-center cursor-pointer">
                             <span>Send Message</span>
                             <span class="icon-[uil--message]"></span>
