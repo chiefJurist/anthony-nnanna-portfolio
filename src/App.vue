@@ -5,9 +5,10 @@
     import Skills from './components/Skills.vue';
     import Qualification from './components/Qualification.vue';
     import Message from './components/Message.vue';
+    import Footer from './components/Footer.vue';
 
     export default{
-        components: { Header, Home, About, Skills, Qualification, Message },
+        components: { Header, Home, About, Skills, Qualification, Message, Footer },
 
         data () {
             return {
@@ -39,5 +40,6 @@
         <Skills></Skills>
         <Qualification></Qualification>
         <Message></Message>
+        <Footer></Footer>
     </div>
 </template>
