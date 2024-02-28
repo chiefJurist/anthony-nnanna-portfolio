@@ -30,7 +30,7 @@
                     <span class="small-icon icon-[mdi--tick-circle-outline]"></span>
                 </span>
                 <span class="q-card-skill-text">
-                    Contribute to the development of open-source backend APIs using JavaScript.
+                    Contribute to the development of backend APIs using JavaScript.
                 </span>
             </div>
         </div>
