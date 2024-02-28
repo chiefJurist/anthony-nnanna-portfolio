@@ -6,11 +6,26 @@
     import TrainingVue from './Qualification/Training.vue';
 
     export default{
-        components: { Sourcedware, Gigabyte, University, Bootcamp, TrainingVue }
+        components: { Sourcedware, Gigabyte, University, Bootcamp, TrainingVue },
+
+        data(){
+            return{
+                sourcedware: true
+            }
+        },
+
+        methods: {
+            toggleSourcedware(){
+                this.sourcedware = !this.sourcedware;
+            }
+        }
     }
 </script>
 <template>
     <div id="qualification" class="body-con">
+        <div v-if="sourcedware">
+            <Sourcedware @change="toggleSourcedware"></Sourcedware>
+        </div>
         <div class="body-subcon text-gray-500 dark:text-white">
             <!--Title-->
             <div class=" text-center">
@@ -44,7 +59,7 @@
                                 2023 - Present
                             </span>
                         </div>
-                        <div class="view-more-con">
+                        <div class="view-more-con" @click="toggleSourcedware">
                             <span class="view-more">View More</span>
                             <span class="icon icon-[uil--arrow-right]"></span>
                         </div>

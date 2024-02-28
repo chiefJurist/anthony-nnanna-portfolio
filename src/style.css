@@ -13,7 +13,7 @@
     @apply cursor-pointer active:text-indigo-700;
 }
 .body-con{
-    @apply bg-slate-50 dark:bg-slate-800 pt-36 -mt-2 font-nunito;
+    @apply bg-slate-50 dark:bg-slate-900 pt-36 -mt-2 font-nunito;
 }
 .body-subcon{
     @apply w-11/12 sm:w-5/6 lg:w-2/3 mx-auto;
@@ -60,7 +60,7 @@
     @apply text-black dark:text-white font-semibold font-sans pt-4;
 }
 .general-qualification-con{
-    @apply bg-white dark:bg-slate-600 rounded-xl shadow-lg py-10 grid grid-cols-2 gap-0;
+    @apply bg-white dark:bg-slate-800 rounded-xl shadow-lg py-10 grid grid-cols-2 gap-0;
 }
 .qualification-con{
     @apply pl-5 border-r border-indigo-700 relative;
@@ -75,8 +75,29 @@
     @apply absolute right-0 transform translate-x-1/2 translate-y-1/2 bg-indigo-700 w-3 h-3 rounded-full;
 }
 .view-more-con{
-    @apply flex justify-between items-center w-28 pt-2;
+    @apply flex justify-between items-center w-28 pt-2 cursor-pointer;
 }
 .view-more{
-    @apply font-bold text-indigo-700
+    @apply font-bold text-indigo-700;
+}
+.q-card-backdrop{
+    @apply bg-gray-200 fixed top-0 h-full w-full z-40 bg-opacity-75 flex justify-center items-center;
+}
+.q-card{
+    @apply relative bg-white rounded-xl p-8 w-11/12;
+}
+.q-card-header{
+    @apply flex justify-between items-center pb-5;
+}
+.q-card-header-text{
+    @apply text-2xl font-extrabold;
+}
+.q-card-skill{
+    @apply py-4 flex justify-between items-start gap-2;
+}
+.small-icon{
+    @apply text-indigo-700 cursor-pointer;
+}
+.q-card-skill-text{
+    @apply text-gray-500 font-semibold sm:text-lg;
 }
