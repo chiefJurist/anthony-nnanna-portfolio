@@ -1,6 +1,6 @@
 <template>
     <div id="message" class="body-con">
-        <div class="body-subcon text-gray-500 dark:text-white">
+        <div class="body-subcon text-gray-500 dark:text-white pb-28">
             <!--Contact Header-->
             <div class="gen-header-con">
                 <div class="gen-header-text">Contact Me</div>
