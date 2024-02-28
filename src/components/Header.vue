@@ -39,7 +39,7 @@
 
 <template>
     <div class=" hidden md:block">
-        <div class=" px-8 flex justify-around items-center py-5 w-full h-16 z-20 bg-slate-50 drop-shadow-md fixed top-0 text-gray-700 dark:bg-slate-800 dark:text-white">
+        <div class=" px-8 flex justify-around items-center py-5 w-full h-16 z-20 bg-slate-50 drop-shadow-md fixed top-0 text-gray-700 dark:bg-slate-900 dark:text-white">
             <div class=" basis-1/3 text-center font-serif font-bold">ANTHONY NNANNA</div>
 
             <div class=" basis-2/3 flex justify-around font-bold text-sm">

@@ -8,7 +8,7 @@
             </div>
 
             <!--Contact Body-->
-            <div>
+            <div class="pt-12 md:flex justify-between">
                 <!--First Part-->
                 <div>
                     <div class="left-contact-con">
@@ -42,16 +42,19 @@
 
                 <!--Second Part-->
                 <div>
-                    <div>
-                        <input type="text" placeholder="Name">
+                    <div class="contact-right-con">
+                        <div>Name</div>
+                        <input type="text" class="contact-right-input">
                     </div>
-                    <div>
-                        <input type="email" placeholder="Email">
+                    <div class="contact-right-con">
+                        <div>Email</div>
+                        <input type="email" class="contact-right-input">
                     </div>
-                    <div>
-                        <textarea cols="30" rows="10" placeholder="Message"></textarea>
+                    <div class="contact-right-con">
+                        <div>Message</div>
+                        <textarea cols="30" rows="10" class="contact-right-input"></textarea>
                     </div>
-                    <div>
+                    <div class="text-white bg-indigo-700 w-40 text-center py-4 rounded-lg font-semibold flex justify-evenly items-center cursor-pointer">
                         <span>Send Message</span>
                         <span class="icon-[uil--message]"></span>
                     </div>

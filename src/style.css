@@ -110,11 +110,17 @@
 
 /*Contact Me*/
 .left-contact-con{
-    @apply flex justify-between items-center gap-2 w-fit;
+    @apply flex justify-between items-center gap-2 w-fit mb-8;
 }
 .contact-icon{
     @apply text-3xl text-indigo-700;
 }
 .left-contact-title{
     @apply text-xl font-bold text-black dark:text-white;
+}
+.contact-right-con{
+    @apply bg-gray-200 dark:bg-slate-800 w-full md:w-96 p-3 placeholder:text-gray-600 lg:placeholder:font-semibold rounded-lg mb-5;
+}
+.contact-right-input{
+    @apply border-none outline-none bg-inherit w-full;
 }
