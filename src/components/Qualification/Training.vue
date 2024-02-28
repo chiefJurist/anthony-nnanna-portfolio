@@ -30,16 +30,7 @@
                     <span class="small-icon icon-[mdi--tick-circle-outline]"></span>
                 </span>
                 <span class="q-card-skill-text">
-                    I gained proficiency in System architecture design, Algorithm development, Software testing methodologies, Performance optimization, Software development life cycle management and Security principles.
-                </span>
-            </div>
-
-            <div class="q-card-skill">
-                <span>
-                    <span class="small-icon icon-[mdi--tick-circle-outline]"></span>
-                </span>
-                <span class="q-card-skill-text">
-                    I graduated with first-class honors, achieving an aggregate CGPA of 4.85
+                    I gained proficiency in System architecture design, Algorithm development, Software testing methodologies, Performance optimization, Software development life cycle management and Security principles.
                 </span>
             </div>
         </div>
