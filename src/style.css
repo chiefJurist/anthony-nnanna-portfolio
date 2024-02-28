@@ -18,6 +18,12 @@
 .body-subcon{
     @apply w-11/12 sm:w-5/6 lg:w-2/3 mx-auto;
 }
+.gen-header-con{
+    @apply text-center;
+}
+.gen-header-text{
+    @apply text-4xl font-bold text-black dark:text-white;
+}
 .icon{
     @apply text-indigo-700 text-2xl cursor-pointer;
 }
@@ -81,23 +87,34 @@
     @apply font-bold text-indigo-700;
 }
 .q-card-backdrop{
-    @apply bg-gray-200 fixed top-0 h-full w-full z-40 bg-opacity-85 flex justify-center items-center;
+    @apply bg-gray-200 fixed top-0 h-full w-full z-40 bg-opacity-85 dark:bg-opacity-35 flex justify-center items-center;
 }
 .q-card{
-    @apply relative bg-white rounded-xl p-8 w-11/12 md:w-2/3 lg:w-1/2;
+    @apply relative bg-white dark:bg-slate-800 rounded-xl p-8 w-11/12 md:w-2/3 lg:w-1/2;
 }
 .q-card-header{
     @apply flex justify-between items-center pb-5;
 }
 .q-card-header-text{
-    @apply text-2xl font-extrabold;
+    @apply text-2xl font-extrabold dark:text-white;
 }
 .q-card-skill{
     @apply py-4 flex justify-between items-start gap-2;
 }
 .small-icon{
-    @apply text-indigo-700 cursor-pointer;
+    @apply text-indigo-700 cursor-pointer dark:text-white;
 }
 .q-card-skill-text{
-    @apply text-gray-500 mr-auto text-left sm:text-lg;
+    @apply text-gray-500 dark:text-white mr-auto text-left sm:text-lg;
+}
+
+/*Contact Me*/
+.left-contact-con{
+    @apply flex justify-between items-center gap-2 w-fit;
+}
+.contact-icon{
+    @apply text-3xl text-indigo-700;
+}
+.left-contact-title{
+    @apply text-xl font-bold text-black dark:text-white;
 }

@@ -61,8 +61,8 @@
         <!--qualification-->
         <div class="body-subcon text-gray-500 dark:text-white">
             <!--Title-->
-            <div class=" text-center">
-                <div class=" text-4xl font-bold text-black dark:text-white">Qualification</div>
+            <div class="gen-header-con">
+                <div class="gen-header-text">Qualification</div>
                 <div>My Personal Journey</div>
             </div>
 
