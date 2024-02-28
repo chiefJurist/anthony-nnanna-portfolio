@@ -99,5 +99,5 @@
     @apply text-indigo-700 cursor-pointer;
 }
 .q-card-skill-text{
-    @apply text-gray-500 sm:text-lg;
+    @apply text-gray-500 mr-auto text-left sm:text-lg;
 }

@@ -7,6 +7,7 @@
         }
     }
 </script>
+
 <template>
     <div class="q-card-backdrop">
         <div class="q-card">
