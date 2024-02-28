@@ -10,7 +10,7 @@
 } */
 
 .nav-link{
-    @apply cursor-pointer active:text-indigo-700;
+    @apply cursor-pointer;
 }
 .body-con{
     @apply bg-slate-50 dark:bg-slate-900 pt-36 -mt-2 font-nunito;
