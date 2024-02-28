@@ -3,7 +3,7 @@
         <div class="body-subcon">
             <div class="md:flex justify-between items-center">
                 <div>
-                    <div class="text-3xl font-bold text-black dark:text-white">Anthony Nnanna</div>
+                    <div class="text-3xl font-bold">Anthony Nnanna</div>
                     <div class="italic">full-stack web developer</div>
                 </div>
 

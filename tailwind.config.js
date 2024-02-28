@@ -10,6 +10,7 @@ module.exports ={
         "src/components/About.vue",
         "src/components/Skills.vue",
         "src/components/Qualification.vue",
+        "src/components/Projects.vue",
         "src/components/Message.vue",
         "src/components/Footer.vue",
         "src/components/Skills/ProgrammingLanguages.vue",

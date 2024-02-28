@@ -4,11 +4,12 @@
     import About from './components/About.vue';
     import Skills from './components/Skills.vue';
     import Qualification from './components/Qualification.vue';
+    import Projects from './components/Projects.vue';
     import Message from './components/Message.vue';
     import Footer from './components/Footer.vue';
 
     export default{
-        components: { Header, Home, About, Skills, Qualification, Message, Footer },
+        components: { Header, Home, About, Skills, Qualification, Projects, Message, Footer },
 
         data () {
             return {
@@ -39,6 +40,7 @@
         <About></About>
         <Skills></Skills>
         <Qualification></Qualification>
+        <Projects></Projects>
         <Message></Message>
         <Footer></Footer>
     </div>
