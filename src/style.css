@@ -81,10 +81,10 @@
     @apply font-bold text-indigo-700;
 }
 .q-card-backdrop{
-    @apply bg-gray-200 fixed top-0 h-full w-full z-40 bg-opacity-75 flex justify-center items-center;
+    @apply bg-gray-200 fixed top-0 h-full w-full z-40 bg-opacity-85 flex justify-center items-center;
 }
 .q-card{
-    @apply relative bg-white rounded-xl p-8 w-11/12;
+    @apply relative bg-white rounded-xl p-8 w-11/12 md:w-2/3 lg:w-1/2;
 }
 .q-card-header{
     @apply flex justify-between items-center pb-5;

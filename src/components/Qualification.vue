@@ -3,29 +3,62 @@
     import Gigabyte from './Qualification/Gigabyte.vue';
     import University from './Qualification/University.vue';
     import Bootcamp from './Qualification/Bootcamp.vue';
-    import TrainingVue from './Qualification/Training.vue';
+    import Training from './Qualification/Training.vue';
 
     export default{
-        components: { Sourcedware, Gigabyte, University, Bootcamp, TrainingVue },
+        components: { Sourcedware, Gigabyte, University, Bootcamp, Training },
 
         data(){
             return{
-                sourcedware: true
+                sourcedware: false,
+                gigabyte: false,
+                university: false,
+                bootcamp: false,
+                training: false
             }
         },
 
         methods: {
             toggleSourcedware(){
                 this.sourcedware = !this.sourcedware;
+            },
+            toggleGigabyte(){
+                this.gigabyte = !this.gigabyte;
+            },
+            toggleUniversity(){
+                this.university = !this.university;
+            },
+            toggleBootcamp(){
+                this.bootcamp = !this.bootcamp;
+            },
+            toggleTraining(){
+                this.training = !this.training;
             }
         }
     }
 </script>
 <template>
     <div id="qualification" class="body-con">
+        <!--modal cards-->
         <div v-if="sourcedware">
             <Sourcedware @change="toggleSourcedware"></Sourcedware>
         </div>
+        <div v-if="gigabyte">
+            <Gigabyte @change="toggleGigabyte"></Gigabyte>
+        </div>
+        <div v-if="university">
+            <University @change="toggleUniversity"></University>
+        </div>
+        <div v-if="bootcamp">
+            <Bootcamp @change="toggleBootcamp"></Bootcamp>
+        </div>
+        <div v-if="training">
+            <Training @change="toggleTraining"></Training>
+        </div>
+
+
+
+        <!--qualification-->
         <div class="body-subcon text-gray-500 dark:text-white">
             <!--Title-->
             <div class=" text-center">
@@ -50,7 +83,7 @@
                     <!--experience one-->
                     <div class="qualification-con">
                         <div class="qualification-header">Sourcedware</div>
-                        <div class="qualification-description">Full-stack and front-end web development</div>
+                        <div class="qualification-description">On contract full-stack and front-end web development</div>
                         <div class="qualification-date">
                             <span>
                                 <span class="icon-[solar--calendar-outline]"></span>
@@ -77,7 +110,7 @@
                     <!--experience two-->
                     <div class="pl-5">
                         <div class="qualification-header">Gigabyte Developers</div>
-                        <div class="qualification-description">Back-end development and engineering</div>
+                        <div class="qualification-description">On contract back-end development and engineering</div>
                         <div class="qualification-date">
                             <span>
                                 <span class="icon-[solar--calendar-outline]"></span>
@@ -86,7 +119,7 @@
                                 2020 - Present
                             </span>
                         </div>
-                        <div class="view-more-con">
+                        <div class="view-more-con" @click="toggleGigabyte">
                             <span class="view-more">View More</span>
                             <span class="icon icon-[uil--arrow-right]"></span>
                         </div>
@@ -119,7 +152,7 @@
                             </span>
                         </div>
                         <div class="view-more-con">
-                            <span class="view-more">View More</span>
+                            <span class="view-more" @click="toggleUniversity">View More</span>
                             <span class="icon icon-[uil--arrow-right]"></span>
                         </div>
                         <div class="progress-circle -top-2"></div>
@@ -142,7 +175,7 @@
                                 2019
                             </span>
                         </div>
-                        <div class="view-more-con">
+                        <div class="view-more-con" @click="toggleBootcamp">
                             <span class="view-more">View More</span>
                             <span class="icon icon-[uil--arrow-right]"></span>
                         </div>
@@ -160,7 +193,7 @@
                                 2020
                             </span>
                         </div>
-                        <div class="view-more-con">
+                        <div class="view-more-con" @click="toggleTraining">
                             <span class="view-more">View More</span>
                             <span class="icon icon-[uil--arrow-right]"></span>
                         </div>
