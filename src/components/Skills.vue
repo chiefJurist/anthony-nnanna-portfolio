@@ -31,7 +31,7 @@
             </div>
 
             <!--Details-->
-            <div class="block sm:grid md:grid-cols-2 gap-12 mx-auto w-full">
+            <div class="block sm:grid md:grid-cols-2 gap-12 mx-auto w-fit">
                 <!--Programming Languages-->
                 <div class="skills">
                     <!--Programming Languages Header-->
