@@ -4,8 +4,15 @@
 
         data(){
             return{
-                apps: false
+                apps: false,
+                activeLink: null
             }
+        },
+        mounted() {
+            window.addEventListener('scroll', this.handleScroll);
+        },
+        beforeDestroy() {
+            window.removeEventListener('scroll', this.handleScroll);
         },
 
         methods: {
@@ -14,6 +21,19 @@
             },
             toggleApps(){
                 this.apps = !this.apps
+            },
+            //
+            handleScroll() {
+                const scrollPosition = window.scrollY;
+                const sections = ['home', 'about', 'skills', 'qualification', 'projects', 'message']; // Add IDs of your sections here
+                const offset = 100; // Adjust the offset as needed
+
+                sections.forEach(section => {
+                    const target = document.getElementById(section);
+                    if (target.offsetTop <= scrollPosition + offset && (target.offsetTop + target.offsetHeight) > scrollPosition + offset) {
+                        this.activeLink = section;
+                    }
+                });
             }
         }
     }
@@ -23,7 +43,7 @@
     <!--MAIN HEADER-->
     <div class="phone-header-con">
         <div class="flex justify-between items-center">
-            <div class="font-semibold">
+            <div class="font-extrabold">
                 Anthony Nnanna
             </div>
 
@@ -45,7 +65,7 @@
 
 
     <!------------------------------------HEADER NAV--------------------------------->
-    <div class="phone-header-con rounded-3xl" v-if="apps">
+    <div class="phone-header-con rounded-t-2xl" v-if="apps">
         <div class="flex justify-center w-full">
             <div class="grid grid-cols-3 gap-y-5 py-8 w-full">
                 <!--nav one-->
