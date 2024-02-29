@@ -132,3 +132,6 @@
 .phone-icon{
     @apply text-2xl cursor-pointer font-bold;
 }
+.phone-nav-link{
+    @apply cursor-pointer text-center text-gray-500 dark:text-white;
+}

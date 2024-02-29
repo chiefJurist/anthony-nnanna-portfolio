@@ -49,7 +49,7 @@
         <div class="flex justify-center w-full">
             <div class="grid grid-cols-3 gap-y-5 py-8 w-full">
                 <!--nav one-->
-                <a href="#home" class="nav-link text-center" :class="{ 'text-indigo-700': activeLink === 'home' }">
+                <a href="#home" class="phone-nav-link" :class="{ 'text-indigo-700': activeLink === 'home' }">
                     <div>
                         <span class="phone-icon icon-[uil--estate]"></span>
                         <div>Home</div>
@@ -57,7 +57,7 @@
                 </a>
                 
                 <!--nav two-->
-                <a href="#about" class="nav-link text-center" :class="{ 'text-indigo-700': activeLink === 'about' }">
+                <a href="#about" class="phone-nav-link" :class="{ 'text-indigo-700': activeLink === 'about' }">
                     <div>
                         <span class="phone-icon icon-[uil--user]"></span>
                         <div>About</div>
@@ -65,7 +65,7 @@
                 </a>
 
                 <!--nav three-->
-                <a href="#skills" class="nav-link text-center" :class="{ 'text-indigo-700': activeLink === 'skills' }">
+                <a href="#skills" class="phone-nav-link" :class="{ 'text-indigo-700': activeLink === 'skills' }">
                     <div>
                         <span class="phone-icon icon-[uil--file-alt]"></span>
                         <div>Skills</div>
@@ -73,7 +73,7 @@
                 </a>
 
                 <!--nav four-->
-                <a href="#qualification" class="nav-link text-center" :class="{ 'text-indigo-700': activeLink === 'qualification' }">
+                <a href="#qualification" class="phone-nav-link" :class="{ 'text-indigo-700': activeLink === 'qualification' }">
                     <div>
                         <span class="phone-icon icon-[uil--briefcase-alt]"></span>
                         <div>Qualification</div>
@@ -81,7 +81,7 @@
                 </a>
 
                 <!--nav five-->
-                <a href="#projects" class="nav-link text-center" :class="{ 'text-indigo-700': activeLink === 'projects' }">
+                <a href="#projects" class="phone-nav-link" :class="{ 'text-indigo-700': activeLink === 'projects' }">
                     <div>
                         <span class="phone-icon icon-[uil--scenery]"></span>
                         <div>Projects</div>
@@ -89,7 +89,7 @@
                 </a>
 
                 <!--nav six-->
-                <a href="#message" class="nav-link text-center" :class="{ 'text-indigo-700': activeLink === 'message' }">
+                <a href="#message" class="phone-nav-link" :class="{ 'text-indigo-700': activeLink === 'message' }">
                     <div>
                         <span class="phone-icon icon-[uil--message]"></span>
                         <div>Contact-Me</div>
