@@ -8,10 +8,9 @@
     import Message from './components/Message.vue';
     import Footer from './components/Footer.vue';
     import PhoneHeader from './components/PhoneHeader.vue';
-    import PhoneNav from './components/PhoneNav.vue';
 
     export default{
-        components: { Header, Home, About, Skills, Qualification, Projects, Message, Footer, PhoneHeader, PhoneNav },
+        components: { Header, Home, About, Skills, Qualification, Projects, Message, Footer, PhoneHeader },
 
         data () {
             return {
@@ -45,7 +44,6 @@
         <Projects></Projects>
         <Message></Message>
         <Footer></Footer>
-        <PhoneHeader></PhoneHeader>
-        <PhoneNav></PhoneNav>
+        <PhoneHeader :mode="darkmode" @change="toggleDarkMode"></PhoneHeader>
     </div>
 </template>

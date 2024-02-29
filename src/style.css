@@ -124,3 +124,11 @@
 .contact-right-input{
     @apply border-none outline-none bg-inherit w-full;
 }
+
+/*PHONE HEADER*/
+.phone-header-con{
+    @apply bg-slate-50 dark:bg-slate-900 text-gray-600 dark:text-white font-nunito md:hidden fixed bottom-0 w-full px-5 py-4 shadow-xl;
+}
+.phone-icon{
+    @apply text-2xl cursor-pointer font-bold;
+}
