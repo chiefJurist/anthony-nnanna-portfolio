@@ -67,7 +67,7 @@
     <!------------------------------------HEADER NAV--------------------------------->
     <div class="phone-header-con rounded-t-2xl" v-if="apps">
         <div class="flex justify-center w-full">
-            <div class="grid grid-cols-3 gap-y-5 py-8 w-full">
+            <div class="grid grid-cols-3 gap-y-5 py-5 w-full">
                 <!--nav one-->
                 <a href="#home" class="phone-nav-link" :class="{ 'text-indigo-700': activeLink === 'home' }">
                     <div>
@@ -120,7 +120,7 @@
 
 
         <div class="text-right">
-            <span class="phone-icon icon-[quill--escape]" @click="toggleApps"></span>
+            <span class="icon icon-[quill--escape]" @click="toggleApps"></span>
         </div>
     </div>
 </template>
