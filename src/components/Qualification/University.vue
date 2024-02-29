@@ -39,7 +39,7 @@
                     <span class="small-icon icon-[mdi--tick-circle-outline]"></span>
                 </span>
                 <span class="q-card-skill-text">
-                    I graduated with first-class honors, achieving an aggregate CGPA of 4.85.
+                    I graduated with first-class honors, achieving an aggregate CGPA of 4.75.
                 </span>
             </div>
         </div>
