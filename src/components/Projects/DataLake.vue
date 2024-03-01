@@ -1,7 +1,7 @@
 <template>
     <div class="project-con">
         <div class="project-img-con">
-            <img src="../../public/img/koinpark.png" alt="" class="project-img">
+            <img src="/img/data-lake.png" alt="" class="project-img">
         </div>
         
         <div class="project-title">Cadabra</div>

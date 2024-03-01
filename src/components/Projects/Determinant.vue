@@ -1,7 +1,7 @@
 <template>
     <div class="project-con">
         <div class="project-img-con">
-            <img src="../../public/img/determinant.png" alt="" class="project-img">
+            <img src="/img/determinant.png" alt="" class="project-img">
         </div>
         
         <div class="project-title">Determinant Finance</div>

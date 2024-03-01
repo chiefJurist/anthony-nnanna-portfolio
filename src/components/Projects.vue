@@ -14,11 +14,29 @@
     import JOG from  './Projects/JOG.vue';
     import Router from  './Projects/Router.vue';
     import Spore from  './Projects/Spore.vue';
+    import Spruce from './Projects/Spruce.vue';
 
     export default {
         data(){
             return{
-                components: [ Anagar, Cadabra, Cicca, DAO, DataLake, Determinant, ElHippo, Gallery, GamePad, Invt, JOG, Koinpark, MixMob, Router, Spore ],
+                components: [
+                    Koinpark,
+                    MixMob,
+                    Spruce,
+                    Cadabra,
+                    Invt,
+                    Determinant,
+                    GamePad,
+                    ElHippo,
+                    DataLake,
+                    Cicca,
+                    JOG,
+                    Spore,
+                    Router,
+                    DAO,
+                    Gallery,        
+                    Anagar,
+                ],
                 currentComponentIndex: null
             }
         },
@@ -46,7 +64,7 @@
             <!--Title-->
             <div class="gen-header-con">
                 <div class="gen-header-text">Projects</div>
-                <div class=" text-gray-600 dark:text-white">Most recent work</div>
+                <div class=" text-gray-600 dark:text-white">Some recent works</div>
             </div>
             
             <!--Body-->
