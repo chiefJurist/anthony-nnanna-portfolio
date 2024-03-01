@@ -68,17 +68,16 @@
                 }
             },
             handleTouchStart(event) {
-                this.touchStartY = event.touches[0].clientY;
+                this.touchStartX = event.touches[0].clientX;
             },
             handleTouchMove(event) {
-                event.preventDefault();
-                this.touchMoveY = event.touches[0].clientY;
-                const deltaY = this.touchMoveY - this.touchStartY;
-                if (deltaY > 50) {
-                    // Swipe down, show previous component
+                this.touchMoveX = event.touches[0].clientX;
+                const deltaX = this.touchMoveX - this.touchStartX;
+                if (deltaX > 50) {
+                    // Swipe right, show previous component
                     this.currentComponentIndex = (this.currentComponentIndex - 1 + this.components.length) % this.components.length;
-                } else if (deltaY < -50) {
-                    // Swipe up, show next component
+                } else if (deltaX < -50) {
+                    // Swipe left, show next component
                     this.currentComponentIndex = (this.currentComponentIndex + 1) % this.components.length;
                 }
             }
