@@ -103,7 +103,7 @@
             
             <!--Body-->
             <div @wheel="handleScroll" @touchstart="handleTouchStart" @touchmove="handleTouchMove">
-                <div class=" transition-all duration-1000 ease-out">      
+                <div>      
                     <div>
                         <component :is="currentComponent" v-if="currentComponent !== null"></component>
                     </div>
