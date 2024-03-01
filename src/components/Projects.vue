@@ -52,8 +52,20 @@
 
         methods: {
             showComponent(index) {
-            this.currentComponentIndex = index;
+                this.currentComponentIndex = index;
+            },
+            handleScroll(event) {
+            // Determine scroll direction
+            const delta = Math.sign(event.deltaY);
+            // Update currentComponentIndex based on scroll direction
+            if (delta > 0) {
+                // Scroll down, show next component
+                this.currentComponentIndex = (this.currentComponentIndex + 1) % this.components.length;
+            } else if (delta < 0) {
+                // Scroll up, show previous component
+                this.currentComponentIndex = (this.currentComponentIndex - 1 + this.components.length) % this.components.length;
             }
+        }
         }
     }
 
@@ -67,15 +79,21 @@
                 <div class=" text-gray-600 dark:text-white">Some recent works</div>
             </div>
             
+            
             <!--Body-->
-            <div class="">
-                <div>
-                    <span></span>
-                    <div>
+            <div class="" @wheel="handleScroll">
+                <div class="flex justify-between">
+                    <div class=" basis-1/12">
+                        <span class="carousel-change icon-[uil--angle-left-b]"></span>
+                    </div>
+                    <div class=" basis-11/12">
                         <component :is="currentComponent" v-if="currentComponent !== null"></component>
                     </div>
-                    <span></span>
+                    <div class=" basis-1/12">
+                        <span class="carousel-change icon-[uil--angle-right-b]"></span>
+                    </div>
                 </div>
+
                 <div class="flex justify-center">
                     <div class="carousel-btn" v-for="(component, index) in components" :key="index" @click="showComponent(index)" :class="{ 'bg-indigo-700': index === currentComponentIndex }"></div>
                 </div>
