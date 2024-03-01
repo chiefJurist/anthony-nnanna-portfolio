@@ -9,7 +9,7 @@
     import Determinant from  './Projects/Determinant.vue';
     import ElHippo from  './Projects/ElHippo.vue';
     import Gallery from  './Projects/Gallery.vue';
-    import GamePad from  './Projects/Gamepad.vue';
+    import GamePad from  './Projects/GamePad.vue';
     import Invt from  './Projects/Invt.vue';
     import JOG from  './Projects/JOG.vue';
     import Router from  './Projects/Router.vue';
