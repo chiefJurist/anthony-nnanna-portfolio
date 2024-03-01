@@ -107,7 +107,7 @@
                     </div>
                 </div>
 
-                <div class="flex justify-center">
+                <div class="flex justify-center py-10">
                     <div class="carousel-btn" v-for="(component, index) in components" :key="index" @click="showComponent(index)" :class="{ 'bg-indigo-700': index === currentComponentIndex }"></div>
                 </div>
             </div>
