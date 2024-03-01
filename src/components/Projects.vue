@@ -37,7 +37,7 @@
                     Gallery,        
                     Anagar,
                 ],
-                currentComponentIndex: null
+                currentComponentIndex: 0
             }
         },
 
@@ -77,7 +77,7 @@
                     <span></span>
                 </div>
                 <div class="flex justify-center">
-                    <div class="carousel-btn" v-for="(component, index) in components" :key="index" @click="showComponent(index)"></div>
+                    <div class="carousel-btn" v-for="(component, index) in components" :key="index" @click="showComponent(index)" :class="{ 'bg-indigo-700': index === currentComponentIndex }"></div>
                 </div>
             </div>
             

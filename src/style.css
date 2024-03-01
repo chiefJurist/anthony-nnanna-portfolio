@@ -156,5 +156,5 @@
     @apply text-white bg-indigo-700 w-36 text-center py-4 rounded-lg flex justify-evenly items-center cursor-pointer font-bold;
 }
 .carousel-btn{
-    @apply w-2 h-2 rounded-full bg-indigo-200 mx-1;
+    @apply w-2 h-2 rounded-full mx-1 border border-indigo-700;
 }

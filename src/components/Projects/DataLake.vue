@@ -4,7 +4,7 @@
             <img src="/img/data-lake.png" alt="" class="project-img">
         </div>
         
-        <div class="project-title">Cadabra</div>
+        <div class="project-title">Data Lake</div>
 
         <div class="project-desc">
             A front-end project which is the official website for a healthcare organization that provides patient pathway analytics, patient registries, anonymous health data sets, data processing and governance tools.<br>
