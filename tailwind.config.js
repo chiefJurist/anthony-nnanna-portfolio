@@ -48,6 +48,19 @@ module.exports ={
             //Custom font
             fontFamily: {
                 nunito: ['Nunito']
+            },
+
+            //Custom Animation
+            keyframes: {
+                grow: {
+                    '0%' : { transform: 'scale(0.5)' },
+                    '90%' : { transform: 'scale(1.2)' },
+                    '100%' : { transform: 'scale(1) '},
+                }
+            },
+
+            animation: {
+                grow : 'grow ease-out 2s'
             }
         }
     },

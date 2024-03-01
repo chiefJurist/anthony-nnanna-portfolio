@@ -21,7 +21,7 @@
             </div>
 
             <!--Image-->
-            <div class=" order-2 lg:order-3">
+            <div class=" order-2 lg:order-3 animate-grow">
                 <img src="../../public/img/tony-img.jpg" alt="tony" class="rounded-full w-48 sm:w-64">
             </div>
 
