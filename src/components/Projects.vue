@@ -55,17 +55,33 @@
                 this.currentComponentIndex = index;
             },
             handleScroll(event) {
-            // Determine scroll direction
-            const delta = Math.sign(event.deltaY);
-            // Update currentComponentIndex based on scroll direction
-            if (delta > 0) {
-                // Scroll down, show next component
-                this.currentComponentIndex = (this.currentComponentIndex + 1) % this.components.length;
-            } else if (delta < 0) {
-                // Scroll up, show previous component
-                this.currentComponentIndex = (this.currentComponentIndex - 1 + this.components.length) % this.components.length;
+                event.preventDefault();
+                // Determine scroll direction
+                const delta = Math.sign(event.deltaY);
+                // Update currentComponentIndex based on scroll direction
+                if (delta > 0) {
+                    // Scroll down, show next component
+                    this.currentComponentIndex = (this.currentComponentIndex + 1) % this.components.length;
+                } else if (delta < 0) {
+                    // Scroll up, show previous component
+                    this.currentComponentIndex = (this.currentComponentIndex - 1 + this.components.length) % this.components.length;
+                }
+            },
+            handleTouchStart(event) {
+                this.touchStartY = event.touches[0].clientY;
+            },
+            handleTouchMove(event) {
+                event.preventDefault();
+                this.touchMoveY = event.touches[0].clientY;
+                const deltaY = this.touchMoveY - this.touchStartY;
+                if (deltaY > 50) {
+                    // Swipe down, show previous component
+                    this.currentComponentIndex = (this.currentComponentIndex - 1 + this.components.length) % this.components.length;
+                } else if (deltaY < -50) {
+                    // Swipe up, show next component
+                    this.currentComponentIndex = (this.currentComponentIndex + 1) % this.components.length;
+                }
             }
-        }
         }
     }
 
@@ -81,7 +97,7 @@
             
             
             <!--Body-->
-            <div class="" @wheel="handleScroll">
+            <div class="" @wheel="handleScroll" @touchstart="handleTouchStart" @touchmove="handleTouchMove">
                 <div class="flex justify-between">
                     <div class=" basis-1/12">
                         <span class="carousel-change icon-[uil--angle-left-b]"></span>
