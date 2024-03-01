@@ -83,13 +83,15 @@
                     <!--experience one-->
                     <div class="qualification-con">
                         <div class="qualification-header">Sourcedware</div>
-                        <div class="qualification-description">On contract full-stack and front-end web development</div>
+                        <div class="qualification-description">
+                            Engaged in contract based full-stack and front-end web development projects.
+                        </div>
                         <div class="qualification-date">
                             <span>
                                 <span class="icon-[solar--calendar-outline]"></span>
                             </span>
                             <span class="text-xs">
-                                2023 - Present
+                                2020 - Present
                             </span>
                         </div>
                         <div class="view-more-con" @click="toggleSourcedware">
@@ -110,13 +112,15 @@
                     <!--experience two-->
                     <div class="pl-5">
                         <div class="qualification-header">Gigabyte Developers</div>
-                        <div class="qualification-description">On contract back-end development and engineering</div>
+                        <div class="qualification-description">                     
+                            Engaged in contract-based back-end development and software engineering projects.
+                        </div>
                         <div class="qualification-date">
                             <span>
                                 <span class="icon-[solar--calendar-outline]"></span>
                             </span>
                             <span class="text-xs">
-                                2020 - Present
+                                2022 - Present
                             </span>
                         </div>
                         <div class="view-more-con" @click="toggleGigabyte">

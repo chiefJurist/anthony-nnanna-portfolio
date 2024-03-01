@@ -26,7 +26,7 @@
                         </div>
                         <div>
                             <div class="left-contact-title">Email</div>
-                            <div>nnnnnwosu@gmail.com</div>
+                            <div>anthonynnanna001@gmail.com</div>
                         </div>
                     </div>
                     <div class="left-contact-con">
