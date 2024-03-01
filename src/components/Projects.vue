@@ -80,6 +80,12 @@
                     // Swipe left, show next component
                     this.currentComponentIndex = (this.currentComponentIndex + 1) % this.components.length;
                 }
+            },
+            showNext() {
+                this.currentComponentIndex = (this.currentComponentIndex + 1) % this.components.length;
+            },
+            showPrevious() {
+                this.currentComponentIndex = (this.currentComponentIndex - 1 + this.components.length) % this.components.length;
             }
         }
     }
@@ -102,8 +108,8 @@
                         <component :is="currentComponent" v-if="currentComponent !== null"></component>
                     </div>
                     <div class="flex justify-between">
-                        <span class="carousel-change icon-[uil--angle-left-b]"></span>
-                        <span class="carousel-change icon-[uil--angle-right-b]"></span>
+                        <span class="carousel-change icon-[uil--angle-left-b]" @click="showPrevious"></span>
+                        <span class="carousel-change icon-[uil--angle-right-b]" @click="showNext"></span>
                     </div>
                 </div>
 
