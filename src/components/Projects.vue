@@ -73,6 +73,11 @@
             handleTouchMove(event) {
                 this.touchMoveX = event.touches[0].clientX;
                 const deltaX = this.touchMoveX - this.touchStartX;
+                this.translateX = -this.currentComponentIndex * this.$refs.carousel.clientWidth + deltaX;
+            },
+
+            handleTouchEnd(event) {
+                const deltaX = this.touchMoveX - this.touchStartX;
                 if (deltaX > 50) {
                     // Swipe right, show previous component
                     this.currentComponentIndex = (this.currentComponentIndex - 1 + this.components.length) % this.components.length;
@@ -80,6 +85,7 @@
                     // Swipe left, show next component
                     this.currentComponentIndex = (this.currentComponentIndex + 1) % this.components.length;
                 }
+                this.translateX = -this.currentComponentIndex * this.$refs.carousel.clientWidth;
             },
             showNext() {
                 this.currentComponentIndex = (this.currentComponentIndex + 1) % this.components.length;
@@ -102,7 +108,7 @@
             
             
             <!--Body-->
-            <div @wheel="handleScroll" @touchstart="handleTouchStart" @touchmove="handleTouchMove">
+            <div @wheel="handleScroll" @touchstart="handleTouchStart" @touchmove="handleTouchMove" @touchend="handleTouchEnd">
                 <div>      
                     <div>
                         <component :is="currentComponent" v-if="currentComponent !== null"></component>
