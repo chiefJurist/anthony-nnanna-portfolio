@@ -158,3 +158,6 @@
 .carousel-btn{
     @apply w-2 h-2 rounded-full mx-1 border border-indigo-700;
 }
+.carousel-change{
+    @apply  text-2xl text-indigo-500;
+}

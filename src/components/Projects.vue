@@ -96,15 +96,13 @@
             
             
             <!--Body-->
-            <div class="" @wheel="handleScroll" @touchstart="handleTouchStart" @touchmove="handleTouchMove">
-                <div class="flex justify-between">
-                    <div class=" basis-1/12">
-                        <span class="carousel-change icon-[uil--angle-left-b]"></span>
-                    </div>
-                    <div class=" basis-11/12">
+            <div @wheel="handleScroll" @touchstart="handleTouchStart" @touchmove="handleTouchMove">
+                <div>      
+                    <div>
                         <component :is="currentComponent" v-if="currentComponent !== null"></component>
                     </div>
-                    <div class=" basis-1/12">
+                    <div class="flex justify-between">
+                        <span class="carousel-change icon-[uil--angle-left-b]"></span>
                         <span class="carousel-change icon-[uil--angle-right-b]"></span>
                     </div>
                 </div>
