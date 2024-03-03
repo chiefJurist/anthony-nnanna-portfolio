@@ -2,6 +2,8 @@
     export default {
         data() {
             return {
+                titleVisible: false, // Add a new property to track image visibility
+                titleApplied: false, // Add a flag to track whether the class has been applied or not
                 imageVisible: false, // Add a new property to track image visibility
                 classApplied: false, // Add a flag to track whether the class has been applied or not
                 pointVisible: false,
@@ -16,7 +18,25 @@
         },
 
         methods: {
+            //THIS FOR THE ANIMATION
             handleScroll() {
+                // Check if the class has been applied already
+                if (!this.titleApplied) {
+                    // Check for image visibility
+                    const title = document.getElementById('title');
+                    const titleRect = title.getBoundingClientRect();
+                    if (titleRect.top < window.innerHeight && titleRect.bottom >= 0) {
+                        this.titleVisible = true;
+                    } else {
+                        this.titleVisible = false;
+                    }
+
+                    // If image is visible, apply the class and update the flag
+                    if (this.titleVisible) {
+                        this.titleApplied = true;
+                    }
+                }
+
                 // Check if the class has been applied already
                 if (!this.classApplied) {
                     // Check for image visibility
@@ -59,9 +79,9 @@
     <div class="body-con" id="about">
         <div class="body-subcon">
             <!--Header-->
-            <div class="text-center">
-                <div class="text-4xl font-bold dark:text-white">More About Me</div>
-                <div class="text-gray-600 dark:text-white">My Introductiom</div>
+            <div class="gen-header-con" id="title" :class="{ 'animate-grow': titleVisible }">
+                <div class="gen-header-text">More About Me</div>
+                <div>My Introductiom</div>
             </div>
 
             <!--Body-->
@@ -73,10 +93,10 @@
                 
                 <!--Details-->
                 <div class="pt-4 w-fit mx-auto">
-                    <div class="text-gray-500 dark:text-white text-lg max-w-96" id="about-div">
+                    <div class="text-lg max-w-96" id="about-div">
                         I possess a self-motivated attitude, thriving in dynamic environments, and am also deeply passionate about learning new skills that facilitate my growth and development. Additionally, my proficiency in leadership and collaboration within teams enables me to excel collectively. Currently, I am actively seeking a competitive position to further enhance my skills
                     </div>
-                    <div id="about-points" class=" max-w-96 flex justify-around gap-5 text-gray-500 dark:text-white font-semibold pt-8 text-center">
+                    <div id="about-points" class=" max-w-96 flex justify-around gap-5 font-semibold pt-8 text-center">
                         <div :class="{ 'animate-right': pointVisible }">
                             <div class=" text-2xl text-black dark:text-white font-extrabold">4.75</div>
                             <div class=" text-wrap">Aggregrate CGPA</div>

@@ -16,7 +16,7 @@
     @apply bg-slate-50 dark:bg-slate-900 pt-36 pb-3 -mt-2 font-nunito;
 }
 .body-subcon{
-    @apply w-11/12 sm:w-5/6 lg:w-2/3 mx-auto;
+    @apply w-11/12 sm:w-5/6 lg:w-2/3 mx-auto text-gray-600 dark:text-white;
 }
 .gen-header-con{
     @apply text-center;
@@ -26,6 +26,14 @@
 }
 .icon{
     @apply text-indigo-700 text-2xl cursor-pointer;
+}
+.section-btn{
+    @apply text-white bg-indigo-700 w-40 text-center py-4 rounded-lg font-semibold flex justify-evenly items-center cursor-pointer hover:translate-y-3 transform duration-1000 ease-out animate-up;
+}
+
+/*HOME*/
+.home-icon{
+    @apply text-indigo-700 text-2xl cursor-pointer mb-4 hover:translate-y-2 transform duration-700 ease-out animate-left;
 }
 
 /*SKILLS*/

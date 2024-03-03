@@ -73,10 +73,10 @@ module.exports ={
 
             //Custom Animation
             animation: {
-                grow : 'grow ease-out 1.5s',
-                up : 'up ease-out 1.5s',
-                left : 'left ease-out 1.5s',
-                right : 'right ease-out 1.5s',
+                grow : 'grow ease-out 1s',
+                up : 'up ease-out 1s',
+                left : 'left ease-out 1s',
+                right : 'right ease-out 1s',
             },
 
             //Custom Duration
