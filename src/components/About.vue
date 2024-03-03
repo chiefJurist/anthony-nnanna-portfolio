@@ -1,3 +1,41 @@
+<script>
+    export default {
+        data() {
+            return {
+                imageVisible: false, // Add a new property to track image visibility
+                classApplied: false // Add a flag to track whether the class has been applied or not
+            };
+        },
+        mounted() {
+            window.addEventListener('scroll', this.handleScroll);
+        },
+        beforeDestroy() {
+            window.removeEventListener('scroll', this.handleScroll);
+        },
+
+        methods: {
+            handleScroll() {
+                // Check if the class has been applied already
+                if (!this.classApplied) {
+                    // Check for image visibility
+                    const image = document.getElementById('about-img');
+                    const imageRect = image.getBoundingClientRect();
+                    if (imageRect.top < window.innerHeight && imageRect.bottom >= 0) {
+                        this.imageVisible = true;
+                    } else {
+                        this.imageVisible = false;
+                    }
+
+                    // If image is visible, apply the class and update the flag
+                    if (this.imageVisible) {
+                        this.classApplied = true;
+                    }
+                }
+            }
+        }
+    }
+</script>
+
 <template>
     <div class="body-con" id="about">
         <div class="body-subcon">
@@ -11,7 +49,7 @@
             <div class=" block lg:flex justify-evenly pt-10 items-center">
                 <!--Image-->
                 <div class=" flex justify-center">
-                    <img src="../../public/img/tony2-img.jpg" alt="tony" class="rounded-full w-48 h-48 sm:w-64 sm:h-64">
+                    <img id="about-img" src="/img/tony2-img.jpg" alt="tony" class="rounded-full w-48 h-48 sm:w-64 sm:h-64" :class="{ 'animate-grow': imageVisible }">
                 </div>
                 
                 <!--Details-->
