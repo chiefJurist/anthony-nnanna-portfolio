@@ -45,14 +45,16 @@
                                 <span class="icon icon-[uil--angle-down]"></span>
                             </div>
                             <div v-if="program">
-                                <span class="icon icon-[uil--angle-down]"></span>
+                                <span class="icon icon-[uil--angle-up]"></span>
                             </div>
                         </div>
                     </div>
                     <!--Programming Languages Body-->
-                    <div v-if="program" class="skills-body">
-                        <Program></Program>
-                    </div>
+                    <Transition name="skill" mode="in-out">
+                        <div v-if="program" class="skills-body">
+                            <Program></Program>
+                        </div>
+                    </Transition>
                 </div>
 
                 <!--Frameworks-->
@@ -68,14 +70,16 @@
                                 <span class="icon icon-[uil--angle-down]"></span>
                             </div>
                             <div v-if="frameworks">
-                                <span class="icon icon-[uil--angle-down]"></span>
+                                <span class="icon icon-[uil--angle-up]"></span>
                             </div>
                         </div>
                     </div>
                     <!--Frameworks Body-->
-                    <div v-if="frameworks" class="skills-body">
-                        <Frameworks></Frameworks>
-                    </div>
+                    <Transition name="skill" mode="in-out">
+                        <div v-if="frameworks" class="skills-body">
+                            <Frameworks></Frameworks>
+                        </div>
+                    </Transition>
                 </div>
 
                 <!--Infrastructural Tools-->
@@ -87,18 +91,20 @@
                         </div>
                         <div class="skills-text">Infrastructural Tools</div>
                         <div class="skills-display">
-                            <div v-if="!Infrastructure">
+                            <div v-if="!infrastructure">
                                 <span class="icon icon-[uil--angle-down]"></span>
                             </div>
-                            <div v-if="Infrastructure">
-                                <span class="icon icon-[uil--angle-down]"></span>
+                            <div v-if="infrastructure">
+                                <span class="icon icon-[uil--angle-up]"></span>
                             </div>
                         </div>
                     </div>
                     <!--Infrasructural Tools Body-->
-                    <div v-if="infrastructure" class="skills-body">
-                        <Insfrastructure></Insfrastructure>
-                    </div>
+                    <Transition name="skill" mode="in-out">
+                        <div v-if="infrastructure" class="skills-body">
+                            <Insfrastructure></Insfrastructure>
+                        </div>
+                    </Transition>
                 </div>
 
                 <!--Development Tools-->
@@ -114,14 +120,16 @@
                                 <span class="icon icon-[uil--angle-down]"></span>
                             </div>
                             <div v-if="development">
-                                <span class="icon icon-[uil--angle-down]"></span>
+                                <span class="icon icon-[uil--angle-up]"></span>
                             </div>
                         </div>
                     </div>
                     <!--Development Tools Body-->
-                    <div class="skills-body" v-if="development">
-                        <Development></Development>
-                    </div>
+                    <Transition name="skill" mode="in-out">
+                        <div class="skills-body" v-if="development">
+                            <Development></Development>
+                        </div>
+                    </Transition>
                 </div>
 
                 <!--Testing Frameworks-->
@@ -137,14 +145,16 @@
                                 <span class="icon icon-[uil--angle-down]"></span>
                             </div>
                             <div v-if="testing">
-                                <span class="icon icon-[uil--angle-down]"></span>
+                                <span class="icon icon-[uil--angle-up]"></span>
                             </div>
                         </div>
                     </div>
                     <!--Testing Frameworks Body-->
-                    <div class="skills-body" v-if="testing">
-                        <Testing></Testing>
-                    </div>
+                    <Transition name="skill" mode="in-out">
+                        <div class="skills-body" v-if="testing">
+                            <Testing></Testing>
+                        </div>
+                    </Transition>
                 </div>
 
                 <!--Design Tools-->
@@ -160,17 +170,16 @@
                                 <span class="icon icon-[uil--angle-down]"></span>
                             </div>
                             <div v-if="design">
-                                <span class="icon icon-[uil--angle-down]"></span>
+                                <span class="icon icon-[uil--angle-up]"></span>
                             </div>
                         </div>
                     </div>
                     <!--Design Tools Body-->
-                    <div class="skills-body" v-if="design">
-                        <Design></Design>
-                    </div>
-                </div>
-                <div>
-
+                    <Transition name="skill" mode="in-out">
+                        <div class="skills-body" v-if="design">
+                            <Design class=" transform duration-2000 ease-out"></Design>
+                        </div>
+                    </Transition>
                 </div>
 
                 <!--Deployment Platforms-->
@@ -186,16 +195,35 @@
                                 <span class="icon icon-[uil--angle-down]"></span>
                             </div>
                             <div v-if="deployment">
-                                <span class="icon icon-[uil--angle-down]"></span>
+                                <span class="icon icon-[uil--angle-up]"></span>
                             </div>
                         </div>
                     </div>
                     <!--Deployment Platforms Body-->
-                    <div class="skills-body" v-if="deployment">
-                        <Deployment></Deployment>
-                    </div>
+                    <Transition name="skill" mode="in-out">
+                        <div class="skills-body" v-if="deployment">
+                            <Deployment></Deployment>
+                        </div>
+                    </Transition>
                 </div>
             </div>
         </div>
     </div>
 </template>
+
+<style>
+    .skill-enter-active{
+    transition: opacity 1s, transform 1s;
+    }
+    .skill-leave-active {
+    transition: opacity 1s, transform 1s;
+    }
+    .skill-leave-to {
+    opacity: 0;
+    transform: translateY(-20%);
+    }
+    .skill-enter-from{
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+</style>
