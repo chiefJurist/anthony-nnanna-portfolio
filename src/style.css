@@ -28,7 +28,7 @@
     @apply text-indigo-700 text-2xl cursor-pointer;
 }
 .section-btn{
-    @apply text-white bg-indigo-700 w-40 text-center py-4 rounded-lg font-semibold flex justify-evenly items-center cursor-pointer hover:translate-y-3 transform duration-1000 ease-out animate-up;
+    @apply text-white bg-indigo-700 w-40 text-center py-4 rounded-lg font-semibold flex justify-evenly items-center cursor-pointer hover:translate-y-3 transform duration-1000 ease-out;
 }
 
 /*HOME*/

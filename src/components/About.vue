@@ -10,9 +10,11 @@
                 pointClassApplied: false
             };
         },
+        
         mounted() {
             window.addEventListener('scroll', this.handleScroll);
         },
+
         beforeDestroy() {
             window.removeEventListener('scroll', this.handleScroll);
         },
@@ -21,7 +23,7 @@
             //THIS FOR THE ANIMATION
             handleScroll() {
                 // Check if the class has been applied already
-                if (!this.titleApplied) {
+                if (!this.titleClassApplied) {
                     // Check for image visibility
                     const title = document.getElementById('title');
                     const titleRect = title.getBoundingClientRect();
@@ -38,7 +40,7 @@
                 }
 
                 // Check if the class has been applied already
-                if (!this.classApplied) {
+                if (!this.imageClassApplied) {
                     // Check for image visibility
                     const image = document.getElementById('about-img');
                     const imageRect = image.getBoundingClientRect();
