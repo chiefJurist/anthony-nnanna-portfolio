@@ -3,9 +3,9 @@
         data() {
             return {
                 titleVisible: false, // Add a new property to track image visibility
-                titleApplied: false, // Add a flag to track whether the class has been applied or not
+                titleClassApplied: false, // Add a flag to track whether the class has been applied or not
                 imageVisible: false, // Add a new property to track image visibility
-                classApplied: false, // Add a flag to track whether the class has been applied or not
+                imageClassApplied: false, // Add a flag to track whether the class has been applied or not
                 pointVisible: false,
                 pointClassApplied: false
             };
@@ -33,7 +33,7 @@
 
                     // If image is visible, apply the class and update the flag
                     if (this.titleVisible) {
-                        this.titleApplied = true;
+                        this.titleClassApplied = true;
                     }
                 }
 
@@ -50,7 +50,7 @@
 
                     // If image is visible, apply the class and update the flag
                     if (this.imageVisible) {
-                        this.classApplied = true;
+                        this.imageClassApplied = true;
                     }
                 }
 
