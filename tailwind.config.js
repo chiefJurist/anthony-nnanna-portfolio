@@ -55,32 +55,28 @@ module.exports ={
             keyframes: {
                 grow: {
                     '0%' : { transform: 'scale(0.5)' },
-                    '90%' : { transform: 'scale(1.2)' },
                     '100%' : { transform: 'scale(1) '},
                 },
                  up: {
                     '0%' : { transform: 'translateY(100%)' },
-                    '90%' : { transform: 'translateY(-10%)' },
                     '100%' : { transform: 'translateY(0) '},
                 },
                 left: {
                     '0%' : { transform: 'translateX(-100%)' },
-                    '90%' : { transform: 'translateX(10%)' },
                     '100%' : { transform: 'translateX(0) '},
                 },
                 right: {
                     '0%' : { transform: 'translateX(100%)' },
-                    '90%' : { transform: 'translateX(-10%)' },
                     '100%' : { transform: 'translateX(0) '},
                 },
             },
 
             //Custom Animation
             animation: {
-                grow : 'grow ease-out 2s',
-                up : 'up ease-out 2s',
-                left : 'left ease-out 2s',
-                right : 'right ease-out 2s',
+                grow : 'grow ease-out 1s',
+                up : 'up ease-out 1s',
+                left : 'left ease-out 1s',
+                right : 'right ease-out 1s',
             },
 
             //Custom Duration
