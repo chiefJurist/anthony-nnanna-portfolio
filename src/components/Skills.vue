@@ -213,17 +213,17 @@
 
 <style>
     .skill-enter-active{
-    transition: opacity 1s, transform 1s;
+    transition: opacity 0.5s, transform 0.5s;
     }
     .skill-leave-active {
-    transition: opacity 1s, transform 1s;
+    transition: opacity 0.5s, transform 0.5s;
     }
     .skill-leave-to {
     opacity: 0;
-    transform: translateY(-20%);
+    transform: translateY(-10%);
     }
     .skill-enter-from{
         opacity: 0;
-        transform: translateY(-20%);
+        transform: translateY(-10%);
     }
 </style>
