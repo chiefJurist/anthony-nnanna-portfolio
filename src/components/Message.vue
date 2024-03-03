@@ -58,7 +58,7 @@
                     </div>
 
                     <a href="mailto:anthonynnanna001@gmail.com">
-                        <div class="text-white bg-indigo-700 w-40 text-center py-4 rounded-lg font-semibold flex justify-evenly items-center cursor-pointer">
+                        <div class="text-white bg-indigo-700 w-40 text-center py-4 rounded-lg font-semibold flex justify-evenly items-center cursor-pointer hover:translate-y-5 transform duration-1000 ease-in-out">
                             <span>Send Message</span>
                             <span class="icon-[uil--message]"></span>
                         </div>

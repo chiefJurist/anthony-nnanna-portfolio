@@ -5,17 +5,17 @@
             <div class=" order-1 pr-4 lg:pr-0">
                 <div>
                     <a href="https://twitter.com/AnthonyNnanna_C" target="_blank">
-                        <span class="icon mb-4 icon-[line-md--twitter-x-alt]"></span>
+                        <span class="icon mb-4 hover:translate-y-2 transform duration-700 ease-out icon-[line-md--twitter-x-alt]"></span>
                     </a>
                 </div>
                 <div>
                     <a href="https://github.com/chiefJurist" target="_blank">
-                        <span class="icon mb-4 icon-[uil--github-alt]"></span>
+                        <span class="icon mb-4 hover:translate-y-2 transform duration-700 ease-out icon-[uil--github-alt]"></span>
                     </a>
                 </div>
                 <div>
                     <a href="https://www.linkedin.com/in/anthony-nnanna-666085234" target="_blank">
-                        <span class="icon mb-4 icon-[uil--linkedin-alt]"></span>
+                        <span class="icon mb-4 hover:translate-y-2 transform duration-700 ease-out icon-[uil--linkedin-alt]"></span>
                     </a>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                 </div>
 
                 <a href="#message">
-                    <div class=" text-white bg-indigo-700 w-40 text-center py-4 rounded-lg font-semibold flex justify-evenly items-center cursor-pointer">
+                    <div class=" text-white bg-indigo-700 w-40 text-center py-4 rounded-lg font-semibold flex justify-evenly items-center cursor-pointer hover:translate-y-3 transform duration-1000 ease-out">
                         <span>Contact Me</span>
                         <span class="icon-[uil--message]"></span>
                     </div>
