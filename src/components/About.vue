@@ -10,7 +10,7 @@
                 pointClassApplied: false
             };
         },
-        
+
         mounted() {
             window.addEventListener('scroll', this.handleScroll);
         },
@@ -25,7 +25,7 @@
                 // Check if the class has been applied already
                 if (!this.titleClassApplied) {
                     // Check for image visibility
-                    const title = document.getElementById('title');
+                    const title = document.getElementById('about-title');
                     const titleRect = title.getBoundingClientRect();
                     if (titleRect.top < window.innerHeight && titleRect.bottom >= 0) {
                         this.titleVisible = true;
@@ -81,7 +81,7 @@
     <div class="body-con" id="about">
         <div class="body-subcon">
             <!--Header-->
-            <div class="gen-header-con" id="title" :class="{ 'animate-grow': titleVisible }">
+            <div class="gen-header-con" id="about-title" :class="{ 'animate-grow': titleVisible }">
                 <div class="gen-header-text">More About Me</div>
                 <div>My Introductiom</div>
             </div>
