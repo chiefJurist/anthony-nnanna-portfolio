@@ -36,7 +36,7 @@
 
                 // Check if the class has been applied already
                 if (!this.divClassApplied) {
-                    // Check for image visibility
+                    // Check for div visibility
                     const div = document.getElementById('about-div');
                     const divRect = div.getBoundingClientRect();
                     if (divRect.top < window.innerHeight && divRect.bottom >= 0) {
@@ -45,7 +45,7 @@
                         this.divVisible = false;
                     }
 
-                    // If image is visible, apply the class and update the flag
+                    // If div is visible, apply the class and update the flag
                     if (this.divVisible) {
                         this.divClassApplied = true;
                     }
@@ -77,15 +77,15 @@
                         I possess a self-motivated attitude, thriving in dynamic environments, and am also deeply passionate about learning new skills that facilitate my growth and development. Additionally, my proficiency in leadership and collaboration within teams enables me to excel collectively. Currently, I am actively seeking a competitive position to further enhance my skills
                     </div>
                     <div class=" max-w-96 flex justify-around gap-5 text-gray-500 dark:text-white font-semibold pt-8 text-center">
-                        <div>
+                        <div class="about-points">
                             <div class=" text-2xl text-black dark:text-white font-extrabold">4.75</div>
                             <div class=" text-wrap">Aggregrate CGPA</div>
                         </div>
-                        <div>
+                        <div class="about-points">
                             <div class=" text-2xl text-black dark:text-white font-extrabold">30+</div>
                             <div>Web Development Projects</div>
                         </div>
-                        <div>
+                        <div class="about-points">
                             <div class=" text-2xl text-black dark:text-white font-extrabold">4+</div>
                             <div>Years Experience</div>
                         </div>
