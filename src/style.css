@@ -27,6 +27,7 @@
 .icon{
     @apply text-indigo-700 text-2xl cursor-pointer;
 }
+/*SKILLS*/
 .skills{
     @apply  pb-8 w-72 sm:w-80;
 }
