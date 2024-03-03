@@ -72,7 +72,7 @@
                 </div>
                 
                 <!--Details-->
-                <div class="pt-4 w-fit mx-auto" id="about-div" :class="{ 'animate-left': divVisible }">
+                <div class="pt-4 w-fit mx-auto" id="about-div" :class="{ 'animate-right': divVisible }">
                     <div class="text-gray-500 dark:text-white text-lg max-w-96 font-semibold">
                         I possess a self-motivated attitude, thriving in dynamic environments, and am also deeply passionate about learning new skills that facilitate my growth and development. Additionally, my proficiency in leadership and collaboration within teams enables me to excel collectively. Currently, I am actively seeking a competitive position to further enhance my skills
                     </div>
