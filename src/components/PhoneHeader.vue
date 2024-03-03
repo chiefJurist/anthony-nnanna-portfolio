@@ -129,17 +129,17 @@
 
 <style>
     .nav-enter-active{
-        transition: opacity 0.5s, transform 0.5s;
+        transition: opacity 1s, transform 1s;
     }
     .nav-leave-active {
-        transition: opacity 0.5s, transform 0.5s;
+        transition: opacity 1s, transform 1s;
     }
     .nav-leave-to {
         opacity: 0;
-        transform: translateY(20%);
+        transform: translateY(100%);
     }
     .nav-enter-from{
         opacity: 0;
-        transform: translateY(20%);
+        transform: translateY(100%);
     }
 </style>
