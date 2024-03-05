@@ -145,7 +145,7 @@
                 </div>
 
                 <div class=" text-gray-600 dark:text-white text-lg mt-4 mb-8 max-w-80">
-                    A full-stack web developer with 4+ years of experience and a B.Tech in software development
+                    A full-stack web developer with over 4 years of experience, holding a Bachelor of Technology (B.Tech) degree in web development.
                 </div>
 
                 <a href="#message" id="button">

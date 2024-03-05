@@ -83,7 +83,7 @@
             <!--Header-->
             <div class="gen-header-con" id="about-title" :class="{ 'animate-grow': titleVisible }">
                 <div class="gen-header-text">More About Me</div>
-                <div>My Introductiom</div>
+                <div>My Introduction</div>
             </div>
 
             <!--Body-->

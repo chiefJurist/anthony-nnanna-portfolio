@@ -21,7 +21,7 @@
                     <span class="small-icon icon-[mdi--tick-circle-outline]"></span>
                 </span>
                 <span class="q-card-skill-text">
-                    Studied core subjects of IT including computer programming, data structures and algorithms, web development, human computer interaction, computer architecture and operating systems.
+                    Studied core courses of  web development including full-stack and front-end web development, data structures and algorithms, RDBMS, version control systems, content management systems and computer architecture.
                 </span>
             </div>
 
