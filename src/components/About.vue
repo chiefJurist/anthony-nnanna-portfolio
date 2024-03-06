@@ -97,20 +97,20 @@
                 
                 <!--Details-->
                 <div class="pt-4 w-fit mx-auto">
-                    <div class="text-lg max-w-96" id="about-text" :class="{ 'animate-opacity': textVisible }">
+                    <div class="text-lg max-w-96" id="about-text" :class="{ 'animate-grow': textVisible }">
                         I possess a self-motivated attitude, thriving in dynamic environments, and am also deeply passionate about learning new skills that facilitate my growth and development. Additionally, my proficiency in leadership and collaboration within teams enables me to excel collectively. Currently, I am actively seeking a competitive position to further enhance my skills
                     </div>
                     <div id="about-points" class=" max-w-96 flex justify-around gap-5 font-semibold pt-8 text-center">
-                        <div :class="{ 'animate-right': pointVisible }">
-                            <div class=" text-2xl text-black dark:text-white font-extrabold">4.75</div>
+                        <div :class="{ 'animate-grow': pointVisible }">
+                            <div class=" text-xl text-black dark:text-white font-extrabold">4.75</div>
                             <div class=" text-wrap">Aggregrate CGPA</div>
                         </div>
                         <div :class="{ 'animate-grow': pointVisible }">
-                            <div class=" text-2xl text-black dark:text-white font-extrabold">30+</div>
+                            <div class=" text-xl text-black dark:text-white font-extrabold">30+</div>
                             <div>Web Development Projects</div>
                         </div>
-                        <div :class="{ 'animate-left': pointVisible }">
-                            <div class=" text-2xl text-black dark:text-white font-extrabold">4+</div>
+                        <div :class="{ 'animate-grow': pointVisible }">
+                            <div class=" text-xl text-black dark:text-white font-extrabold">4+</div>
                             <div>Years Experience</div>
                         </div>
                     </div>
