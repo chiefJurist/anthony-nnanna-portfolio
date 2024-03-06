@@ -170,21 +170,23 @@
                 <div class="general-qualification-con">
                     <!--experience one-->
                     <div class="qualification-con">
-                        <div class="qualification-header">Sourcedware</div>
-                        <div class="qualification-description" id="sourcedware" :class="{ 'animate-grow': sourcedwareVisible }">
-                            Engaged in contract based full-stack and front-end web development projects.
-                        </div>
-                        <div class="qualification-date">
-                            <span>
-                                <span class="icon-[solar--calendar-outline]"></span>
-                            </span>
-                            <span class="text-xs">
-                                2020 - Present
-                            </span>
-                        </div>
-                        <div class="view-more-con" @click="toggleSourcedware">
-                            <span class="view-more">View More</span>
-                            <span class="icon icon-[uil--arrow-right]"></span>
+                        <div  id="sourcedware" :class="{ 'animate-grow': sourcedwareVisible }">
+                            <div class="qualification-header">Sourcedware</div>
+                            <div class="qualification-description">
+                                Engaged in contract based full-stack and front-end web development projects.
+                            </div>
+                            <div class="qualification-date">
+                                <span>
+                                    <span class="icon-[solar--calendar-outline]"></span>
+                                </span>
+                                <span class="text-xs">
+                                    2020 - Present
+                                </span>
+                            </div>
+                            <div class="view-more-con" @click="toggleSourcedware">
+                                <span class="view-more">View More</span>
+                                <span class="icon icon-[uil--arrow-right]"></span>
+                            </div>
                         </div>
                         <div class="progress-circle -top-2"></div>
                         <div class="progress-circle bottom-0"></div>
@@ -199,21 +201,23 @@
 
                     <!--experience two-->
                     <div class="pl-5">
-                        <div class="qualification-header">Gigabyte Developers</div>
-                        <div class="qualification-description" id="gigabyte" :class="{ 'animate-grow': gigabyteVisible }">                     
-                            Engaged in contract-based back-end development and software engineering projects.
-                        </div>
-                        <div class="qualification-date">
-                            <span>
-                                <span class="icon-[solar--calendar-outline]"></span>
-                            </span>
-                            <span class="text-xs">
-                                2022 - Present
-                            </span>
-                        </div>
-                        <div class="view-more-con" @click="toggleGigabyte">
-                            <span class="view-more">View More</span>
-                            <span class="icon icon-[uil--arrow-right]"></span>
+                        <div id="gigabyte" :class="{ 'animate-grow': gigabyteVisible }">
+                            <div class="qualification-header">Gigabyte Developers</div>
+                            <div class="qualification-description">                     
+                                Engaged in contract-based back-end development and software engineering projects.
+                            </div>
+                            <div class="qualification-date">
+                                <span>
+                                    <span class="icon-[solar--calendar-outline]"></span>
+                                </span>
+                                <span class="text-xs">
+                                    2022 - Present
+                                </span>
+                            </div>
+                            <div class="view-more-con" @click="toggleGigabyte">
+                                <span class="view-more">View More</span>
+                                <span class="icon icon-[uil--arrow-right]"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -233,19 +237,21 @@
                 <div class="general-qualification-con">
                     <!--education one-->
                     <div class="qualification-con">
-                        <div class="qualification-header">University</div>
-                        <div class="qualification-description" id="university" :class="{ 'animate-grow': universityVisible }">Federal University of Technology Owerri</div>
-                        <div class="qualification-date">
-                            <span>
-                                <span class="icon-[solar--calendar-outline]"></span>
-                            </span>
-                            <span class="text-xs">
-                                2016 - 2020
-                            </span>
-                        </div>
-                        <div class="view-more-con">
-                            <span class="view-more" @click="toggleUniversity">View More</span>
-                            <span class="icon icon-[uil--arrow-right]"></span>
+                        <div id="university" :class="{ 'animate-grow': universityVisible }">
+                            <div class="qualification-header">University</div>
+                            <div class="qualification-description">Federal University of Technology Owerri</div>
+                            <div class="qualification-date">
+                                <span>
+                                    <span class="icon-[solar--calendar-outline]"></span>
+                                </span>
+                                <span class="text-xs">
+                                    2016 - 2020
+                                </span>
+                            </div>
+                            <div class="view-more-con">
+                                <span class="view-more" @click="toggleUniversity">View More</span>
+                                <span class="icon icon-[uil--arrow-right]"></span>
+                            </div>
                         </div>
                         <div class="progress-circle -top-2"></div>
                         <div class="progress-circle bottom-0"></div>
@@ -257,37 +263,41 @@
 
                     <!--education two-->
                     <div class="pl-5">
-                        <div class="qualification-header">Bootcamp</div>
-                        <div class="qualification-description" id="bootcamp" :class="{ 'animate-grow': bootcampVisible }">BLOC web developers bootcamp</div>
-                        <div class="qualification-date">
-                            <span>
-                                <span class="icon-[solar--calendar-outline]"></span>
-                            </span>
-                            <span class="text-xs">
-                                2019
-                            </span>
-                        </div>
-                        <div class="view-more-con" @click="toggleBootcamp">
-                            <span class="view-more">View More</span>
-                            <span class="icon icon-[uil--arrow-right]"></span>
+                        <div id="bootcamp" :class="{ 'animate-grow': bootcampVisible }">
+                            <div class="qualification-header">Bootcamp</div>
+                            <div class="qualification-description">BLOC web developers bootcamp</div>
+                            <div class="qualification-date">
+                                <span>
+                                    <span class="icon-[solar--calendar-outline]"></span>
+                                </span>
+                                <span class="text-xs">
+                                    2019
+                                </span>
+                            </div>
+                            <div class="view-more-con" @click="toggleBootcamp">
+                                <span class="view-more">View More</span>
+                                <span class="icon icon-[uil--arrow-right]"></span>
+                            </div>
                         </div>
                     </div>
 
                     <!--education three-->
                     <div class="qualification-con">
-                        <div class="qualification-header">Training Camp</div>
-                        <div class="qualification-description" id="training" :class="{ 'animate-grow': trainingVisible }">Decagon Software Engineering Training Institute</div>
-                        <div class="qualification-date">
-                            <span>
-                                <span class="icon-[solar--calendar-outline]"></span>
-                            </span>
-                            <span class="text-xs">
-                                2020
-                            </span>
-                        </div>
-                        <div class="view-more-con" @click="toggleTraining">
-                            <span class="view-more">View More</span>
-                            <span class="icon icon-[uil--arrow-right]"></span>
+                        <div id="training" :class="{ 'animate-grow': trainingVisible }">
+                            <div class="qualification-header">Training Camp</div>
+                            <div class="qualification-description">Decagon Software Engineering Training Institute</div>
+                            <div class="qualification-date">
+                                <span>
+                                    <span class="icon-[solar--calendar-outline]"></span>
+                                </span>
+                                <span class="text-xs">
+                                    2020
+                                </span>
+                            </div>
+                            <div class="view-more-con" @click="toggleTraining">
+                                <span class="view-more">View More</span>
+                                <span class="icon icon-[uil--arrow-right]"></span>
+                            </div>
                         </div>
                         <div class="progress-circle -top-2"></div>
                         <div class="progress-circle bottom-0"></div>
