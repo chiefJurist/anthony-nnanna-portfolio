@@ -2,8 +2,8 @@
     export default {
         data() {
             return {
-                titleVisible: false, // Add a new property to track image visibility
-                titleClassApplied: false, // Add a flag to track whether the class has been applied or not
+                textVisible: false, // Add a new property to track image visibility
+                textClassApplied: false, // Add a flag to track whether the class has been applied or not
                 imageVisible: false, // Add a new property to track image visibility
                 imageClassApplied: false, // Add a flag to track whether the class has been applied or not
                 pointVisible: false,
@@ -25,14 +25,14 @@
             //THIS FOR THE ANIMATION
             handleScroll() {
                 // Check if the class has been applied already
-                if (!this.titleClassApplied) {
+                if (!this.textClassApplied) {
                     // Check for image visibility
-                    const title = document.getElementById('about-title');
-                    const titleRect = title.getBoundingClientRect();
-                    if (titleRect.top < window.innerHeight && titleRect.bottom >= 0) {
-                        this.titleVisible = true;
+                    const text = document.getElementById('about-text');
+                    const textRect = text.getBoundingClientRect();
+                    if (textRect.top < window.innerHeight && textRect.bottom >= 0) {
+                        this.textVisible = true;
                     } else {
-                        this.titleVisible = false;
+                        this.textVisible = false;
                     }
 
                     // If image is visible, apply the class and update the flag
@@ -83,7 +83,7 @@
     <div class="body-con" id="about">
         <div class="body-subcon">
             <!--Header-->
-            <div class="gen-header-con" id="about-title" :class="{ 'animate-grow': titleVisible }">
+            <div class="gen-header-con">
                 <div class="gen-header-text">More About Me</div>
                 <div>My Introduction</div>
             </div>
@@ -92,12 +92,12 @@
             <div class=" block lg:flex justify-evenly pt-10 items-center">
                 <!--Image-->
                 <div class=" flex justify-center">
-                    <img id="about-img" src="/img/tony2-img.jpg" alt="tony" class="rounded-full w-48 h-48 sm:w-64 sm:h-64" :class="{ 'animate-grow': imageVisible }">
+                    <img id="about-img" src="/img/tony2-img.jpg" alt="tony" class="rounded-full w-48 h-48 sm:w-64 sm:h-64" :class="{ 'animate-left': imageVisible }">
                 </div>
                 
                 <!--Details-->
                 <div class="pt-4 w-fit mx-auto">
-                    <div class="text-lg max-w-96" id="about-div">
+                    <div class="text-lg max-w-96" id="about-text" :class="{ 'animate-opacity': textVisible }">
                         I possess a self-motivated attitude, thriving in dynamic environments, and am also deeply passionate about learning new skills that facilitate my growth and development. Additionally, my proficiency in leadership and collaboration within teams enables me to excel collectively. Currently, I am actively seeking a competitive position to further enhance my skills
                     </div>
                     <div id="about-points" class=" max-w-96 flex justify-around gap-5 font-semibold pt-8 text-center">

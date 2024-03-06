@@ -57,10 +57,6 @@ module.exports ={
                     '0%' : { transform: 'scale(0.5)' },
                     '100%' : { transform: 'scale(1) '},
                 },
-                 up: {
-                    '0%' : { transform: 'translateY(100%)' },
-                    '100%' : { transform: 'translateY(0) '},
-                },
                 left: {
                     '0%' : { transform: 'translateX(-50%)' },
                     '100%' : { transform: 'translateX(0) '},
@@ -68,6 +64,10 @@ module.exports ={
                 right: {
                     '0%' : { transform: 'translateX(50%)' },
                     '100%' : { transform: 'translateX(0) '},
+                },
+                opacity: {
+                    '0%' : { opacity: 0 },
+                    '100%' : { opacity: 100},
                 },
             },
 
@@ -77,6 +77,7 @@ module.exports ={
                 up : 'up ease-out 1s',
                 left : 'left ease-out 1s',
                 right : 'right ease-out 1s',
+                opacity : 'opacity ease-out 2s',
             },
 
             //Custom Duration

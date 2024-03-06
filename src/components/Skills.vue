@@ -18,7 +18,6 @@
                 design: false,
                 deployment: false,
                 //For the Animation
-                titleVisible: false,
                 programVisible: false,
                 frameworkVisible: false,
                 infrastructureVisible: false,
@@ -27,7 +26,6 @@
                 designVisible: false,
                 deploymentVisible: false,
                 //checking if the class is applied
-                titleClassApplied: false,
                 programClassApplied: false,
                 frameworkClassApplied: false,
                 infrastructureClassApplied: false,
@@ -50,19 +48,6 @@
         methods: {
             //THIS FOR THE ANIMATION
             handleScroll() {
-                if (!this.titleClassApplied) {
-                    const title = document.getElementById('skills-title');
-                    const titleRect = title.getBoundingClientRect();
-                    if (titleRect.top < window.innerHeight && titleRect.bottom >= 0) {
-                        this.titleVisible = true;
-                    } else {
-                        this.titleVisible = false;
-                    }
-                    if (this.titleVisible) {
-                        this.titleClassApplied = true;
-                    }
-                }
-
                 if (!this.programClassApplied) {
                     const program = document.getElementById('program');
                     const programRect = program.getBoundingClientRect();
@@ -161,7 +146,7 @@
     <div class="body-con" id="skills">
         <div class="body-subcon text-black dark:text-white">
             <!--Title-->
-            <div class="gen-header-con mb-10" id="skills-title" :class="{ 'animate-grow': titleVisible }">
+            <div class="gen-header-con mb-10">
                 <div class="gen-header-text">Skills</div>
                 <div class=" font-semibold text-gray-600 dark:text-white">My Technical Level</div>
             </div>
