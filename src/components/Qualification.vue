@@ -14,8 +14,29 @@
                 gigabyte: false,
                 university: false,
                 bootcamp: false,
-                training: false
+                training: false,
+                //For the Animation
+                sourcedwareVisible: false,
+                gigabyteVisible: false,
+                universityVisible: false,
+                bootcampVisible: false,
+                trainingVisible: false,
+                //checking if the class is applied
+                sourcedwareClassApplied: false,
+                gigabyteClassApplied: false,
+                universityClassApplied: false,
+                bootcampClassApplied: false,
+                trainingClassApplied: false,
             }
+        },
+
+        mounted() {
+            window.addEventListener('scroll', this.handleScroll);
+            this.handleScroll();
+        },
+
+        beforeDestroy() {
+            window.removeEventListener('scroll', this.handleScroll);
         },
 
         methods: {
@@ -33,6 +54,73 @@
             },
             toggleTraining(){
                 this.training = !this.training;
+            },
+            //THIS FOR THE ANIMATION
+            handleScroll() {
+                if (!this.sourcedwareClassApplied) {
+                    const sourcedware = document.getElementById('sourcedware');
+                    const sourcedwareRect = sourcedware.getBoundingClientRect();
+                    if (sourcedwareRect.top < window.innerHeight && sourcedwareRect.bottom >= 0) {
+                        this.sourcedwareVisible = true;
+                    } else {
+                        this.sourcedwareVisible = false;
+                    }
+                    if (this.sourcedwareVisible) {
+                        this.sourcedwareClassApplied = true;
+                    }
+                }
+
+                if (!this.gigabyteClassApplied) {
+                    const framework = document.getElementById('gigabyte');
+                    const gigabyteRect = gigabyte.getBoundingClientRect();
+                    if (gigabyteRect.top < window.innerHeight && gigabyteRect.bottom >= 0) {
+                        this.gigabyteVisible = true;
+                    } else {
+                        this.gigabyteVisible = false;
+                    }
+                    if (this.gigabyteVisible) {
+                        this.gigabyteClassApplied = true;
+                    }
+                }
+
+                if (!this.universityClassApplied) {
+                    const university = document.getElementById('university');
+                    const universityRect = university.getBoundingClientRect();
+                    if (universityRect.top < window.innerHeight && universityRect.bottom >= 0) {
+                        this.universityVisible = true;
+                    } else {
+                        this.universityVisible = false;
+                    }
+                    if (this.universityVisible) {
+                        this.universityClassApplied = true;
+                    }
+                }
+
+                if (!this.bootcampClassApplied) {
+                    const bootcamp = document.getElementById('bootcamp');
+                    const bootcampRect = bootcamp.getBoundingClientRect();
+                    if (bootcampRect.top < window.innerHeight && bootcampRect.bottom >= 0) {
+                        this.bootcampVisible = true;
+                    } else {
+                        this.bootcampVisible = false;
+                    }
+                    if (this.bootcampVisible) {
+                        this.bootcampClassApplied = true;
+                    }
+                }
+
+                if (!this.trainingClassApplied) {
+                    const training = document.getElementById('training');
+                    const trainingRect = training.getBoundingClientRect();
+                    if (trainingRect.top < window.innerHeight && trainingRect.bottom >= 0) {
+                        this.trainingVisible = true;
+                    } else {
+                        this.trainingVisible = false;
+                    }
+                    if (this.trainingVisible) {
+                        this.trainingClassApplied = true;
+                    }
+                }
             }
         }
     }
@@ -83,7 +171,7 @@
                     <!--experience one-->
                     <div class="qualification-con">
                         <div class="qualification-header">Sourcedware</div>
-                        <div class="qualification-description">
+                        <div class="qualification-description" id="sourcedware" :class="{ 'animate-grow': sourcedwareVisible }">
                             Engaged in contract based full-stack and front-end web development projects.
                         </div>
                         <div class="qualification-date">
@@ -112,7 +200,7 @@
                     <!--experience two-->
                     <div class="pl-5">
                         <div class="qualification-header">Gigabyte Developers</div>
-                        <div class="qualification-description">                     
+                        <div class="qualification-description" id="gigabyte" :class="{ 'animate-grow': gigabyteVisible }">                     
                             Engaged in contract-based back-end development and software engineering projects.
                         </div>
                         <div class="qualification-date">
@@ -146,7 +234,7 @@
                     <!--education one-->
                     <div class="qualification-con">
                         <div class="qualification-header">University</div>
-                        <div class="qualification-description">Federal University of Technology Owerri</div>
+                        <div class="qualification-description" id="university" :class="{ 'animate-grow': universityVisible }">Federal University of Technology Owerri</div>
                         <div class="qualification-date">
                             <span>
                                 <span class="icon-[solar--calendar-outline]"></span>
@@ -170,7 +258,7 @@
                     <!--education two-->
                     <div class="pl-5">
                         <div class="qualification-header">Bootcamp</div>
-                        <div class="qualification-description">BLOC web developers bootcamp</div>
+                        <div class="qualification-description" id="bootcamp" :class="{ 'animate-grow': bootcampVisible }">BLOC web developers bootcamp</div>
                         <div class="qualification-date">
                             <span>
                                 <span class="icon-[solar--calendar-outline]"></span>
@@ -188,7 +276,7 @@
                     <!--education three-->
                     <div class="qualification-con">
                         <div class="qualification-header">Training Camp</div>
-                        <div class="qualification-description">Decagon Software Engineering Training Institute</div>
+                        <div class="qualification-description" id="training" :class="{ 'animate-grow': trainingVisible }">Decagon Software Engineering Training Institute</div>
                         <div class="qualification-date">
                             <span>
                                 <span class="icon-[solar--calendar-outline]"></span>
