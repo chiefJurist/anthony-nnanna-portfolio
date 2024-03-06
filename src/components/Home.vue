@@ -149,8 +149,8 @@
                     A full-stack web developer with over 4 years of experience, holding a Bachelor of Technology (B.Tech) degree in web development.
                 </div>
 
-                <a href="#message" id="button">
-                    <div class="section-btn" :class="{ 'animate-up': buttonVisible }">
+                <a href="#message">
+                    <div class="section-btn" id="button" :class="{ 'animate-up': buttonVisible }">
                         <span>Contact Me</span>
                         <span class="icon-[uil--message]"></span>
                     </div>

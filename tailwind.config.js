@@ -57,6 +57,10 @@ module.exports ={
                     '0%' : { transform: 'scale(0.5)' },
                     '100%' : { transform: 'scale(1) '},
                 },
+                up: {
+                    '0%' : { transform: 'translateY(50%)' },
+                    '100%' : { transform: 'translateY(0) '},
+                },
                 left: {
                     '0%' : { transform: 'translateX(-50%)' },
                     '100%' : { transform: 'translateX(0) '},
@@ -67,7 +71,7 @@ module.exports ={
                 },
                 opacity: {
                     '0%' : { opacity: 0 },
-                    '100%' : { opacity: 100},
+                    '100%' : { opacity: 1},
                 },
             },
 
