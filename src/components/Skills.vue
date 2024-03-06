@@ -16,7 +16,143 @@
                 development: false,
                 testing: false,
                 design: false,
-                deployment: false
+                deployment: false,
+                //For the Animation
+                titleVisible: false,
+                programVisible: false,
+                frameworkVisible: false,
+                infrastructureVisible: false,
+                developmentVisible: false,
+                testingVisible: false,
+                designVisible: false,
+                deploymentVisible: false,
+                //checking if the class is applied
+                titleClassApplied: false,
+                programClassApplied: false,
+                frameworkClassApplied: false,
+                infrastructureClassApplied: false,
+                developmentClassApplied: false,
+                testingClassApplied: false,
+                designClassApplied: false,
+                deploymentClassApplied: false
+            }
+        },
+
+        mounted() {
+            window.addEventListener('scroll', this.handleScroll);
+            this.handleScroll();
+        },
+
+        beforeDestroy() {
+            window.removeEventListener('scroll', this.handleScroll);
+        },
+
+        methods: {
+            //THIS FOR THE ANIMATION
+            handleScroll() {
+                if (!this.titleClassApplied) {
+                    const title = document.getElementById('skills-title');
+                    const titleRect = title.getBoundingClientRect();
+                    if (titleRect.top < window.innerHeight && titleRect.bottom >= 0) {
+                        this.titleVisible = true;
+                    } else {
+                        this.titleVisible = false;
+                    }
+                    if (this.titleVisible) {
+                        this.titleClassApplied = true;
+                    }
+                }
+
+                if (!this.programClassApplied) {
+                    const program = document.getElementById('program');
+                    const programRect = program.getBoundingClientRect();
+                    if (programRect.top < window.innerHeight && programRect.bottom >= 0) {
+                        this.programVisible = true;
+                    } else {
+                        this.programVisible = false;
+                    }
+                    if (this.programVisible) {
+                        this.programClassApplied = true;
+                    }
+                }
+
+                if (!this.frameworkClassApplied) {
+                    const framework = document.getElementById('framework');
+                    const frameworkRect = framework.getBoundingClientRect();
+                    if (frameworkRect.top < window.innerHeight && frameworkRect.bottom >= 0) {
+                        this.frameworkVisible = true;
+                    } else {
+                        this.frameworkVisible = false;
+                    }
+                    if (this.frameworkVisible) {
+                        this.frameworkClassApplied = true;
+                    }
+                }
+
+                if (!this.infrastructureClassApplied) {
+                    const infrastructure = document.getElementById('infrastructure');
+                    const infrastructureRect = infrastructure.getBoundingClientRect();
+                    if (infrastructureRect.top < window.innerHeight && infrastructureRect.bottom >= 0) {
+                        this.infrastructureVisible = true;
+                    } else {
+                        this.infrastructureVisible = false;
+                    }
+                    if (this.infrastructureVisible) {
+                        this.infrastructureClassApplied = true;
+                    }
+                }
+
+                if (!this.developmentClassApplied) {
+                    const development = document.getElementById('development');
+                    const developmentRect = development.getBoundingClientRect();
+                    if (developmentRect.top < window.innerHeight && developmentRect.bottom >= 0) {
+                        this.developmentVisible = true;
+                    } else {
+                        this.developmentVisible = false;
+                    }
+                    if (this.developmentVisible) {
+                        this.developmentClassApplied = true;
+                    }
+                }
+
+                if (!this.testingClassApplied) {
+                    const testing = document.getElementById('testing');
+                    const testingRect = testing.getBoundingClientRect();
+                    if (testingRect.top < window.innerHeight && testingRect.bottom >= 0) {
+                        this.testingVisible = true;
+                    } else {
+                        this.testingVisible = false;
+                    }
+                    if (this.testingVisible) {
+                        this.testingClassApplied = true;
+                    }
+                }
+
+                if (!this.designClassApplied) {
+                    const design = document.getElementById('design');
+                    const designRect = design.getBoundingClientRect();
+                    if (designRect.top < window.innerHeight && designRect.bottom >= 0) {
+                        this.designVisible = true;
+                    } else {
+                        this.designVisible = false;
+                    }
+                    if (this.designVisible) {
+                        this.designClassApplied = true;
+                    }
+                }
+
+                if (!this.deploymentClassApplied) {
+                    const deployment = document.getElementById('deployment');
+                    const deploymentRect = deployment.getBoundingClientRect();
+                    if (deploymentRect.top < window.innerHeight && deploymentRect.bottom >= 0) {
+                        this.deploymentVisible = true;
+                    } else {
+                        this.deploymentVisible = false;
+                    }
+                    if (this.deploymentVisible) {
+                        this.deploymentClassApplied = true;
+                    }
+                }
             }
         }
     }
@@ -25,15 +161,15 @@
     <div class="body-con" id="skills">
         <div class="body-subcon text-black dark:text-white">
             <!--Title-->
-            <div class="text-center mb-10">
-                <div class=" text-4xl font-extrabold">Skills</div>
+            <div class="gen-header-con mb-10" id="skills-title" :class="{ 'animate-grow': titleVisible }">
+                <div class="gen-header-text">Skills</div>
                 <div class=" font-semibold text-gray-600 dark:text-white">My Technical Level</div>
             </div>
 
             <!--Details-->
             <div class="block sm:grid md:grid-cols-2 gap-12 mx-auto w-fit">
                 <!--Programming Languages-->
-                <div class="skills">
+                <div class="skills" id="program" :class="{ 'animate-right': programVisible }">
                     <!--Programming Languages Header-->
                     <div class="skills-header" @click="program = !program">
                         <div class="skills-icon">
@@ -58,7 +194,7 @@
                 </div>
 
                 <!--Frameworks-->
-                <div class="skills">
+                <div class="skills" id="framework" :class="{ 'animate-left': frameworkVisible }">
                     <!--Frameworks Header-->
                     <div class="skills-header" @click="frameworks = !frameworks">
                         <div class="skills-icon">
@@ -83,7 +219,7 @@
                 </div>
 
                 <!--Infrastructural Tools-->
-                <div class="skills">
+                <div class="skills" id="infrastructure" :class="{ 'animate-right': infrastructureVisible }">
                     <!--Infrastructural Tools header-->
                     <div class="skills-header" @click="infrastructure = !infrastructure">
                         <div class="skills-icon">
@@ -108,7 +244,7 @@
                 </div>
 
                 <!--Development Tools-->
-                <div class="skills">
+                <div class="skills" id="development" :class="{ 'animate-left': developmentVisible }">
                     <!--Development Tools Header-->
                     <div class="skills-header" @click="development = !development">
                         <div class="skills-icon">
@@ -133,7 +269,7 @@
                 </div>
 
                 <!--Testing Frameworks-->
-                <div class="skills">
+                <div class="skills" id="testing" :class="{ 'animate-right': testingVisible }">
                     <!--Testing Frameworks Header-->
                     <div class="skills-header" @click="testing = !testing">
                         <div class="skills-icon">
@@ -158,7 +294,7 @@
                 </div>
 
                 <!--Design Tools-->
-                <div class="skills">
+                <div class="skills" id="design" :class="{ 'animate-left': designVisible }">
                     <!--Design Tools header-->
                     <div class="skills-header" @click="design = !design">
                         <div class="skills-icon">
@@ -183,7 +319,7 @@
                 </div>
 
                 <!--Deployment Platforms-->
-                <div class="skills">
+                <div class="skills" id="deployment" :class="{ 'animate-right': deploymentVisible }">
                     <!--Deployment Platforms Header-->
                     <div class="skills-header" @click="deployment =!deployment">
                         <div class="skills-icon">

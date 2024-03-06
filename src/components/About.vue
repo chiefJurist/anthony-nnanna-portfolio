@@ -13,6 +13,8 @@
 
         mounted() {
             window.addEventListener('scroll', this.handleScroll);
+            //Calling the function in case this is the first part of the code to load
+            this.handleScroll();
         },
 
         beforeDestroy() {

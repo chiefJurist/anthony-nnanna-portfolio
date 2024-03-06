@@ -47,7 +47,7 @@
     @apply basis-1/12 mr-2;
 }
 .skills-text{
-    @apply text-base sm:text-xl font-bold text-start basis-10/12;
+    @apply text-base sm:text-xl font-bold text-start basis-10/12 text-black dark:text-white;
 }
 .skills-display{
     @apply basis-1/12 text-right;

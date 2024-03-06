@@ -19,6 +19,7 @@
 
         mounted() {
             window.addEventListener('scroll', this.handleScroll);
+            this.handleScroll();
         },
 
         beforeDestroy() {
