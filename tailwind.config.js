@@ -77,11 +77,11 @@ module.exports ={
 
             //Custom Animation
             animation: {
-                grow : 'grow ease-in 1s',
-                up : 'up ease-in 1s',
-                left : 'left ease-in 1s',
-                right : 'right ease-in 1s',
-                opacity : 'opacity ease-in 1s',
+                grow : 'grow ease-in-out 1s',
+                up : 'up ease-in-out 1s',
+                left : 'left ease-in-out 1s',
+                right : 'right ease-in-out 1s',
+                opacity : 'opacity ease-in-out 1s',
             },
 
             //Custom Duration
