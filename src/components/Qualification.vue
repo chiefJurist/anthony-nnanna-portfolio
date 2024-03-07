@@ -173,7 +173,7 @@
                         <div  id="sourcedware" :class="{ 'animate-grow': sourcedwareVisible }">
                             <div class="qualification-header">Sourcedware</div>
                             <div class="qualification-description">
-                                Engaged in contract based full-stack and front-end web development projects.
+                                Contract based full-stack and front-end web development projects.
                             </div>
                             <div class="qualification-date">
                                 <span>
@@ -204,7 +204,7 @@
                         <div id="gigabyte" :class="{ 'animate-grow': gigabyteVisible }">
                             <div class="qualification-header">Gigabyte Developers</div>
                             <div class="qualification-description">                     
-                                Engaged in contract-based back-end development and software engineering projects.
+                                Contract-based back-end development and software engineering projects.
                             </div>
                             <div class="qualification-date">
                                 <span>
@@ -284,7 +284,7 @@
                     <!--education three-->
                     <div class="qualification-con">
                         <div id="training" :class="{ 'animate-grow': trainingVisible }">
-                            <div class="qualification-header">Training Camp</div>
+                            <div class="qualification-header">Industrial Training</div>
                             <div class="qualification-description">Decagon Software Engineering Training Institute</div>
                             <div class="qualification-date">
                                 <span>

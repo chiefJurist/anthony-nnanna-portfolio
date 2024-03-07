@@ -21,7 +21,7 @@
                     <span class="small-icon icon-[mdi--tick-circle-outline]"></span>
                 </span>
                 <span class="q-card-skill-text">
-                    I completed a six-month intensive internship at Decagon Institute, specializing in software engineering.
+                    I completed a six-month intensive industrial training at Decagon Institute, specializing in software engineering.
                 </span>
             </div>
 
