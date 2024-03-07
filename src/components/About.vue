@@ -2,8 +2,6 @@
     export default {
         data() {
             return {
-                textVisible: false, // Add a new property to track image visibility
-                textClassApplied: false, // Add a flag to track whether the class has been applied or not
                 imageVisible: false, // Add a new property to track image visibility
                 imageClassApplied: false, // Add a flag to track whether the class has been applied or not
                 pointVisible: false,
@@ -24,23 +22,6 @@
         methods: {
             //THIS FOR THE ANIMATION
             handleScroll() {
-                // Check if the class has been applied already
-                if (!this.textClassApplied) {
-                    // Check for image visibility
-                    const text = document.getElementById('about-text');
-                    const textRect = text.getBoundingClientRect();
-                    if (textRect.top < window.innerHeight && textRect.bottom >= 0) {
-                        this.textVisible = true;
-                    } else {
-                        this.textVisible = false;
-                    }
-
-                    // If image is visible, apply the class and update the flag
-                    if (this.titleVisible) {
-                        this.titleClassApplied = true;
-                    }
-                }
-
                 // Check if the class has been applied already
                 if (!this.imageClassApplied) {
                     // Check for image visibility
@@ -97,7 +78,7 @@
                 
                 <!--Details-->
                 <div class="pt-4 w-fit mx-auto">
-                    <div class="text-lg max-w-96" id="about-text" :class="{ 'animate-grow': textVisible }">
+                    <div class="text-lg max-w-96" id="about-text">
                         I possess a self-motivated attitude, thriving in dynamic environments, and am also deeply passionate about learning new skills that facilitate my growth and development. Additionally, my proficiency in leadership and collaboration within teams enables me to excel collectively. Currently, I am actively seeking a competitive position to further enhance my skills
                     </div>
                     <div id="about-points" class=" max-w-96 flex justify-around gap-5 font-semibold pt-8 text-center">
