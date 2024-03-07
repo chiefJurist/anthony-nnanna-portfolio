@@ -136,7 +136,7 @@
             </div>
 
             <!--Contact Body-->
-            <div class="pt-12 md:flex justify-between">
+            <div class="pt-12 md:flex justify-between flex-wrap gap-5">
                 <!--First Part-->
                 <div>
                     <div class="left-contact-con" id="phone" :class="{ 'animate-grow': phoneVisible }">
