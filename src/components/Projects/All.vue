@@ -60,9 +60,9 @@
                 if (Math.abs(touchDeltaX) > 50) {
                     // Call next function on swipe right, prev function on swipe left
                     if (touchDeltaX > 0) {
-                        this.next();
-                    } else {
                         this.prev();
+                    } else {
+                        this.next();
                     }
                     this.touchStartX = null;
                 }
