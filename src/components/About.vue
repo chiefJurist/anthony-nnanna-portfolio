@@ -73,7 +73,7 @@
             <div class=" block lg:flex justify-evenly pt-10 items-center">
                 <!--Image-->
                 <div class=" flex justify-center">
-                    <img id="about-img" src="/img/tony2-img.jpg" alt="tony" class="rounded-full w-48 h-48 sm:w-64 sm:h-64" :class="{ 'animate-left': imageVisible }">
+                    <img id="about-img" src="/img/tony2-img.jpg" alt="tony" class="rounded-full w-48 h-48 sm:w-64 sm:h-64" :class="{ 'animate-grow': imageVisible }">
                 </div>
                 
                 <!--Details-->
