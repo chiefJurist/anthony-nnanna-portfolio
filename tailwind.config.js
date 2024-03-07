@@ -54,7 +54,7 @@ module.exports ={
             //Custom Keyframes
             keyframes: {
                 grow: {
-                    '0%' : { transform: 'scale(0.5)' },
+                    '0%' : { transform: 'scale(0.4)' },
                     '100%' : { transform: 'scale(1) '},
                 },
                 up: {
@@ -77,7 +77,7 @@ module.exports ={
 
             //Custom Animation
             animation: {
-                grow : 'grow ease-out 1s',
+                grow : 'grow ease-out 1.5s',
                 up : 'up ease-out 1s',
                 left : 'left ease-out 1s',
                 right : 'right ease-out 1s',

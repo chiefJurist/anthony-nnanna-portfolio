@@ -70,7 +70,7 @@
             </div>
 
             <!--Body-->
-            <div class=" block lg:flex justify-evenly pt-10 items-center">
+            <div class=" block lg:flex justify-evenly mt-10 items-center">
                 <!--Image-->
                 <div class=" flex justify-center">
                     <img id="about-img" src="/img/tony2-img.jpg" alt="tony" class="rounded-full w-48 h-48 sm:w-64 sm:h-64" :class="{ 'animate-grow': imageVisible }">
@@ -81,7 +81,7 @@
                     <div class="text-lg max-w-96" id="about-text">
                         I possess a self-motivated attitude, thriving in dynamic environments, and am also deeply passionate about learning new skills that facilitate my growth and development. Additionally, my proficiency in leadership and collaboration within teams enables me to excel collectively. Currently, I am actively seeking a competitive position to further enhance my skills
                     </div>
-                    <div id="about-points" class=" max-w-96 flex justify-around gap-5 font-semibold pt-8 text-center">
+                    <div id="about-points" class=" max-w-96 flex justify-around gap-5 font-semibold mt-8 text-center">
                         <div :class="{ 'animate-grow': pointVisible }">
                             <div class=" text-xl text-black dark:text-white font-extrabold">4.75</div>
                             <div class=" text-wrap">Aggregrate CGPA</div>
