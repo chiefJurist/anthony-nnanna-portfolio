@@ -39,13 +39,40 @@
                 } else {
                     this.currentIndex = this.components.length - 1;
                 }
+            },
+            handleMouseWheel(event) {
+                // Call prev function on upward scroll, next function on downward scroll
+                if (event.deltaY < 0) {
+                    this.prev();
+                } else {
+                    this.next();
+                }
+            },
+            handleTouchStart(event) {
+                this.touchStartX = event.touches[0].clientX;
+            },
+            handleTouchMove(event) {
+                if (!this.touchStartX) return;
+
+                const touchEndX = event.touches[0].clientX;
+                const touchDeltaX = touchEndX - this.touchStartX;
+
+                if (Math.abs(touchDeltaX) > 50) {
+                    // Call next function on swipe right, prev function on swipe left
+                    if (touchDeltaX > 0) {
+                        this.next();
+                    } else {
+                        this.prev();
+                    }
+                    this.touchStartX = null;
+                }
             }
         }
     };
 </script>
 
 <template>
-  <div class="relative">
+  <div class="relative" @wheel.prevent="handleMouseWheel" @touchstart="handleTouchStart" @touchmove="handleTouchMove">
         <div class="flex transition-transform duration-1000 ease-out" :style="{ 'transform': 'translateX(-' + currentIndex * 100 + '%)' }">
             <div v-for="(component, index) in components" :key="index" class="flex-shrink-0 w-full">
                 <component :is="component" class="w-full"></component>
