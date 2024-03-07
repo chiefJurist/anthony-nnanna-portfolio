@@ -6,8 +6,10 @@
     import Testing from './Skills/TestingFrameworks.vue';
     import Design from './Skills/DesignTools.vue';
     import Deployment from './Skills/DeploymentPlatforms.vue';
+    
     export default{
         components: { Program, Frameworks, Insfrastructure, Development,Testing, Design, Deployment },
+
         data(){
             return{
                 program: false,

@@ -12,7 +12,7 @@
         </div>
 
         <a href="https://www.invt.ai/">
-            <div class="project-btn">
+            <div class="section-btn">
                 <span>See Live</span>
                 <span class="icon-[uil--external-link-alt]"></span>
             </div>

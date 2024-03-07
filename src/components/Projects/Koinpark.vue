@@ -11,7 +11,7 @@
             This project, which is  contracted through Sourcedware, is safeguarded by the terms of the agreement.
         </div>
 
-        <div class="project-btn">
+        <div class="section-btn">
             <span>See Live</span>
             <span class="icon-[uil--external-link-alt]"></span>
         </div>

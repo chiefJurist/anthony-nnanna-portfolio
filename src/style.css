@@ -28,7 +28,7 @@
     @apply text-indigo-700 text-2xl cursor-pointer;
 }
 .section-btn{
-    @apply text-white bg-indigo-700 w-40 text-center py-4 rounded-lg font-semibold flex justify-evenly items-center cursor-pointer hover:translate-y-3 transform duration-1000 ease-out;
+    @apply text-white bg-indigo-700 w-36 text-center py-4 rounded-lg font-semibold flex justify-evenly items-center cursor-pointer hover:translate-y-3 transform duration-1000 ease-out;
 }
 
 /*HOME*/
@@ -153,7 +153,7 @@
 
 /*PROJECTS*/
 .project-con{
-    @apply py-8;
+    @apply py-8 w-full;
 }
 .project-img-con{
     @apply flex justify-center;
@@ -165,15 +165,11 @@
     @apply text-2xl font-bold text-black dark:text-white pt-6;
 }
 .project-desc{
-    @apply text-gray-600 dark:text-white py-3 h-52 sm:h-36;
+    @apply text-gray-600 dark:text-white pt-3 h-52 sm:h-36;
 }
 .project-btn{
-    @apply text-white bg-indigo-700 w-36 text-center py-4 rounded-lg flex justify-evenly items-center cursor-pointer font-bold hover:translate-y-4 transform duration-1000 ease-out
-    ;
+    @apply absolute top-1/2 transform -translate-y-3/4 p-2 text-indigo-600 font-bold text-4xl;
 }
 .carousel-btn{
-    @apply w-2 h-2 rounded-full mx-1 border border-indigo-700;
-}
-.carousel-change{
-    @apply  text-2xl text-indigo-500;
+    @apply w-2 h-2 rounded-full mx-1 border border-indigo-700 cursor-pointer;
 }
