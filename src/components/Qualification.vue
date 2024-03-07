@@ -204,7 +204,7 @@
                         <div id="gigabyte" :class="{ 'animate-grow': gigabyteVisible }">
                             <div class="qualification-header">Gigabyte Developers</div>
                             <div class="qualification-description">                     
-                                Contract-based back-end development and software engineering projects.
+                                Contract based back-end development and software engineering projects.
                             </div>
                             <div class="qualification-date">
                                 <span>
