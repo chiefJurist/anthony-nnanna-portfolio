@@ -2,26 +2,22 @@
     import Koinpark from './Koinpark.vue';
     import MixMob from './MixMob.vue';
     import Cadabra from  './Cadabra.vue';
-    import Cicca from  './Cicca.vue';
     import DAO from  './DAO.vue';
     import DataLake from  './DataLake.vue';
-    import Determinant from  './Determinant.vue';
     import ElHippo from  './ElHippo.vue';
     import Gallery from  './Gallery.vue';
     import GamePad from  './GamePad.vue';
     import Invt from  './Invt.vue';
-    import JOG from  './JOG.vue';
     import Router from  './Router.vue';
     import Spore from  './Spore.vue';
-    import Spruce from './Spruce.vue';
 
     export default {
-        components: { Koinpark, MixMob, Cadabra, Cicca, DAO, DataLake, Determinant, ElHippo, Gallery, GamePad, Invt, JOG, Router, Spore, Spruce },
+        components: { Koinpark, MixMob, Cadabra, DAO, DataLake, ElHippo, Gallery, GamePad, Invt, Router, Spore },
         
         data() {
             return {
                 currentIndex: 0,
-                components: [ Koinpark, MixMob, Cadabra, Cicca, DAO, DataLake, Determinant, ElHippo, Gallery, GamePad, Invt, JOG, Router, Spore, Spruce ]
+                components: [ Koinpark, MixMob, Cadabra, DAO, DataLake, ElHippo, Gallery, GamePad, Invt, Router, Spore ]
             };
         },
 
