@@ -21,7 +21,7 @@
                     <span class="small-icon icon-[mdi--tick-circle-outline]"></span>
                 </span>
                 <span class="q-card-skill-text">
-                    Contribute to the development open-source Vue libraries using JavaScript and Vue.js.
+                    Contributed to the development open-source Vue libraries using JavaScript and Vue.js.
                 </span>
             </div>
 
@@ -30,7 +30,7 @@
                     <span class="small-icon icon-[mdi--tick-circle-outline]"></span>
                 </span>
                 <span class="q-card-skill-text">
-                    Contribute to the development of backend APIs using JavaScript.
+                    Contributed to the development of backend APIs and web-applications using JavaScript, Node.js, python and other backend development tools.
                 </span>
             </div>
         </div>

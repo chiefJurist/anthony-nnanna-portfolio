@@ -180,7 +180,7 @@
                                     <span class="icon-[solar--calendar-outline]"></span>
                                 </span>
                                 <span class="text-xs">
-                                    2020 - Present
+                                    2020 - 2023
                                 </span>
                             </div>
                             <div class="view-more-con" @click="toggleSourcedware">
@@ -211,7 +211,7 @@
                                     <span class="icon-[solar--calendar-outline]"></span>
                                 </span>
                                 <span class="text-xs">
-                                    2022 - Present
+                                    2022 - 2024
                                 </span>
                             </div>
                             <div class="view-more-con" @click="toggleGigabyte">
