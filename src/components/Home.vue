@@ -116,21 +116,21 @@
         <div class="body-subcon flex flex-wrap justify-center lg:justify-around items-center">
             <!--Links-->
             <div class=" order-1 pr-4 lg:pr-0">
-                <div>
+                <!-- <div>
                     <a href="https://twitter.com/AnthonyNnanna_C" target="_blank" id="twitter" :class="{ 'animate-left': titleVisible }">
                         <span class="home-icon icon-[line-md--twitter-x-alt]"></span>
                     </a>
-                </div>
+                </div> -->
                 <div>
                     <a href="https://github.com/chiefJurist" target="_blank" id="github" :class="{ 'animate-left': githubVisible }">
                         <span class="home-icon icon-[uil--github-alt]"></span>
                     </a>
                 </div>
-                <div>
+                <!-- <div>
                     <a href="https://www.linkedin.com/in/anthony-nnanna-666085234" target="_blank" id="linkedin" :class="{ 'animate-left': linkedinVisible }">
                         <span class="home-icon icon-[uil--linkedin-alt]"></span>
                     </a>
-                </div>
+                </div> -->
             </div>
 
             <!--Image-->
