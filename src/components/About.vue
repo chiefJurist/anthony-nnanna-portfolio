@@ -79,7 +79,7 @@
                 <!--Details-->
                 <div class="pt-4 w-fit mx-auto">
                     <div class="text-lg max-w-96" id="about-text">
-                        I possess a self-motivated attitude, thriving in dynamic environments, and am also deeply passionate about learning new skills that facilitate my growth and development. Additionally, my proficiency in leadership and collaboration within teams enables me to excel collectively. Currently, I am actively seeking a competitive position to further enhance my skills
+                        I create scalable web solutions using PHP/Laravel, Node.js, and Python—paired with Vue.js for outstanding user experiences. My toolkit also includes modern UI/UX design, Tailwind CSS, HTML, CSS, and Git. I excel in collaborative teams and seek a challenging role to drive innovation and deliver impactful software solutions.
                     </div>
                     <div id="about-points" class=" max-w-96 flex justify-around gap-5 font-semibold mt-8 text-center">
                         <div :class="{ 'animate-grow': pointVisible }">

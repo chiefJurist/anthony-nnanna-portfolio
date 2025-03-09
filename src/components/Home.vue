@@ -146,7 +146,7 @@
                 </div>
 
                 <div class=" text-gray-600 dark:text-white text-lg mt-4 mb-8 max-w-80">
-                    A full-stack web developer with over 4 years of experience, holding a Bachelor of Technology (B.Tech) degree in web development.
+                    I am a full-stack web developer with a BSc in Software Development from the Netherlands and 4+ years of experience.
                 </div>
 
                 <a href="#message">
