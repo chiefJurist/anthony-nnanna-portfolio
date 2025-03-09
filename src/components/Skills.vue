@@ -1,21 +1,20 @@
 <script>
-    import Program from './Skills/ProgrammingLanguages.vue';
-    import Frameworks from './Skills/Frameworks.vue';
-    import Insfrastructure from './Skills/InfrastructuralTools.vue';
-    import Development from './Skills/DevelopmentTools.vue';
-    import Testing from './Skills/TestingFrameworks.vue';
+    import Frontend from './Skills/Frontend.vue';
+    import Backend from './Skills/Backend.vue';
+    import DevOpsTools from './Skills/DevOpsTools.vue';
+    import Databases from './Skills/Databases.vue';
+    import Testing from './Skills/TestingOptimization.vue';
     import Design from './Skills/DesignTools.vue';
-    import Deployment from './Skills/DeploymentPlatforms.vue';
-    
+    import Deployment from './Skills/DeploymentPlatforms.vue';    
     export default{
-        components: { Program, Frameworks, Insfrastructure, Development,Testing, Design, Deployment },
+        components: { Frontend, Backend, DevOpsTools, Databases,Testing, Design, Deployment },
 
         data(){
             return{
-                program: false,
-                frameworks: true,
-                infrastructure: false,
-                development: false,
+                frontend: false,
+                backend: true,
+                devops: false,
+                databases: false,
                 testing: false,
                 design: false,
                 deployment: false,
@@ -34,114 +33,114 @@
 
             <!--Details-->
             <div class="block sm:grid md:grid-cols-2 gap-12 mx-auto w-fit">
-                <!--Programming Languages-->
+                <!--Frontend Development-->
                 <div class="skills">
-                    <!--Programming Languages Header-->
-                    <div class="skills-header" @click="program = !program">
+                    <!--Frontend Development Header-->
+                    <div class="skills-header" @click="frontend = !frontend">
                         <div class="skills-icon">
                             <span class="icon icon-[fa--code]"></span>
                         </div>
-                        <div class="skills-text">Programming Languages</div>
+                        <div class="skills-text">Frontend Development</div>
                         <div class="skills-display">
-                            <div v-if="!program">
+                            <div v-if="!frontend">
                                 <span class="icon icon-[uil--angle-down]"></span>
                             </div>
-                            <div v-if="program">
+                            <div v-if="frontend">
                                 <span class="icon icon-[uil--angle-up]"></span>
                             </div>
                         </div>
                     </div>
-                    <!--Programming Languages Body-->
+                    <!--Frontend Development Body-->
                     <Transition name="skill" mode="in-out">
-                        <div v-if="program" class="skills-body">
-                            <Program></Program>
+                        <div v-if="frontend" class="skills-body">
+                            <Frontend></Frontend>
                         </div>
                     </Transition>
                 </div>
 
-                <!--Frameworks-->
+                <!--Backend Development-->
                 <div class="skills">
-                    <!--Frameworks Header-->
-                    <div class="skills-header" @click="frameworks = !frameworks">
+                    <!--Backend Development Header-->
+                    <div class="skills-header" @click="backend = !backend">
                         <div class="skills-icon">
                             <span class="icon icon-[mingcute--pencil-ruler-line]"></span>
                         </div>
-                        <div class="skills-text">Frameworks</div>
+                        <div class="skills-text">Backend Development</div>
                         <div class="skills-display">
-                            <div v-if="!frameworks">
+                            <div v-if="!backend">
                                 <span class="icon icon-[uil--angle-down]"></span>
                             </div>
-                            <div v-if="frameworks">
+                            <div v-if="backend">
                                 <span class="icon icon-[uil--angle-up]"></span>
                             </div>
                         </div>
                     </div>
-                    <!--Frameworks Body-->
+                    <!--Backend Development Body-->
                     <Transition name="skill" mode="in-out">
-                        <div v-if="frameworks" class="skills-body">
-                            <Frameworks></Frameworks>
+                        <div v-if="backend" class="skills-body">
+                            <Backend></Backend>
                         </div>
                     </Transition>
                 </div>
 
-                <!--Infrastructural Tools-->
+                <!--DevOps & Tools-->
                 <div class="skills">
-                    <!--Infrastructural Tools header-->
-                    <div class="skills-header" @click="infrastructure = !infrastructure">
+                    <!--DevOps & Tools header-->
+                    <div class="skills-header" @click="devops = !devops">
                         <div class="skills-icon">
                             <span class="icon icon-[streamline--industry-innovation-and-infrastructure-solid]"></span>
                         </div>
-                        <div class="skills-text">Infrastructural Tools</div>
+                        <div class="skills-text">DevOps & Tools</div>
                         <div class="skills-display">
-                            <div v-if="!infrastructure">
+                            <div v-if="!devops">
                                 <span class="icon icon-[uil--angle-down]"></span>
                             </div>
-                            <div v-if="infrastructure">
+                            <div v-if="devops">
                                 <span class="icon icon-[uil--angle-up]"></span>
                             </div>
                         </div>
                     </div>
                     <!--Infrasructural Tools Body-->
                     <Transition name="skill" mode="in-out">
-                        <div v-if="infrastructure" class="skills-body">
-                            <Insfrastructure></Insfrastructure>
+                        <div v-if="devops" class="skills-body">
+                            <DevOpsTools></DevOpsTools>
                         </div>
                     </Transition>
                 </div>
 
-                <!--Development Tools-->
+                <!--Databases-->
                 <div class="skills">
-                    <!--Development Tools Header-->
-                    <div class="skills-header" @click="development = !development">
+                    <!--Databases Header-->
+                    <div class="skills-header" @click="databases = !databases">
                         <div class="skills-icon">
                             <span class="icon icon-[fluent--developer-board-16-regular]"></span>
                         </div>
-                        <div class="skills-text">Development Tools</div>
+                        <div class="skills-text">Databases</div>
                         <div class="skills-display">
-                            <div v-if="!development">
+                            <div v-if="!databases">
                                 <span class="icon icon-[uil--angle-down]"></span>
                             </div>
-                            <div v-if="development">
+                            <div v-if="databases">
                                 <span class="icon icon-[uil--angle-up]"></span>
                             </div>
                         </div>
                     </div>
-                    <!--Development Tools Body-->
+                    <!--Databases Body-->
                     <Transition name="skill" mode="in-out">
-                        <div class="skills-body" v-if="development">
-                            <Development></Development>
+                        <div class="skills-body" v-if="databases">
+                            <Databases></Databases>
                         </div>
                     </Transition>
                 </div>
 
-                <!--Testing Frameworks-->
+                <!--Testing & Optimization-->
                 <div class="skills">
-                    <!--Testing Frameworks Header-->
+                    <!--Testing & Optimization Header-->
                     <div class="skills-header" @click="testing = !testing">
                         <div class="skills-icon">
                             <span class="icon icon-[ant-design--deployment-unit-outlined]"></span>
                         </div>
-                        <div class="skills-text">Testing Frameworks</div>
+                        <div class="skills-text">Testing & Optimization</div>
                         <div class="skills-display">
                             <div v-if="!testing">
                                 <span class="icon icon-[uil--angle-down]"></span>
@@ -151,7 +150,7 @@
                             </div>
                         </div>
                     </div>
-                    <!--Testing Frameworks Body-->
+                    <!--Testing & Optimization Body-->
                     <Transition name="skill" mode="in-out">
                         <div class="skills-body" v-if="testing">
                             <Testing></Testing>

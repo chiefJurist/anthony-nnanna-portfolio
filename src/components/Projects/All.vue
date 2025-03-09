@@ -1,23 +1,23 @@
 <script>
-    import Koinpark from './Koinpark.vue';
     import MixMob from './MixMob.vue';
     import Cadabra from  './Cadabra.vue';
+    import Invt from  './Invt.vue';
     import DAO from  './DAO.vue';
     import DataLake from  './DataLake.vue';
     import ElHippo from  './ElHippo.vue';
     import Gallery from  './Gallery.vue';
     import GamePad from  './GamePad.vue';
-    import Invt from  './Invt.vue';
     import Router from  './Router.vue';
+    import Koinpark from './Koinpark.vue';
     import Spore from  './Spore.vue';
 
     export default {
-        components: { Koinpark, MixMob, Cadabra, DAO, DataLake, ElHippo, Gallery, GamePad, Invt, Router, Spore },
+        components: { MixMob, Cadabra, Invt, DAO, DataLake, ElHippo, Gallery, GamePad, Router, Koinpark, Spore },
         
         data() {
             return {
                 currentIndex: 0,
-                components: [ Koinpark, MixMob, Cadabra, DAO, DataLake, ElHippo, Gallery, GamePad, Invt, Router, Spore ]
+                components: [ MixMob, Cadabra, Invt, DAO, DataLake, ElHippo, Gallery, GamePad, Router, Koinpark, Spore ]
             };
         },
 
@@ -93,10 +93,6 @@
             <div class="carousel-btn" @click="currentIndex = 8" :class="{ 'bg-indigo-700': currentIndex == 8 }"></div>
             <div class="carousel-btn" @click="currentIndex = 9" :class="{ 'bg-indigo-700': currentIndex == 9 }"></div>
             <div class="carousel-btn" @click="currentIndex = 10" :class="{ 'bg-indigo-700': currentIndex == 10 }"></div>
-            <div class="carousel-btn" @click="currentIndex = 11" :class="{ 'bg-indigo-700': currentIndex == 11 }"></div>
-            <div class="carousel-btn" @click="currentIndex = 12" :class="{ 'bg-indigo-700': currentIndex == 12 }"></div>
-            <div class="carousel-btn" @click="currentIndex = 13" :class="{ 'bg-indigo-700': currentIndex == 13 }"></div>
-            <div class="carousel-btn" @click="currentIndex = 14" :class="{ 'bg-indigo-700': currentIndex == 14 }"></div>
         </div>
   </div>
 </template>
