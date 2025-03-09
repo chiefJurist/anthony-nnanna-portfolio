@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="sub-skill-header">
-            <span>Vue.js</span>
+            <span>PHP & Laravel</span>
             <span class="sub-skill-percentage">100%</span>
         </div>
         <div class="progress-bar-con">
@@ -13,7 +13,7 @@
 
     <div>
         <div class="sub-skill-header">
-            <span>Laravel</span>
+            <span>Node.js & Express.js</span>
             <span class="sub-skill-percentage">100%</span>
         </div>
         <div class="progress-bar-con">
@@ -25,7 +25,19 @@
 
     <div>
         <div class="sub-skill-header">
-            <span>Tailwind</span>
+            <span>Python & FastAPI/Django</span>
+            <span class="sub-skill-percentage">95%</span>
+        </div>
+        <div class="progress-bar-con">
+            <div class="progress-bar">
+                <div style="width: 95%;" class="progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="sub-skill-header">
+            <span>RESTful APIs & WebSockets</span>
             <span class="sub-skill-percentage">100%</span>
         </div>
         <div class="progress-bar-con">
@@ -37,12 +49,12 @@
 
     <div>
         <div class="sub-skill-header">
-            <span>Nuxt.js</span>
-            <span class="sub-skill-percentage">90%</span>
+            <span>Authentication (JWT, OAuth)</span>
+            <span class="sub-skill-percentage">95%</span>
         </div>
         <div class="progress-bar-con">
             <div class="progress-bar">
-                <div style="width: 90%;" class="progress"></div>
+                <div style="width: 95%;" class="progress"></div>
             </div>
         </div>
     </div>

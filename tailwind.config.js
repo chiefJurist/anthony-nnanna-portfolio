@@ -19,8 +19,6 @@ module.exports ={
         "src/components/Skills/DevOps.vue",
         "src/components/Skills/Databases.vue",
         "src/components/Skills/TestingOptimization.vue",
-        "src/components/Skills/DesignTools.vue",
-        "src/components/Skills/DeploymentPlatforms.vue",
         "src/components/Qualification/Sourcedware.vue",
         "src/components/Qualification/Gigabyte.vue",
         "src/components/Qualification/University.vue",

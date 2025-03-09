@@ -3,16 +3,14 @@
     import Backend from './Skills/Backend.vue';
     import DevOpsTools from './Skills/DevOpsTools.vue';
     import Databases from './Skills/Databases.vue';
-    import Testing from './Skills/TestingOptimization.vue';
-    import Design from './Skills/DesignTools.vue';
-    import Deployment from './Skills/DeploymentPlatforms.vue';    
+    import Testing from './Skills/TestingOptimization.vue';  
     export default{
-        components: { Frontend, Backend, DevOpsTools, Databases,Testing, Design, Deployment },
+        components: { Frontend, Backend, DevOpsTools, Databases,Testing },
 
         data(){
             return{
                 frontend: false,
-                backend: true,
+                backend: false,
                 devops: false,
                 databases: false,
                 testing: false,
@@ -63,7 +61,7 @@
                     <!--Backend Development Header-->
                     <div class="skills-header" @click="backend = !backend">
                         <div class="skills-icon">
-                            <span class="icon icon-[mingcute--pencil-ruler-line]"></span>
+                            <span class="icon icon-[carbon--deployment-pattern]"></span>
                         </div>
                         <div class="skills-text">Backend Development</div>
                         <div class="skills-display">
@@ -88,7 +86,7 @@
                     <!--DevOps & Tools header-->
                     <div class="skills-header" @click="devops = !devops">
                         <div class="skills-icon">
-                            <span class="icon icon-[streamline--industry-innovation-and-infrastructure-solid]"></span>
+                            <span class="icon icon-[ant-design--deployment-unit-outlined]"></span>
                         </div>
                         <div class="skills-text">DevOps & Tools</div>
                         <div class="skills-display">
@@ -113,7 +111,7 @@
                     <!--Databases Header-->
                     <div class="skills-header" @click="databases = !databases">
                         <div class="skills-icon">
-                            <span class="icon icon-[fluent--developer-board-16-regular]"></span>
+                            <span class="icon icon-[streamline--industry-innovation-and-infrastructure-solid]"></span>
                         </div>
                         <div class="skills-text">Databases</div>
                         <div class="skills-display">
@@ -138,7 +136,7 @@
                     <!--Testing & Optimization Header-->
                     <div class="skills-header" @click="testing = !testing">
                         <div class="skills-icon">
-                            <span class="icon icon-[ant-design--deployment-unit-outlined]"></span>
+                            <span class="icon icon-[fluent--developer-board-16-regular]"></span>
                         </div>
                         <div class="skills-text">Testing & Optimization</div>
                         <div class="skills-display">
@@ -154,56 +152,6 @@
                     <Transition name="skill" mode="in-out">
                         <div class="skills-body" v-if="testing">
                             <Testing></Testing>
-                        </div>
-                    </Transition>
-                </div>
-
-                <!--Design Tools-->
-                <div class="skills">
-                    <!--Design Tools header-->
-                    <div class="skills-header" @click="design = !design">
-                        <div class="skills-icon">
-                            <span class="icon icon-[carbon--deployment-pattern]"></span>
-                        </div>
-                        <div class="skills-text">Design Tools</div>
-                        <div class="skills-display">
-                            <div v-if="!design">
-                                <span class="icon icon-[uil--angle-down]"></span>
-                            </div>
-                            <div v-if="design">
-                                <span class="icon icon-[uil--angle-up]"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Design Tools Body-->
-                    <Transition name="skill" mode="in-out">
-                        <div class="skills-body" v-if="design">
-                            <Design class=" transform duration-2000 ease-out"></Design>
-                        </div>
-                    </Transition>
-                </div>
-
-                <!--Deployment Platforms-->
-                <div class="skills">
-                    <!--Deployment Platforms Header-->
-                    <div class="skills-header" @click="deployment =!deployment">
-                        <div class="skills-icon">
-                            <span class="icon icon-[eos-icons--code-deploy-outlined]"></span>
-                        </div>
-                        <div class="skills-text">Deployment Platforms</div>
-                        <div class="skills-display">
-                            <div v-if="!deployment">
-                                <span class="icon icon-[uil--angle-down]"></span>
-                            </div>
-                            <div v-if="deployment">
-                                <span class="icon icon-[uil--angle-up]"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Deployment Platforms Body-->
-                    <Transition name="skill" mode="in-out">
-                        <div class="skills-body" v-if="deployment">
-                            <Deployment></Deployment>
                         </div>
                     </Transition>
                 </div>
