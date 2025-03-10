@@ -144,8 +144,8 @@
                             <span class="contact-icon icon-[uil--calling]"></span>
                         </div>
                         <div>
-                            <div class="left-contact-title">Contact Me</div>
-                            <div>+2347010028679</div>
+                            <div class="left-contact-title">Time Zone</div>
+                            <div>GMT + 1</div>
                         </div>
                     </div>
                     <div class="left-contact-con" id="email" :class="{ 'animate-grow': emailVisible }">
@@ -154,7 +154,7 @@
                         </div>
                         <div>
                             <div class="left-contact-title">Email</div>
-                            <div>anthonynnanna001@gmail.com</div>
+                            <div>anthonynnannac@gmail.com</div>
                         </div>
                     </div>
                     <div class="left-contact-con" id="location" :class="{ 'animate-grow': locationVisible }">
@@ -185,7 +185,7 @@
                         <textarea cols="30" rows="10" class="contact-right-input"></textarea>
                     </div>
 
-                    <a href="mailto:anthonynnanna001@gmail.com">
+                    <a href="mailto:anthonynnannac@gmail.com">
                         <div class="text-white bg-indigo-700 w-40 text-center py-4 rounded-lg font-semibold flex justify-evenly items-center cursor-pointer hover:translate-y-5 transform duration-1000 ease-in-out" id="contact-button" :class="{ 'animate-up': buttonVisible }">
                             <span>Send Message</span>
                             <span class="icon-[uil--message]"></span>

@@ -40,8 +40,8 @@
         <Home></Home>
         <About></About>
         <Skills></Skills>
-        <Qualification></Qualification>
         <Projects></Projects>
+        <Qualification></Qualification>
         <Message></Message>
         <Footer></Footer>
         <PhoneHeader :mode="darkmode" @change="toggleDarkMode"></PhoneHeader>
