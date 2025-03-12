@@ -185,7 +185,7 @@
                         <textarea cols="30" rows="10" class="contact-right-input"></textarea>
                     </div>
 
-                    <a href="mailto:anthonynnannac@gmail.com">
+                    <a href="mailto:anthonynnannac@gmail.com?subject=Job%20Inquiry&body=Hello%20Anthony%2C%20I%20am%20interested%20in%20working%20with%20you.">
                         <div class="text-white bg-indigo-700 w-40 text-center py-4 rounded-lg font-semibold flex justify-evenly items-center cursor-pointer hover:translate-y-5 transform duration-1000 ease-in-out" id="contact-button" :class="{ 'animate-up': buttonVisible }">
                             <span>Send Message</span>
                             <span class="icon-[uil--message]"></span>
