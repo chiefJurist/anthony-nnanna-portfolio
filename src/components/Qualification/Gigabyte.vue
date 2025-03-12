@@ -21,7 +21,7 @@
                     <span class="small-icon icon-[mdi--tick-circle-outline]"></span>
                 </span>
                 <span class="q-card-skill-text">
-                    Contributed to the development open-source Vue libraries using JavaScript and Vue.js.
+                    Developed versatile full-stack solutions leveraging Vue.js with PHP, Node.js, or Python backends.
                 </span>
             </div>
 
@@ -30,7 +30,16 @@
                     <span class="small-icon icon-[mdi--tick-circle-outline]"></span>
                 </span>
                 <span class="q-card-skill-text">
-                    Contributed to the development of backend APIs and web-applications using JavaScript, Node.js, python and other backend development tools.
+                    Implemented microservices architectures and managed CI/CD pipelines for secure, automated deployments.
+                </span>
+            </div>
+
+            <div class="q-card-skill">
+                <span>
+                    <span class="small-icon icon-[mdi--tick-circle-outline]"></span>
+                </span>
+                <span class="q-card-skill-text">
+                    Collaborated cross-functionally to integrate authentication, APIs, and real-time updates following best practices.
                 </span>
             </div>
         </div>

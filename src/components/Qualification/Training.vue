@@ -21,7 +21,7 @@
                     <span class="small-icon icon-[mdi--tick-circle-outline]"></span>
                 </span>
                 <span class="q-card-skill-text">
-                    I completed a six-month intensive industrial training at Decagon Institute, specializing in software engineering.
+                    Developed and maintained internal tools using a versatile stack (PHP, Node.js, Python, Vue.js, Tailwind CSS, TypeScript).
                 </span>
             </div>
 
@@ -30,7 +30,16 @@
                     <span class="small-icon icon-[mdi--tick-circle-outline]"></span>
                 </span>
                 <span class="q-card-skill-text">
-                    I gained proficiency in System architecture design, Algorithm development, Software testing methodologies, Performance optimization, Software development life cycle management and Security principles.
+                    Implemented role-based authentication, API integrations, and design systems for secure, user-friendly applications.
+                </span>
+            </div>
+
+            <div class="q-card-skill">
+                <span>
+                    <span class="small-icon icon-[mdi--tick-circle-outline]"></span>
+                </span>
+                <span class="q-card-skill-text">
+                    Strengthened full-stack expertise through practical, real-world project experience.
                 </span>
             </div>
         </div>

@@ -21,7 +21,7 @@
                     <span class="small-icon icon-[mdi--tick-circle-outline]"></span>
                 </span>
                 <span class="q-card-skill-text">
-                    Studied core courses of  web development including full-stack and front-end web development, data structures and algorithms, RDBMS, version control systems, content management systems and computer architecture.
+                    Specialized in full-stack software development and scalable system architecture.
                 </span>
             </div>
 
@@ -30,7 +30,7 @@
                     <span class="small-icon icon-[mdi--tick-circle-outline]"></span>
                 </span>
                 <span class="q-card-skill-text">
-                    Student coordinator in media and publication club of the college.
+                    Graduated with first-class honors (CGPA: 4.75).
                 </span>
             </div>
 
@@ -39,7 +39,7 @@
                     <span class="small-icon icon-[mdi--tick-circle-outline]"></span>
                 </span>
                 <span class="q-card-skill-text">
-                    I graduated with first-class honors, achieving an aggregate CGPA of 4.75.
+                    Built a solid foundation in modern web technologies and development methodologies.
                 </span>
             </div>
         </div>

@@ -21,7 +21,7 @@
                     <span class="small-icon icon-[mdi--tick-circle-outline]"></span>
                 </span>
                 <span class="q-card-skill-text">
-                    Developed front-end websites using HTML, Tailwind, JavaScript, Typescript, Vue, Git and other development tools.
+                    Engineered scalable web applications using PHP/Laravel, Node.js, or Python frameworks with Vue.js for dynamic UIs.
                 </span>
             </div>
 
@@ -30,7 +30,16 @@
                     <span class="small-icon icon-[mdi--tick-circle-outline]"></span>
                 </span>
                 <span class="q-card-skill-text">
-                    Developed full-stack web applications using Laravel, PHP, SQL, MySQL, Ajax, Json, API's, Docker, front-end languages and other development tools.
+                    Designed robust RESTful APIs and real-time features via WebSockets, integrating third-party services.
+                </span>
+            </div>
+
+            <div class="q-card-skill">
+                <span>
+                    <span class="small-icon icon-[mdi--tick-circle-outline]"></span>
+                </span>
+                <span class="q-card-skill-text">
+                    Optimized performance with advanced caching, lazy loading, and Docker-based cloud deployments.
                 </span>
             </div>
         </div>

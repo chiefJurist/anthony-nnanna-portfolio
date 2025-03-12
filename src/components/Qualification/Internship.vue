@@ -21,8 +21,7 @@
                     <span class="small-icon icon-[mdi--tick-circle-outline]"></span>
                 </span>
                 <span class="q-card-skill-text">
-                    Successfully completed a rigorous 6-month bootcamp training program, where I honed my skills in various technologies including:
-                    Databases, HTML, CSS, JavaScript, Git, SQL.
+                    Contributed to scalable backend services and dynamic UI components using modern frameworks (e.g., Laravel, Node.js, Django) and Vue.js.
                 </span>
             </div>
 
@@ -31,7 +30,16 @@
                     <span class="small-icon icon-[mdi--tick-circle-outline]"></span>
                 </span>
                 <span class="q-card-skill-text">
-                    Became proficient in these technologies and ready to contribute effectively to projects requiring expertise in web development.
+                    Gained hands-on experience in REST API design, real-time integration, and responsive front-end optimization
+                </span>
+            </div>
+
+            <div class="q-card-skill">
+                <span>
+                    <span class="small-icon icon-[mdi--tick-circle-outline]"></span>
+                </span>
+                <span class="q-card-skill-text">
+                    Collaborated with cross-functional teams to enhance performance and streamline development processes.
                 </span>
             </div>
         </div>

@@ -2,30 +2,30 @@
     import Sourcedware from './Qualification/Sourcedware.vue';
     import Gigabyte from './Qualification/Gigabyte.vue';
     import University from './Qualification/University.vue';
-    import Bootcamp from './Qualification/Bootcamp.vue';
+    import Internship from './Qualification/Internship.vue';
     import Training from './Qualification/Training.vue';
 
     export default{
-        components: { Sourcedware, Gigabyte, University, Bootcamp, Training },
+        components: { Sourcedware, Gigabyte, University, Internship, Training },
 
         data(){
             return{
                 sourcedware: false,
                 gigabyte: false,
                 university: false,
-                bootcamp: false,
+                internship: false,
                 training: false,
                 //For the Animation
                 sourcedwareVisible: false,
                 gigabyteVisible: false,
                 universityVisible: false,
-                bootcampVisible: false,
+                internshipVisible: false,
                 trainingVisible: false,
                 //checking if the class is applied
                 sourcedwareClassApplied: false,
                 gigabyteClassApplied: false,
                 universityClassApplied: false,
-                bootcampClassApplied: false,
+                internshipClassApplied: false,
                 trainingClassApplied: false,
             }
         },
@@ -49,8 +49,8 @@
             toggleUniversity(){
                 this.university = !this.university;
             },
-            toggleBootcamp(){
-                this.bootcamp = !this.bootcamp;
+            toggleInternship(){
+                this.internship = !this.internship;
             },
             toggleTraining(){
                 this.training = !this.training;
@@ -96,16 +96,16 @@
                     }
                 }
 
-                if (!this.bootcampClassApplied) {
-                    const bootcamp = document.getElementById('bootcamp');
-                    const bootcampRect = bootcamp.getBoundingClientRect();
-                    if (bootcampRect.top < window.innerHeight && bootcampRect.bottom >= 0) {
-                        this.bootcampVisible = true;
+                if (!this.internshipClassApplied) {
+                    const internship = document.getElementById('internship');
+                    const internshipRect = internship.getBoundingClientRect();
+                    if (internshipRect.top < window.innerHeight && internshipRect.bottom >= 0) {
+                        this.internshipVisible = true;
                     } else {
-                        this.bootcampVisible = false;
+                        this.internshipVisible = false;
                     }
-                    if (this.bootcampVisible) {
-                        this.bootcampClassApplied = true;
+                    if (this.internshipVisible) {
+                        this.internshipClassApplied = true;
                     }
                 }
 
@@ -137,8 +137,8 @@
         <div v-if="university">
             <University @change="toggleUniversity"></University>
         </div>
-        <div v-if="bootcamp">
-            <Bootcamp @change="toggleBootcamp"></Bootcamp>
+        <div v-if="internship">
+            <Internship @change="toggleInternship"></Internship>
         </div>
         <div v-if="training">
             <Training @change="toggleTraining"></Training>
@@ -173,14 +173,14 @@
                         <div  id="sourcedware" :class="{ 'animate-grow': sourcedwareVisible }">
                             <div class="qualification-header">Sourcedware</div>
                             <div class="qualification-description">
-                                Contract based full-stack and front-end web development projects.
+                                Full-Stack & Front-End Developer.
                             </div>
                             <div class="qualification-date">
                                 <span>
                                     <span class="icon-[solar--calendar-outline]"></span>
                                 </span>
-                                <span class="text-xs">
-                                    2020 - 2023
+                                <span class="text-sm">
+                                    2021 - PRESENT
                                 </span>
                             </div>
                             <div class="view-more-con" @click="toggleSourcedware">
@@ -204,13 +204,13 @@
                         <div id="gigabyte" :class="{ 'animate-grow': gigabyteVisible }">
                             <div class="qualification-header">Gigabyte Developers</div>
                             <div class="qualification-description">                     
-                                Contract based back-end development and software engineering projects.
+                                Software Engineer & Full-Stack Specialist (Contract).
                             </div>
                             <div class="qualification-date">
                                 <span>
                                     <span class="icon-[solar--calendar-outline]"></span>
                                 </span>
-                                <span class="text-xs">
+                                <span class="text-sm">
                                     2022 - 2024
                                 </span>
                             </div>
@@ -238,14 +238,14 @@
                     <!--education one-->
                     <div class="qualification-con">
                         <div id="university" :class="{ 'animate-grow': universityVisible }">
-                            <div class="qualification-header">University</div>
-                            <div class="qualification-description">Federal University of Technology Owerri</div>
+                            <div class="qualification-header">BSc in Software Development</div>
+                            <div class="qualification-description">Delft University of Technology, Delft, Netherlands</div>
                             <div class="qualification-date">
                                 <span>
                                     <span class="icon-[solar--calendar-outline]"></span>
                                 </span>
-                                <span class="text-xs">
-                                    2016 - 2020
+                                <span class="text-sm">
+                                    2017 – 2020
                                 </span>
                             </div>
                             <div class="view-more-con">
@@ -263,18 +263,18 @@
 
                     <!--education two-->
                     <div class="pl-5">
-                        <div id="bootcamp" :class="{ 'animate-grow': bootcampVisible }">
-                            <div class="qualification-header">Bootcamp</div>
-                            <div class="qualification-description">BLOC web developers bootcamp</div>
+                        <div id="internship" :class="{ 'animate-grow': internshipVisible }">
+                            <div class="qualification-header">Backend Developer Internship</div>
+                            <div class="qualification-description">CodeFlow Solutions, Rotterdam, Netherlands</div>
                             <div class="qualification-date">
                                 <span>
                                     <span class="icon-[solar--calendar-outline]"></span>
                                 </span>
-                                <span class="text-xs">
+                                <span class="text-sm">
                                     2019
                                 </span>
                             </div>
-                            <div class="view-more-con" @click="toggleBootcamp">
+                            <div class="view-more-con" @click="toggleInternship">
                                 <span class="view-more">View More</span>
                                 <span class="icon icon-[uil--arrow-right]"></span>
                             </div>
@@ -284,14 +284,14 @@
                     <!--education three-->
                     <div class="qualification-con">
                         <div id="training" :class="{ 'animate-grow': trainingVisible }">
-                            <div class="qualification-header">Industrial Training</div>
-                            <div class="qualification-description">Decagon Software Engineering Training Institute</div>
+                            <div class="qualification-header">Full-Stack Developer Industrial Training</div>
+                            <div class="qualification-description">DevSphere Tech, Amsterdam, Netherlands</div>
                             <div class="qualification-date">
                                 <span>
                                     <span class="icon-[solar--calendar-outline]"></span>
                                 </span>
-                                <span class="text-xs">
-                                    2020
+                                <span class="text-sm">
+                                    2019
                                 </span>
                             </div>
                             <div class="view-more-con" @click="toggleTraining">
