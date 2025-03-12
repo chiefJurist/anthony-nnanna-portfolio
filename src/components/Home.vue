@@ -116,26 +116,26 @@
         <div class="body-subcon flex flex-wrap justify-center lg:justify-around items-center">
             <!--Links-->
             <div class=" order-1 pr-4 lg:pr-0">
-                <!-- <div>
-                    <a href="https://twitter.com/AnthonyNnanna_C" target="_blank" id="twitter" :class="{ 'animate-left': titleVisible }">
-                        <span class="home-icon icon-[line-md--twitter-x-alt]"></span>
-                    </a>
-                </div> -->
                 <div>
                     <a href="https://github.com/chiefJurist" target="_blank" id="github" :class="{ 'animate-left': githubVisible }">
                         <span class="home-icon icon-[uil--github-alt]"></span>
                     </a>
                 </div>
-                <!-- <div>
-                    <a href="https://www.linkedin.com/in/anthony-nnanna-666085234" target="_blank" id="linkedin" :class="{ 'animate-left': linkedinVisible }">
-                        <span class="home-icon icon-[uil--linkedin-alt]"></span>
+                <div>
+                    <a href="mailto:anthonynnannac@gmail.com?subject=Job%20Inquiry&body=Hello%20Anthony%2C%20I%20am%20interested%20in%20working%20with%20you." target="_blank" id="twitter" :class="{ 'animate-left': titleVisible }">
+                        <span class="home-icon icon-[streamline--gmail]"></span>
                     </a>
-                </div> -->
+                </div>
+                <div>
+                    <a href="https://t.me/chief_jurist" target="_blank" id="linkedin" :class="{ 'animate-left': linkedinVisible }">
+                        <span class="home-icon icon-[uil--telegram-alt]"></span>
+                    </a>
+                </div>
             </div>
 
             <!--Image-->
             <div class=" order-2 lg:order-3">
-                <img src="/img/tony-img.jpg" alt="tony" class="rounded-full w-48 sm:w-64"  id="image" :class="{ 'animate-right': imageVisible }">
+                <img src="/img/tony3-img.jpg" alt="tony" class="rounded-full w-48 sm:w-64"  id="image" :class="{ 'animate-right': imageVisible }">
             </div>
 
             <!--Summary-->
