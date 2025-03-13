@@ -3,19 +3,19 @@
     import Backend from './Skills/Backend.vue';
     import DevOpsTools from './Skills/DevOpsTools.vue';
     import Databases from './Skills/Databases.vue';
-    import Testing from './Skills/TestingOptimization.vue';  
+    import Testing from './Skills/TestingOptimization.vue';
+    import Blockchain from './Skills/Blockchain.vue'
     export default{
-        components: { Frontend, Backend, DevOpsTools, Databases,Testing },
+        components: { Frontend, Backend, DevOpsTools, Databases,Testing, Blockchain },
 
         data(){
             return{
                 frontend: false,
-                backend: true,
+                backend: false,
                 devops: false,
                 databases: false,
                 testing: false,
-                design: false,
-                deployment: false,
+                blockchain: false,
             }
         }
     }
@@ -30,7 +30,7 @@
             </div>
 
             <!--Details-->
-            <div class="block sm:grid md:grid-cols-2 gap-12 mx-auto w-fit">
+            <div class="block sm:grid md:grid-cols-2 gap-12 lg:gap-x-40 mx-auto w-fit">
                 <!--Frontend Development-->
                 <div class="skills">
                     <!--Frontend Development Header-->
@@ -152,6 +152,31 @@
                     <Transition name="skill" mode="in-out">
                         <div class="skills-body" v-if="testing">
                             <Testing></Testing>
+                        </div>
+                    </Transition>
+                </div>
+
+                <!--Blockchain & Smart Contracts-->
+                <div class="skills">
+                    <!--Blockchain & Smart Contracts Header-->
+                    <div class="skills-header" @click="blockchain = !blockchain">
+                        <div class="skills-icon">
+                            <span class="icon icon-[eos-icons--blockchain]"></span>
+                        </div>
+                        <div class="skills-text">Blockchain & Smart Contracts</div>
+                        <div class="skills-display">
+                            <div v-if="!blockchain">
+                                <span class="icon icon-[uil--angle-down]"></span>
+                            </div>
+                            <div v-if="blockchain">
+                                <span class="icon icon-[uil--angle-up]"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Blockchain & Smart Contracts Body-->
+                    <Transition name="skill" mode="in-out">
+                        <div class="skills-body" v-if="blockchain">
+                            <Blockchain></Blockchain>
                         </div>
                     </Transition>
                 </div>

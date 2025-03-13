@@ -50,11 +50,11 @@
     <div>
         <div class="sub-skill-header">
             <span>UI/UX</span>
-            <span class="sub-skill-percentage">90%</span>
+            <span class="sub-skill-percentage">95%</span>
         </div>
         <div class="progress-bar-con">
             <div class="progress-bar">
-                <div style="width: 90%;" class="progress"></div>
+                <div style="width: 95%;" class="progress"></div>
             </div>
         </div>
     </div>

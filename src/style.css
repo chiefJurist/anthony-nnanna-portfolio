@@ -16,7 +16,7 @@
     @apply bg-slate-50 dark:bg-slate-900 pt-36 pb-3 -mt-2 font-nunito;
 }
 .body-subcon{
-    @apply w-11/12 sm:w-5/6 md:w-2/3 mx-auto text-gray-600 dark:text-white;
+    @apply w-11/12 sm:w-5/6 md:w-3/4 mx-auto text-gray-600 dark:text-white;
 }
 .gen-header-con{
     @apply text-center;
@@ -38,7 +38,7 @@
 
 /*SKILLS*/
 .skills{
-    @apply  pb-8 w-72 sm:w-80;
+    @apply  pb-8 lg:w-96;
 }
 .skills-header{
     @apply flex justify-between items-center w-full cursor-pointer;
