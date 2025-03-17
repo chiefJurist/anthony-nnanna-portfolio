@@ -70,7 +70,7 @@
 <template>
   <div class="relative" @wheel.prevent="handleMouseWheel" @touchstart="handleTouchStart" @touchmove="handleTouchMove">
         <div class="flex transition-transform duration-1000 ease-out" :style="{ 'transform': 'translateX(-' + currentIndex * 100 + '%)' }">
-            <div v-for="(component, index) in components" :key="index" class="flex-shrink-0 w-full">
+            <div v-for="(component, index) in components" :key="index" class="shrink-0 w-full">
                 <component :is="component" class="w-full"></component>
             </div>
         </div>
