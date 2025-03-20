@@ -116,7 +116,7 @@ layer(base);
     @apply font-bold text-indigo-700;
 }
 .q-card-backdrop{
-    @apply bg-gray-200/85 dark:bg-gray-200/35 fixed top-0 h-full w-full z-40 flex justify-center items-center;
+    @apply backdrop-brightness-25 backdrop-blur-xs fixed top-0 h-full w-full z-40 flex justify-center items-center;
 }
 .q-card{
     @apply relative bg-white dark:bg-slate-800 rounded-xl p-8 w-11/12 md:w-2/3 lg:w-1/2;
