@@ -145,7 +145,7 @@
                     <div class="font-bold text-xl mt-8 max-w-80">Full-Stack Web Developer</div>
                 </div>
 
-                <div class=" text-gray-600 dark:text-white text-lg mt-4 mb-8 max-w-80">
+                <div class=" text-gray-600 dark:text-white text-lg mt-4 mb-8 max-w-96">
                     I am a full-stack web developer with a BSc in Software Development from the Netherlands and 4+ years of experience.
                 </div>
 
