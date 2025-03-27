@@ -16,27 +16,29 @@ export default {
 
     data() {
         return {
-            currentIndex: 1, // Start at the first real slide
+            currentIndex: 1,
             components: [],
             transitionEnabled: true,
+            isActive: false, // Determines if carousel behavior is active
+            activationTimeout: null, // Delays activation when scrolling fast
         };
     },
 
     computed: {
         realSlides() {
             return [
-                this.components[this.components.length - 1], // Clone last slide (before first)
-                ...this.components, // Original slides
-                this.components[0] // Clone first slide (after last)
+                this.components[this.components.length - 1],
+                ...this.components,
+                this.components[0]
             ];
         },
         activeIndex() {
             if (this.currentIndex === 0) {
-                return this.components.length - 1; // Highlight last real slide
+                return this.components.length - 1;
             } else if (this.currentIndex === this.components.length + 1) {
-                return 0; // Highlight first real slide
+                return 0;
             } else {
-                return this.currentIndex - 1; // Adjust for cloned slides
+                return this.currentIndex - 1;
             }
         }
     },
@@ -55,7 +57,7 @@ export default {
                     this.transitionEnabled = false;
                     this.currentIndex = 1;
                     requestAnimationFrame(() => { this.transitionEnabled = true; });
-                }, 600); // Wait for the transition to finish
+                }, 600);
             } else {
                 this.transitionEnabled = true;
                 this.currentIndex++;
@@ -71,14 +73,30 @@ export default {
                     this.transitionEnabled = false;
                     this.currentIndex = this.components.length;
                     requestAnimationFrame(() => { this.transitionEnabled = true; });
-                }, 600); // Wait for the transition to finish
+                }, 600);
             } else {
                 this.transitionEnabled = true;
                 this.currentIndex--;
             }
         },
 
+        handleMouseEnter() {
+            // Activate carousel behavior only if user pauses for 500ms
+            this.activationTimeout = setTimeout(() => {
+                this.isActive = true;
+            }, 500);
+        },
+
+        handleMouseLeave() {
+            // Deactivate if user scrolls past quickly
+            clearTimeout(this.activationTimeout);
+            this.isActive = false;
+        },
+
         handleMouseWheel(event) {
+            if (!this.isActive) return; // Allow normal scrolling if not active
+
+            event.preventDefault();
             if (event.deltaY > 0) {
                 this.next();
             } else {
@@ -110,7 +128,14 @@ export default {
 </script>
 
 <template>
-  <div class="relative overflow-hidden" @wheel.prevent="handleMouseWheel" @touchstart="handleTouchStart" @touchmove="handleTouchMove">
+  <div 
+    class="relative overflow-hidden" 
+    @mouseenter="handleMouseEnter"
+    @mouseleave="handleMouseLeave"
+    @wheel="handleMouseWheel"
+    @touchstart="handleTouchStart"
+    @touchmove="handleTouchMove"
+  >
     <div 
       class="flex transition-transform duration-700 ease-in-out"
       :class="{ 'transition-none': !transitionEnabled }"
