@@ -135,7 +135,7 @@
 
             <!--Image-->
             <div class=" order-2 lg:order-3">
-                <img src="/img/tony3-img.jpg" alt="tony" class="rounded-full w-48 sm:w-64"  id="image" :class="{ 'animate-right': imageVisible }">
+                <img src="/img/tony6-img.png" alt="tony" class="rounded-full w-48 sm:w-64"  id="image" :class="{ 'animate-right': imageVisible }">
             </div>
 
             <!--Summary-->
