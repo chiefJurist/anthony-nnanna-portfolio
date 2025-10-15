@@ -61,7 +61,7 @@
                 <div>
                     <a href="#message" class="nav-link" :class="{ 'text-indigo-700': activeLink === 'message' }">Contact-Me</a>
                 </div>
-                <div @click="changeMode">
+                <div @click="changeMode" class="cursor-pointer">
                     <span v-if="mode">
                         <span class="text-xl icon-[ph--sun-bold]"></span>
                     </span>
