@@ -1,10 +1,17 @@
 <script>
-    import { RouterView } from 'vue-router';
-    import Header from './components/Header.vue';
-    import Footer from './components/Footer.vue';
+    import Header from '../components/Header.vue';
+    import Home from '../components/Home.vue';
+    import About from '../components/About.vue';
+    import Skills from '../components/Skills.vue';
+    import Qualification from '../components/Qualification.vue';
+    import Projects from '../components/Projects.vue';
+    import Message from '../components/Message.vue';
+    import Footer from '../components/Footer.vue';
     import PhoneHeader from './components/PhoneHeader.vue';
 
     export default{
+        components: { Header, Home, About, Skills, Qualification, Projects, Message, Footer, PhoneHeader },
+
         data () {
             return {
                 darkmode: false
@@ -30,7 +37,12 @@
 <template>
     <div ref="container">
         <Header :mode="darkmode" @change="toggleDarkMode"></Header>
-        <RouterView></RouterView>
+        <Home></Home>
+        <About></About>
+        <Skills></Skills>
+        <Projects></Projects>
+        <Qualification></Qualification>
+        <Message></Message>
         <Footer></Footer>
         <PhoneHeader :mode="darkmode" @change="toggleDarkMode"></PhoneHeader>
     </div>
