@@ -32,10 +32,10 @@ layer(base);
     @apply cursor-pointer;
 }
 .body-con{
-    @apply bg-slate-50 dark:bg-slate-900 pt-36 pb-3 -mt-2 font-nunito;
+    @apply bg-slate-50 dark:bg-slate-900 pt-36 pb-3 font-nunito;
 }
 .body-subcon{
-    @apply w-11/12 sm:w-5/6 md:w-3/4 mx-auto text-gray-600 dark:text-white;
+    @apply w-11/12 sm:w-5/6 md:w-3/4 mx-auto text-gray-800 dark:text-white;
 }
 .gen-header-con{
     @apply text-center;
@@ -191,4 +191,12 @@ layer(base);
 }
 .carousel-btn{
     @apply w-2 h-2 rounded-full mx-1 border border-indigo-700 cursor-pointer;
+}
+
+/*Rebrand*/
+.rebrand-wrap-one{
+    @apply flex gap-2 items-center bg-white dark:bg-slate-800 p-4 rounded-lg shadow;
+}
+.rebrand-wrap-two{
+    @apply font-bold text-gray-700 dark:text-gray-300;
 }

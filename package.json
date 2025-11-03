@@ -28,6 +28,8 @@
     "vue-router": "^4.6.3"
   },
   "devDependencies": {
+    "@iconify-json/material-icon-theme": "^1.2.36",
+    "@iconify/json": "^2.2.402",
     "@tailwindcss/postcss": "^4.0.14",
     "@vitejs/plugin-vue": "^4.5.2",
     "postcss": "^8.4.33",

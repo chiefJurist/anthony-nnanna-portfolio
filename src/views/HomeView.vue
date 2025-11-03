@@ -1,16 +1,16 @@
 <script>
     import Header from '../components/Header.vue';
-    import Home from '../components/Home.vue';
-    import About from '../components/About.vue';
     import Skills from '../components/Skills.vue';
     import Qualification from '../components/Qualification.vue';
     import Projects from '../components/Projects.vue';
     import Message from '../components/Message.vue';
     import Footer from '../components/Footer.vue';
     import PhoneHeader from '../components/PhoneHeader.vue';
+    import Introduction from '../components/HomeView/Introduction.vue';
+    import About from '../components/HomeView/About.vue';
 
     export default{
-        components: { Header, Home, About, Skills, Qualification, Projects, Message, Footer, PhoneHeader },
+        components: { Header, Introduction, About, Skills, Qualification, Projects, Message, Footer, PhoneHeader },
 
         data () {
             return {
@@ -37,7 +37,7 @@
 <template>
     <div ref="container">
         <Header :mode="darkmode" @change="toggleDarkMode"></Header>
-        <Home></Home>
+        <Introduction></Introduction>
         <About></About>
         <Skills></Skills>
         <Projects></Projects>
