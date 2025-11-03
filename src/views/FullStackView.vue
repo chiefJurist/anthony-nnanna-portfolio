@@ -7,7 +7,7 @@
     import Projects from '../components/Projects.vue';
     import Message from '../components/Message.vue';
     import Footer from '../components/Footer.vue';
-    import PhoneHeader from './components/PhoneHeader.vue';
+    import PhoneHeader from '../components/PhoneHeader.vue';
 
     export default{
         components: { Header, Home, About, Skills, Qualification, Projects, Message, Footer, PhoneHeader },

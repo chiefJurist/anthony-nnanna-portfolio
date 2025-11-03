@@ -8,9 +8,10 @@
     import PhoneHeader from '../components/PhoneHeader.vue';
     import Introduction from '../components/HomeView/Introduction.vue';
     import About from '../components/HomeView/About.vue';
+    import Specialization from '../components/HomeView/Specialization.vue';
 
     export default{
-        components: { Header, Introduction, About, Skills, Qualification, Projects, Message, Footer, PhoneHeader },
+        components: { Header, Introduction, About, Specialization, Skills, Qualification, Projects, Message, Footer, PhoneHeader },
 
         data () {
             return {
@@ -39,6 +40,7 @@
         <Header :mode="darkmode" @change="toggleDarkMode"></Header>
         <Introduction></Introduction>
         <About></About>
+        <Specialization></Specialization>
         <Skills></Skills>
         <Projects></Projects>
         <Qualification></Qualification>
