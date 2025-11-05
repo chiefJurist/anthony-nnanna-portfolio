@@ -7,9 +7,10 @@
     import Introduction from '../components/HomeView/Introduction.vue';
     import About from '../components/HomeView/About.vue';
     import Specialization from '../components/HomeView/Specialization.vue';
+import FeaturedProjects from '../components/HomeView/FeaturedProjects.vue';
 
     export default{
-        components: { Header, Introduction, About, Specialization, Qualification, Message, Footer, PhoneHeader },
+        components: { Header, Introduction, About, Specialization, FeaturedProjects, Qualification, Message, Footer, PhoneHeader },
 
         data () {
             return {
@@ -39,6 +40,7 @@
         <Introduction></Introduction>
         <About></About>
         <Specialization></Specialization>
+        <FeaturedProjects></FeaturedProjects>
         <Qualification></Qualification>
         <Message></Message>
         <Footer></Footer>

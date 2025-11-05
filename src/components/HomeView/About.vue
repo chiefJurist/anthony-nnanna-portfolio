@@ -89,7 +89,7 @@
                         I believe software should not only work, it should inspire confidence through precision, performance, and purpose.
                     </span>
                 </div>
-                <div id="about-points" class="sm:grid grid-cols-4 gap-5 mt-10 text-center">
+                <div id="about-points" class="grid grid-cols-1 sm:grid-cols-4 gap-5 mt-10 text-center">
                     <div class="rebrand-wrap-eight animate-grow">
                         <div class="rebrand-wrap-seven">Experience</div>
                         <div class="rebrand-warp-nine">5+ years</div>
