@@ -89,28 +89,28 @@
                         I believe software should not only work, it should inspire confidence through precision, performance, and purpose.
                     </span>
                 </div>
-                <div id="about-points" class="flex flex-wrap justify-around gap-5 font-semibold mt-8 text-center">
-                    <div :class="{ 'animate-grow': pointVisible }">
-                        <div class=" text-xl text-black dark:text-white font-extrabold">Experience</div>
-                        <div class=" text-wrap">5+ years</div>
+                <div id="about-points" class="sm:grid grid-cols-4 gap-5 mt-10 text-center">
+                    <div class="rebrand-wrap-eight animate-grow">
+                        <div class="rebrand-wrap-seven">Experience</div>
+                        <div class="rebrand-warp-nine">5+ years</div>
                     </div>
-                    <div :class="{ 'animate-grow': pointVisible }">
-                        <div class=" text-xl text-black dark:text-white font-extrabold">Performance</div>
-                        <div>20% average performance improvement delivered on projects</div>
+                    <div class="rebrand-wrap-eight animate-grow">
+                        <div class="rebrand-wrap-seven">Performance</div>
+                        <div class="rebrand-warp-nine">20% average performance improvement delivered on projects</div>
                     </div>
-                    <div :class="{ 'animate-grow': pointVisible }">
-                        <div class=" text-xl text-black dark:text-white font-extrabold">Leadership</div>
-                        <div>Led cross-functional teams from design to production</div>
+                    <div class="rebrand-wrap-eight animate-grow">
+                        <div class="rebrand-wrap-seven">Leadership</div>
+                        <div class="rebrand-warp-nine">Led cross-functional teams from design to production</div>
                     </div>
-                    <div :class="{ 'animate-grow': pointVisible }">
-                        <div class=" text-xl text-black dark:text-white font-extrabold">Open Source</div>
-                        <div>Active open-source contributor</div>
+                    <div class="rebrand-wrap-eight animate-grow">
+                        <div class="rebrand-wrap-seven">Open Source</div>
+                        <div class="rebrand-warp-nine">Active open-source contributor</div>
                     </div>
                 </div>
             </div>
 
             <!--Technologies-->
-            <div class="gen-header-con mt-20">
+            <div class="gen-header-con pt-36">
                 <div class="font-bold text-black dark:text-white text-2xl">Core Technologies I Master</div>
                 <div>
                     I work with a focused set of technologies I use daily to build reliable, high-performance systems and delightful UIs.

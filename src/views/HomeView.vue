@@ -1,8 +1,6 @@
 <script>
     import Header from '../components/Header.vue';
-    import Skills from '../components/Skills.vue';
     import Qualification from '../components/Qualification.vue';
-    import Projects from '../components/Projects.vue';
     import Message from '../components/Message.vue';
     import Footer from '../components/Footer.vue';
     import PhoneHeader from '../components/PhoneHeader.vue';
@@ -11,7 +9,7 @@
     import Specialization from '../components/HomeView/Specialization.vue';
 
     export default{
-        components: { Header, Introduction, About, Specialization, Skills, Qualification, Projects, Message, Footer, PhoneHeader },
+        components: { Header, Introduction, About, Specialization, Qualification, Message, Footer, PhoneHeader },
 
         data () {
             return {
@@ -41,8 +39,6 @@
         <Introduction></Introduction>
         <About></About>
         <Specialization></Specialization>
-        <Skills></Skills>
-        <Projects></Projects>
         <Qualification></Qualification>
         <Message></Message>
         <Footer></Footer>

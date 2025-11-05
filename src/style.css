@@ -212,3 +212,12 @@ layer(base);
 .rebrand-wrap-six{
     @apply cursor-pointer text-indigo-700 dark:text-indigo-300 font-semibold py-3 hover:translate-x-3 duration-1000 ease-out;
 }
+.rebrand-wrap-seven{
+    @apply text-xl dark:text-white font-bold py-2;
+}
+.rebrand-wrap-eight{
+    @apply shadow-sm rounded-2xl py-3 bg-indigo-700 text-white px-5;
+}
+.rebrand-warp-nine{
+    @apply italic text-sm;
+}
