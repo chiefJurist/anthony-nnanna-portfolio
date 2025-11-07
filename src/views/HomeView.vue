@@ -4,10 +4,10 @@
     import Message from '../components/Message.vue';
     import Footer from '../components/Footer.vue';
     import PhoneHeader from '../components/PhoneHeader.vue';
-    import Introduction from '../components/HomeView/Introduction.vue';
-    import About from '../components/HomeView/About.vue';
-    import Specialization from '../components/HomeView/Specialization.vue';
-import FeaturedProjects from '../components/HomeView/FeaturedProjects.vue';
+    import Introduction from '../components/HomeView/Sect1Introduction.vue';
+    import About from '../components/HomeView/Sect2About.vue';
+    import Specialization from '../components/HomeView/Sect3Specialization.vue';
+    import FeaturedProjects from '../components/HomeView/Sect4FeaturedProjects.vue';
 
     export default{
         components: { Header, Introduction, About, Specialization, FeaturedProjects, Qualification, Message, Footer, PhoneHeader },
