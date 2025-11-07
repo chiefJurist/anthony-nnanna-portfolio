@@ -6,40 +6,40 @@ export default {
             projectsClassApplied: false,
             projects: [
                 {
-                    title: "Rekorr",
+                    title: "TruvoTrade",
                     subtitle: "Smart Job Board + International Payments",
                     description:
-                        "A next-gen platform merging a job application tracker with a seamless global payment system. Applicants get real-time status updates while users receive payments directly into local banks.",
+                        "A next-gen platform merging a portfolio investment platform with a seamless global payment system. Users get real-time status updates while users receive payments directly into local banks.",
                     tech: ["Laravel", "Vue.js", "Tailwind", "MySQL", "Docker"],
-                    link: "#",
-                    image: "/images/projects/rekorr.png",
+                    link: "https://truvotrade.com",
+                    image: "../public/img/TruvoTrade.png",
                 },
                 {
                     title: "Binance HFT Bot",
                     subtitle: "High-Frequency Market Maker for Binance Futures",
                     description:
-                        "A lightning-fast Python trading bot using CCXT and asyncio to place, modify, and cancel futures orders in milliseconds with intelligent risk limits and inventory control.",
+                        "A lightning-fast Python trading bot using CCXT and asyncio to place, modify, and cancel futures orders in milliseconds with intelligent risk limits and inventory control. The bot also sends all liquidations that happen in real time to a telegram channel.",
                     tech: ["Python", "CCXT", "Asyncio", "TA-Lib"],
-                    link: "#",
-                    image: "/images/projects/hftbot.png",
+                    link: "https://t.me/binance_liqs",
+                    image: "../public/img/hft.png",
                 },
                 {
-                    title: "Multisig Wallet Bridge",
+                    title: "Router Protocol Wallet Bridge",
                     subtitle: "Secure Web3 Integration for Mobile dApps",
                     description:
-                        "A Rust and Web3.js-powered module enabling dApp developers to build native mobile apps with secure multisignature wallet access and transaction coordination.",
+                        "A Rust and Web3.js-powered module enabling dApp developers to build native launchpads with secure multisignature wallet access and transaction coordination.",
                     tech: ["Rust", "Web3.js", "Solidity", "Node.js"],
-                    link: "#",
-                    image: "/images/projects/multisig.png",
+                    link: "https://www.routerprotocol.com/",
+                    image: "../public/img/router.png",
                 },
                 {
                     title: "Portfolio Platform",
                     subtitle: "Modern Developer Showcase System",
                     description:
-                        "A fast and dynamic Vue + Laravel platform for developers to display live projects, skills, and metrics — optimized for recruiters and hiring managers.",
+                        "A fast and dynamic Vue + Laravel platform for freelancers from all professions who want to sell their products/services in the global market..",
                     tech: ["Laravel", "Vue.js", "Tailwind", "Node.js"],
-                    link: "#",
-                    image: "/images/projects/portfolio.png",
+                    link: "https://ruul.io/",
+                    image: "../public/img/ruul.png",
                 },
             ],
         };
@@ -76,7 +76,7 @@ export default {
             <div class="gen-header-con mb-10">
                 <div class="gen-header-text">Featured Projects</div>
                 <div>
-                    A selection of systems and tools I’ve built — spanning full-stack, Web3, Rust, and automation projects.
+                    A selection of systems and tools I’ve built, spanning full-stack, Web3, Rust, and automation projects.
                 </div>
             </div>
 
