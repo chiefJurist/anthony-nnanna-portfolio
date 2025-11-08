@@ -1,16 +1,19 @@
 <script>
     import Header from '../components/Header.vue';
-    import Qualification from '../components/Qualification.vue';
-    import Message from '../components/Message.vue';
-    import Footer from '../components/Footer.vue';
-    import PhoneHeader from '../components/PhoneHeader.vue';
     import Introduction from '../components/HomeView/Sect1Introduction.vue';
     import About from '../components/HomeView/Sect2About.vue';
     import Specialization from '../components/HomeView/Sect3Specialization.vue';
     import FeaturedProjects from '../components/HomeView/Sect4FeaturedProjects.vue';
+    import TechnicalExpertise from '../components/HomeView/Sect5TechnicalExpertise.vue';
+    import Achievements from '../components/HomeView/Sect6Achievements.vue';
+    import Testimonials from '../components/HomeView/Sect7Testimonials.vue';
+    import Blog from '../components/HomeView/Sect8Blog.vue';
+    import Contact from '../components/HomeView/Sect9Contact.vue';
+    import Footer from '../components/Footer.vue';
+    import PhoneHeader from '../components/PhoneHeader.vue';
 
     export default{
-        components: { Header, Introduction, About, Specialization, FeaturedProjects, Qualification, Message, Footer, PhoneHeader },
+        components: { Header, Introduction, About, Specialization, FeaturedProjects, TechnicalExpertise, Achievements, Testimonials, Blog, Contact, Footer, PhoneHeader },
 
         data () {
             return {
@@ -41,8 +44,11 @@
         <About></About>
         <Specialization></Specialization>
         <FeaturedProjects></FeaturedProjects>
-        <Qualification></Qualification>
-        <Message></Message>
+        <TechnicalExpertise></TechnicalExpertise>
+        <Achievements></Achievements>
+        <Testimonials></Testimonials>
+        <Blog></Blog>
+        <Contact></Contact>
         <Footer></Footer>
         <PhoneHeader :mode="darkmode" @change="toggleDarkMode"></PhoneHeader>
     </div>
