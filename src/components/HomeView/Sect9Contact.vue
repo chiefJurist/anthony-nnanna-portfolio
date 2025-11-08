@@ -3,12 +3,12 @@
         <div class="container mx-auto px-6 text-center">
         <!-- Header -->
         <div class="mb-12">
-            <h2 class="text-3xl font-bold mb-3">Let’s Build Something Amazing Together</h2>
-            <p class="text-gray-400 max-w-2xl mx-auto mb-8">
+            <div class="text-3xl font-bold mb-3">Let’s Build Something Amazing Together</div>
+            <div class="text-gray-400 max-w-2xl mx-auto mb-8">
             Whether you’re looking for a senior engineer to scale your platform,
             mentor your team, or build the next high-performance product,
             I’m open to collaboration. Reach out, and let’s make it happen.
-            </p>
+            </div>
         </div>
 
         <!-- Form -->

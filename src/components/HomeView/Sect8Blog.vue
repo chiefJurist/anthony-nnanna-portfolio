@@ -3,11 +3,11 @@
         <div class="container mx-auto px-6 text-center">
             <!-- Title -->
             <div class="mb-12">
-                <h2 class="text-3xl font-bold mb-3">Insights & Thought Leadership</h2>
-                <p class="text-gray-400 max-w-2xl mx-auto">
+                <div class="text-3xl font-bold mb-3">Insights & Thought Leadership</div>
+                <div class="text-gray-400 max-w-2xl mx-auto">
                 Sharing ideas, lessons, and experiments from building high-performance systems
                 and mentoring engineering teams.
-                </p>
+                </div>
             </div>
 
             <!-- Blog Cards -->
@@ -18,8 +18,8 @@
                 class="bg-gray-900 p-8 rounded-2xl border border-gray-800 hover:border-emerald-400 transition hover:-translate-y-2 duration-300"
                 >
                     <div class="text-emerald-400 text-sm mb-2">{{ post.tags }}</div>
-                    <h3 class="text-xl font-bold mb-3">{{ post.title }}</h3>
-                    <p class="text-gray-400 mb-6">{{ post.excerpt }}</p>
+                    <div class="text-xl font-bold mb-3">{{ post.title }}</div>
+                    <div class="text-gray-400 mb-6">{{ post.excerpt }}</div>
                     <a
                         href="#"
                         class="inline-block text-emerald-400 font-semibold hover:underline"

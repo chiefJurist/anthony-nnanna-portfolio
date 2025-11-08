@@ -3,27 +3,27 @@
         <div class="container mx-auto px-6">
             <!-- Title -->
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold mb-3">Experience & Achievements</h2>
-                <p class="text-gray-400 max-w-2xl mx-auto">
+                <div class="text-3xl font-bold mb-3">Experience & Achievements</div>
+                <div class="text-gray-400 max-w-2xl mx-auto">
                 Building reliable, high-performing systems while mentoring teams and driving measurable growth across web and blockchain ecosystems.
-                </p>
+                </div>
             </div>
 
             <!-- Achievements Grid -->
             <div class="grid md:grid-cols-2 gap-10">
                 <div v-for="(item, index) in achievements" :key="index" class="bg-gray-900 p-8 rounded-2xl border border-gray-800 hover:border-emerald-400 transition">
-                    <h3 class="text-xl font-semibold mb-2">{{ item.title }}</h3>
-                    <p class="text-emerald-400 text-sm mb-3">{{ item.company }}</p>
-                    <p class="text-gray-300 mb-2">{{ item.description }}</p>
-                    <p class="text-gray-400 text-sm italic">{{ item.result }}</p>
+                    <div class="text-xl font-semibold mb-2">{{ item.title }}</div>
+                    <div class="text-emerald-400 text-sm mb-3">{{ item.company }}</div>
+                    <div class="text-gray-300 mb-2">{{ item.description }}</div>
+                    <div class="text-gray-400 text-sm italic">{{ item.result }}</div>
                 </div>
             </div>
 
             <!-- Highlights Row -->
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mt-16 text-center border-t border-gray-800 pt-8">
                 <div v-for="(highlight, index) in highlights" :key="index">
-                    <p class="text-lg font-semibold">{{ highlight.value }}</p>
-                    <p class="text-gray-400 text-sm">{{ highlight.label }}</p>
+                    <div class="text-lg font-semibold">{{ highlight.value }}</div>
+                    <div class="text-gray-400 text-sm">{{ highlight.label }}</div>
                 </div>
             </div>
         </div>

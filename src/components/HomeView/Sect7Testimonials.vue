@@ -3,10 +3,10 @@
         <div class="container mx-auto px-6 text-center">
             <!-- Title -->
             <div class="mb-12">
-                <h2 class="text-3xl font-bold mb-3">Testimonials & Endorsements</h2>
-                <p class="text-gray-400 max-w-2xl mx-auto">
+                <div class="text-3xl font-bold mb-3">Testimonials & Endorsements</div>
+                <div class="text-gray-400 max-w-2xl mx-auto">
                 I’ve had the privilege of collaborating with exceptional teams and clients across the globe. Here’s what some of them have shared about our work together.
-                </p>
+                </div>
             </div>
 
             <!-- Testimonials Grid -->
@@ -17,15 +17,15 @@
                 class="bg-gray-900 p-8 rounded-2xl border border-gray-800 hover:border-emerald-400 transition"
                 >
                     <div class="mb-4 text-emerald-400 text-6xl leading-none">“</div>
-                    <p class="text-gray-300 italic mb-6">{{ t.quote }}</p>
+                    <div class="text-gray-300 italic mb-6">{{ t.quote }}</div>
                     <div class="flex flex-col items-center">
                         <div
                         class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-xl font-bold text-emerald-400 mb-2"
                         >
                         {{ t.initials }}
                         </div>
-                        <p class="font-semibold">{{ t.name }}</p>
-                        <p class="text-gray-400 text-sm">{{ t.role }}</p>
+                        <div class="font-semibold">{{ t.name }}</div>
+                        <div class="text-gray-400 text-sm">{{ t.role }}</div>
                     </div>
                 </div>
             </div>
