@@ -1,17 +1,19 @@
 <script>
     export default{
         props: [ 'mode' ],
+        emits: ['change'],
 
         data(){
             return{
                 apps: false,
-                activeLink: null
+                activeLink: null,
+                buttonVisible: true
             }
         },
         mounted() {
             window.addEventListener('scroll', this.handleScroll);
         },
-        beforeDestroy() {
+        beforeUnmount() {
             window.removeEventListener('scroll', this.handleScroll);
         },
 
@@ -21,20 +23,24 @@
             },
             toggleApps(){
                 this.apps = !this.apps
+                console.log(this.apps)
             },
             //
             handleScroll() {
                 const scrollPosition = window.scrollY;
-                const sections = ['home', 'about', 'skills', 'qualification', 'projects', 'message']; // Add IDs of your sections here
-                const offset = 100; // Adjust the offset as needed
+                const sections = ['introduction', 'about', 'specialization', 'projects', 'tech-stack', 'experience', 'testimonials', 'blog', 'contact'];
+
+                const offset = 100;
 
                 sections.forEach(section => {
                     const target = document.getElementById(section);
+                    if (!target) return; // ← prevent errors
                     if (target.offsetTop <= scrollPosition + offset && (target.offsetTop + target.offsetHeight) > scrollPosition + offset) {
                         this.activeLink = section;
                     }
                 });
             }
+
         }
     }
 </script>
@@ -65,8 +71,8 @@
 
 
     <!------------------------------------HEADER NAV--------------------------------->
-    <Transition name="nav" mode="in-out">
-        <div class="phone-header-con rounded-t-2xl" v-if="apps">
+    <!-- <Transition name="nav" mode="in-out"> -->
+        <div v-if="apps" class="phone-header-con rounded-t-2xl">
             <div class="flex justify-center w-full">
                 <div class="grid grid-cols-3 gap-y-5 py-5 w-full">
                     <!--nav one-->
@@ -134,7 +140,7 @@
                     </a>
 
                     <!--nav nine-->
-                    <a href="#conatact" class="phone-nav-link" :class="{ 'text-indigo-700': activeLink === 'conatact' }">
+                    <a href="#contact" class="phone-nav-link" :class="{ 'text-indigo-700': activeLink === 'contact' }">
                         <div>
                             <span class="phone-icon icon-[uil--message]"></span>
                             <div>Conatact</div>
@@ -148,9 +154,9 @@
                 <span class="icon icon-[quill--escape]" @click="toggleApps"></span>
             </div>
         </div>  
-    </Transition>
+    <!-- </Transition> -->
 </template>
-
+<!-- 
 <style>
     .nav-enter-active{
         transition: opacity 1s, transform 1s;
@@ -166,4 +172,4 @@
         opacity: 0;
         transform: translateY(100%);
     }
-</style>
+</style> -->
