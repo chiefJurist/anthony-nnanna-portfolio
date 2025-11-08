@@ -5,7 +5,7 @@
     import Specialization from '../components/HomeView/Sect3Specialization.vue';
     import FeaturedProjects from '../components/HomeView/Sect4FeaturedProjects.vue';
     import TechnicalExpertise from '../components/HomeView/Sect5TechnicalExpertise.vue';
-    import Achievements from '../components/HomeView/Sect6Achievements.vue';
+    import Experience from '../components/HomeView/Sect6Experience.vue';
     import Testimonials from '../components/HomeView/Sect7Testimonials.vue';
     import Blog from '../components/HomeView/Sect8Blog.vue';
     import Contact from '../components/HomeView/Sect9Contact.vue';
@@ -13,7 +13,7 @@
     import PhoneHeader from '../components/HomeView/PhoneHeader.vue';
 
     export default{
-        components: { Header, Introduction, About, Specialization, FeaturedProjects, TechnicalExpertise, Achievements, Testimonials, Blog, Contact, Footer, PhoneHeader },
+        components: { Header, Introduction, About, Specialization, FeaturedProjects, TechnicalExpertise, Experience, Testimonials, Blog, Contact, Footer, PhoneHeader },
 
         data () {
             return {
@@ -45,7 +45,7 @@
         <Specialization></Specialization>
         <FeaturedProjects></FeaturedProjects>
         <TechnicalExpertise></TechnicalExpertise>
-        <Achievements></Achievements>
+        <Experience></Experience>
         <Testimonials></Testimonials>
         <Blog></Blog>
         <Contact></Contact>

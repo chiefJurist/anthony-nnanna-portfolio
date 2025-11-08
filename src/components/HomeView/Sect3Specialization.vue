@@ -1,5 +1,5 @@
 <template>
-    <div class="body-con">
+    <div class="body-con" id="specialization">
         <div class="body-subcon">
             <div class="gen-header-con">
                 <div class="gen-header-text">Explore My Specializations</div>

@@ -23,7 +23,7 @@
 
             handleScroll() {
                 const scrollPosition = window.scrollY;
-                const sections = ['introduction', 'about', 'specialization', 'projects', 'expertise', 'achievements', 'testimonials', 'blog', 'contact']; //Add IDs of your sections here
+                const sections = ['introduction', 'about', 'specialization', 'projects', 'tech-stack', 'achievements', 'testimonials', 'blog', 'contact']; //Add IDs of your sections here
                 const offset = 100; // Adjust the offset as needed
 
                 sections.forEach(section => {
@@ -56,10 +56,10 @@
                     <a href="#projects" class="nav-link" :class="{ 'text-indigo-700': activeLink === 'projects' }">Projects</a>
                 </div>
                 <div>
-                    <a href="#expertise" class="nav-link" :class="{ 'text-indigo-700': activeLink === 'expertise' }">Expertise</a>
+                    <a href="#tech-stack" class="nav-link" :class="{ 'text-indigo-700': activeLink === 'tech-stack' }">Tech-Stack</a>
                 </div>
                 <div>
-                    <a href="#achievemnts" class="nav-link" :class="{ 'text-indigo-700': activeLink === 'achievements' }">Achievements</a>
+                    <a href="#experience" class="nav-link" :class="{ 'text-indigo-700': activeLink === 'experience' }">Experience</a>
                 </div>
                 <div>
                     <a href="#testimonials" class="nav-link" :class="{ 'text-indigo-700': activeLink === 'testimonials' }">Testimonials</a>

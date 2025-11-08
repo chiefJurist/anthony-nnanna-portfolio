@@ -1,5 +1,5 @@
 <template>
-    <section id="tech-stack" class="py-20 bg-gray-900 text-white">
+    <div id="tech-stack" class="py-20 bg-gray-900 text-white">
         <div class="container mx-auto px-6">
         <!-- Section Title -->
         <div class="text-center mb-12">
@@ -26,7 +26,7 @@
             </div>
         </div>
         </div>
-    </section>
+    </div>
 </template>
 
 <script setup>

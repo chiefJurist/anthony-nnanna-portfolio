@@ -70,10 +70,10 @@
             <div class="flex justify-center w-full">
                 <div class="grid grid-cols-3 gap-y-5 py-5 w-full">
                     <!--nav one-->
-                    <a href="#home" class="phone-nav-link" :class="{ 'text-indigo-700': activeLink === 'home' }">
+                    <a href="#introduction" class="phone-nav-link" :class="{ 'text-indigo-700': activeLink === 'introduction' }">
                         <div>
                             <span class="phone-icon icon-[uil--estate]"></span>
-                            <div>Home</div>
+                            <div>Introduction</div>
                         </div>
                     </a>
                     
@@ -86,18 +86,18 @@
                     </a>
 
                     <!--nav three-->
-                    <a href="#skills" class="phone-nav-link" :class="{ 'text-indigo-700': activeLink === 'skills' }">
+                    <a href="#specialization" class="phone-nav-link" :class="{ 'text-indigo-700': activeLink === 'specialization' }">
                         <div>
                             <span class="phone-icon icon-[uil--file-alt]"></span>
-                            <div>Skills</div>
+                            <div>Specialization</div>
                         </div>
                     </a>
 
                     <!--nav four-->
-                    <a href="#qualification" class="phone-nav-link" :class="{ 'text-indigo-700': activeLink === 'qualification' }">
+                    <a href="#tech-stack" class="phone-nav-link" :class="{ 'text-indigo-700': activeLink === 'tech-stack' }">
                         <div>
                             <span class="phone-icon icon-[uil--briefcase-alt]"></span>
-                            <div>Qualification</div>
+                            <div>Tech-Stack</div>
                         </div>
                     </a>
 
@@ -110,10 +110,34 @@
                     </a>
 
                     <!--nav six-->
-                    <a href="#message" class="phone-nav-link" :class="{ 'text-indigo-700': activeLink === 'message' }">
+                    <a href="#experience" class="phone-nav-link" :class="{ 'text-indigo-700': activeLink === 'experience' }">
                         <div>
                             <span class="phone-icon icon-[uil--message]"></span>
-                            <div>Contact-Me</div>
+                            <div>Experience</div>
+                        </div>
+                    </a>
+
+                    <!--nav seven-->
+                    <a href="#testimonials" class="phone-nav-link" :class="{ 'text-indigo-700': activeLink === 'testimonials' }">
+                        <div>
+                            <span class="phone-icon icon-[uil--message]"></span>
+                            <div>Testimonials</div>
+                        </div>
+                    </a>
+
+                    <!--nav eight-->
+                    <a href="#blog" class="phone-nav-link" :class="{ 'text-indigo-700': activeLink === 'blog' }">
+                        <div>
+                            <span class="phone-icon icon-[uil--message]"></span>
+                            <div>Blog</div>
+                        </div>
+                    </a>
+
+                    <!--nav nine-->
+                    <a href="#conatact" class="phone-nav-link" :class="{ 'text-indigo-700': activeLink === 'conatact' }">
+                        <div>
+                            <span class="phone-icon icon-[uil--message]"></span>
+                            <div>Conatact</div>
                         </div>
                     </a>
                 </div>
