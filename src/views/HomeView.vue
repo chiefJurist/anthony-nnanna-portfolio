@@ -1,5 +1,5 @@
 <script>
-    import Header from '../components/Header.vue';
+    import Header from '../components/HomeView/Header.vue';
     import Introduction from '../components/HomeView/Sect1Introduction.vue';
     import About from '../components/HomeView/Sect2About.vue';
     import Specialization from '../components/HomeView/Sect3Specialization.vue';
@@ -9,8 +9,8 @@
     import Testimonials from '../components/HomeView/Sect7Testimonials.vue';
     import Blog from '../components/HomeView/Sect8Blog.vue';
     import Contact from '../components/HomeView/Sect9Contact.vue';
-    import Footer from '../components/Footer.vue';
-    import PhoneHeader from '../components/PhoneHeader.vue';
+    import Footer from '../components/HomeView/Footer.vue';
+    import PhoneHeader from '../components/HomeView/PhoneHeader.vue';
 
     export default{
         components: { Header, Introduction, About, Specialization, FeaturedProjects, TechnicalExpertise, Achievements, Testimonials, Blog, Contact, Footer, PhoneHeader },

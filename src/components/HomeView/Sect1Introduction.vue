@@ -112,7 +112,7 @@
 </script>
 
 <template>
-    <div class="body-con" id="home">
+    <div :id="introduction" class="body-con" id="home">
         <div class="body-subcon flex flex-wrap justify-center lg:justify-around items-center">
             <!--Links-->
             <div class=" order-1 pr-4 lg:pr-0">
