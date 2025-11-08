@@ -1,10 +1,7 @@
 <script>
 import MixMob from './MixMob.vue';
-import Cadabra from './Cadabra.vue';
-import Invt from './Invt.vue';
 import DAO from './DAO.vue';
 import DataLake from './DataLake.vue';
-import ElHippo from './ElHippo.vue';
 import Gallery from './Gallery.vue';
 import GamePad from './GamePad.vue';
 import Router from './Router.vue';
@@ -12,7 +9,7 @@ import Koinpark from './Koinpark.vue';
 import Spore from './Spore.vue';
 
 export default {
-    components: { MixMob, Cadabra, Invt, DAO, DataLake, ElHippo, Gallery, GamePad, Router, Koinpark, Spore },
+    components: { MixMob, DAO, DataLake, Gallery, GamePad, Router, Koinpark, Spore },
 
     data() {
         return {

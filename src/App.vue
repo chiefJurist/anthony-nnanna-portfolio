@@ -1,9 +1,6 @@
 <script>
     import { RouterView } from 'vue-router';
-    import Header from './components/Header.vue';
-    import Footer from './components/Footer.vue';
-    import PhoneHeader from './components/PhoneHeader.vue';
-
+    
     export default{
         data () {
             return {
@@ -29,9 +26,6 @@
 
 <template>
     <div ref="container">
-        <Header :mode="darkmode" @change="toggleDarkMode"></Header>
         <RouterView></RouterView>
-        <Footer></Footer>
-        <PhoneHeader :mode="darkmode" @change="toggleDarkMode"></PhoneHeader>
     </div>
 </template>
