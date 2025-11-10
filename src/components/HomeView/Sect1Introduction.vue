@@ -113,9 +113,9 @@
 
 <template>
     <div class="body-con" id="introduction">
-        <div class="body-subcon flex flex-wrap justify-center lg:justify-around items-center">
+        <div class="body-subcon flex flex-wrap justify-around items-center">
             <!--Links-->
-            <div class=" order-1 pr-4 lg:pr-0">
+            <div class="order-1">
                 <div>
                     <a href="https://github.com/chiefJurist" target="_blank" id="github" :class="{ 'animate-left': githubVisible }">
                         <span class="home-icon icon-[uil--github-alt]"></span>

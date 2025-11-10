@@ -1,10 +1,10 @@
 <template>
-    <section id="blog" class="py-20 bg-gray-950 text-white">
-        <div class="container mx-auto px-6 text-center">
+    <div id="blog" class="body-con">
+        <div class="body-subcon text-center">
             <!-- Title -->
             <div class="mb-12">
                 <div class="text-3xl font-bold mb-3">Insights & Thought Leadership</div>
-                <div class="text-gray-400 max-w-2xl mx-auto">
+                <div class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
                 Sharing ideas, lessons, and experiments from building high-performance systems
                 and mentoring engineering teams.
                 </div>
@@ -15,11 +15,11 @@
                 <div
                 v-for="(post, index) in posts"
                 :key="index"
-                class="bg-gray-900 p-8 rounded-2xl border border-gray-800 hover:border-emerald-400 transition hover:-translate-y-2 duration-300"
+                class="shadow bg-gray-50 dark:bg-gray-900 p-8 rounded-2xl border border-gray-100 dark:border-gray-800 hover:border-emerald-400 transition hover:-translate-y-2 duration-500"
                 >
-                    <div class="text-emerald-400 text-sm mb-2">{{ post.tags }}</div>
+                    <div class="text-emerald-600 dark:text-emerald-400 text-sm mb-2">{{ post.tags }}</div>
                     <div class="text-xl font-bold mb-3">{{ post.title }}</div>
-                    <div class="text-gray-400 mb-6">{{ post.excerpt }}</div>
+                    <div class="text-gray-600 dark:text-gray-400 mb-6">{{ post.excerpt }}</div>
                     <a
                         href="#"
                         class="inline-block text-emerald-400 font-semibold hover:underline"
@@ -29,7 +29,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </template>
 
 <script setup>

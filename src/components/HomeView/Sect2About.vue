@@ -72,7 +72,7 @@
             <!--Body-->
             <div class="mt-10">
                 <!--Details-->
-                <div id="about-text">
+                <div id="about-text" class="md:w-3/4 mx-auto">
                     <span>
                         I'm Anthony Nnanna, a Senior Software Engineer with over 5 years of professional experience building full-stack, frontend, and blockchain-driven systems.
                     </span>
@@ -89,7 +89,7 @@
                         I believe software should not only work, it should inspire confidence through precision, performance, and purpose.
                     </span>
                 </div>
-                <div id="about-points" class="grid grid-cols-1 sm:grid-cols-4 gap-5 mt-10 text-center">
+                <div id="about-points" class="grid grid-cols-1 md:grid-cols-4 gap-5 mt-10 text-center md:w-5/6 mx-auto">
                     <div class="rebrand-wrap-eight animate-grow">
                         <div class="rebrand-wrap-seven">Experience</div>
                         <div class="rebrand-warp-nine">5+ years</div>
@@ -106,56 +106,6 @@
                         <div class="rebrand-wrap-seven">Open Source</div>
                         <div class="rebrand-warp-nine">Active open-source contributor</div>
                     </div>
-                </div>
-            </div>
-
-            <!--Technologies-->
-            <div class="gen-header-con pt-36">
-                <div class="font-bold text-black dark:text-white text-2xl">Core Technologies I Master</div>
-                <div>
-                    I work with a focused set of technologies I use daily to build reliable, high-performance systems and delightful UIs.
-                </div>
-            </div>
-            <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-4">
-                <div class="rebrand-wrap-one">
-                    <span class="icon-[material-icon-theme--laravel]" style="width: 24px; height: 24px;"></span>
-                    <span class="rebrand-wrap-two">Laravel</span>
-                </div>
-                <div class="rebrand-wrap-one">
-                    <span class="icon-[logos--vue]" style="width: 27.81px; height: 24px;"></span>
-                    <span class="rebrand-wrap-two">Vue.js</span>
-                </div>
-                <div class="rebrand-wrap-one">
-                    <span class="icon-[mdi--tailwind]" style="width: 24px; height: 24px;"></span>
-                    <span class="rebrand-wrap-two">Tailwind CSS</span>
-                </div>
-                <div class="rebrand-wrap-one">
-                    <span class="icon-[devicon--nodejs]" style="width: 24px; height: 24px;"></span>
-                    <span class="rebrand-wrap-two">Node.js</span>
-                </div>
-                <div class="rebrand-wrap-one">
-                    <span class="icon-[devicon--rust]" style="width: 24px; height: 24px;"></span>
-                    <span class="rebrand-wrap-two">Rust</span>
-                </div>
-                <div class="rebrand-wrap-one">
-                    <span class="icon-[devicon--web3js]" style="width: 24px; height: 24px;"></span>
-                    <span class="rebrand-wrap-two">Web3.js</span>
-                </div>
-                <div class="rebrand-wrap-one">
-                    <span class="icon-[devicon--solidity]" style="width: 24px; height: 24px;"></span>
-                    <span class="rebrand-wrap-two">Solidity</span>
-                </div>
-                <div class="rebrand-wrap-one">
-                    <span class="icon-[devicon--mysql]" style="width: 24px; height: 24px;"></span>
-                    <span class="rebrand-wrap-two">MySQL</span>
-                </div>
-                <div class="rebrand-wrap-one">
-                    <span class="icon-[material-icon-theme--docker]" style="width: 24px; height: 24px;"></span>
-                    <span class="rebrand-wrap-two">Docker</span>
-                </div>
-                <div class="rebrand-wrap-one">
-                    <span class="icon-[material-icon-theme--git]" style="width: 24px; height: 24px;"></span>
-                    <span class="rebrand-wrap-two">Git</span>
                 </div>
             </div>
 

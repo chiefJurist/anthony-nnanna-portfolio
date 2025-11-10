@@ -88,7 +88,7 @@ export default {
                 <div
                     v-for="(project, index) in projects"
                     :key="index"
-                    class="bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-2xl transition duration-500 overflow-hidden"
+                    class="rebrand-wrap-ten"
                 >
                     <img
                         :src="project.image"
@@ -96,13 +96,13 @@ export default {
                         class="w-full h-52 object-cover"
                     />
                     <div class="p-6">
-                        <div class="text-2xl font-bold text-black dark:text-white mb-2">
+                        <div class="rebrand-wrap-eleven">
                             {{ project.title }}
                         </div>
-                        <div class="text-indigo-600 dark:text-indigo-400 font-medium mb-2">
+                        <div class="rebrand-wrap-twelve">
                             {{ project.subtitle }}
                         </div>
-                        <div class="text-gray-700 dark:text-gray-300 mb-4">
+                        <div class="rebrand-wrap-thirteen">
                             {{ project.description }}
                         </div>
 
@@ -110,7 +110,7 @@ export default {
                             <span
                                 v-for="(tech, i) in project.tech"
                                 :key="i"
-                                class="bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 px-3 py-1 rounded-full text-sm"
+                                class="rebrand-wrap-fourteen"
                             >
                                 {{ tech }}
                             </span>
@@ -119,7 +119,7 @@ export default {
                         <a
                             :href="project.link"
                             target="_blank"
-                            class="inline-block bg-indigo-700 text-white px-5 py-2 rounded-md font-semibold hover:bg-indigo-800 transition"
+                            class="rebrand-wrap-fifteen"
                         >
                             View Project →
                         </a>

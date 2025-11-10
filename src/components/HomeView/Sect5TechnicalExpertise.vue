@@ -1,30 +1,21 @@
 <template>
-    <div id="tech-stack" class="py-20 bg-gray-900 text-white">
-        <div class="container mx-auto px-6">
-        <!-- Section Title -->
-        <div class="text-center mb-12">
-            <div class="text-3xl font-bold mb-3">Core Technologies I Master</div>
-            <div class="text-gray-400 max-w-2xl mx-auto">
-            A strong command of modern frameworks and languages — powering efficient,
-            scalable, and secure digital systems from backend to blockchain.
+    <div id="tech-stack" class="body-con">
+        <div class="body-subcon">
+            <!-- Section Title -->
+            <div class="text-center mb-12">
+                <div class="text-3xl font-bold mb-3">Core Technologies I Master</div>
+                <div class="text-gray-400 max-w-2xl mx-auto">
+                    A strong command of modern frameworks and languages I use for powering efficient, scalable, and secure digital systems from backend to blockchain.
+                </div>
             </div>
-        </div>
 
-        <!-- Grid -->
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-            <div v-for="(tech, index) in techStack" :key="index" class="bg-gray-800 rounded-2xl p-6 hover:bg-gray-700 transition">
-            <div class="font-semibold text-lg mb-2">{{ tech.name }}</div>
-            <div class="text-sm text-gray-400">{{ tech.description }}</div>
+            <!-- Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div v-for="(tech, index) in techStack" :key="index" class="bg-gray-100 shadow dark:bg-gray-800 rounded-2xl p-6 hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                    <div class="font-semibold text-lg mb-2">{{ tech.name }}</div>
+                    <div class="text-sm text-gray-600 dark:text-gray-400">{{ tech.description }}</div>
+                </div>
             </div>
-        </div>
-
-        <!-- Stats Row -->
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mt-12 text-center border-t border-gray-700 pt-8">
-            <div v-for="(stat, index) in stats" :key="index">
-            <div class="text-xl font-bold">{{ stat.value }}</div>
-            <div class="text-gray-400 text-sm">{{ stat.label }}</div>
-            </div>
-        </div>
         </div>
     </div>
 </template>

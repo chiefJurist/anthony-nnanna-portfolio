@@ -1,21 +1,21 @@
 <template>
-    <section id="experience" class="py-20 bg-gray-950 text-white">
-        <div class="container mx-auto px-6">
+    <div id="experience" class="body-con">
+        <div class="body-subcon">
             <!-- Title -->
             <div class="text-center mb-12">
                 <div class="text-3xl font-bold mb-3">Experience & Achievements</div>
-                <div class="text-gray-400 max-w-2xl mx-auto">
+                <div class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
                 Building reliable, high-performing systems while mentoring teams and driving measurable growth across web and blockchain ecosystems.
                 </div>
             </div>
 
             <!-- Achievements Grid -->
             <div class="grid md:grid-cols-2 gap-10">
-                <div v-for="(item, index) in achievements" :key="index" class="bg-gray-900 p-8 rounded-2xl border border-gray-800 hover:border-emerald-400 transition">
+                <div v-for="(item, index) in achievements" :key="index" class="shadow bg-gray-50 dark:bg-gray-900 p-8 rounded-2xl border border-gray-100 dark:border-gray-800 hover:border-emerald-400 transition duration-500">
                     <div class="text-xl font-semibold mb-2">{{ item.title }}</div>
                     <div class="text-emerald-400 text-sm mb-3">{{ item.company }}</div>
-                    <div class="text-gray-300 mb-2">{{ item.description }}</div>
-                    <div class="text-gray-400 text-sm italic">{{ item.result }}</div>
+                    <div class="text-gray-500 dark:text-gray-300 mb-2">{{ item.description }}</div>
+                    <div class="text-gray-600 dark:text-gray-400 text-sm italic">{{ item.result }}</div>
                 </div>
             </div>
 
@@ -27,7 +27,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </template>
 
 <script setup>
