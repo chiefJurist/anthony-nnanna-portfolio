@@ -1,16 +1,15 @@
 <script>
     import Header from '../components/Header.vue';
-    import Home from '../components/Home.vue';
-    import About from '../components/About.vue';
-    import Skills from '../components/Skills.vue';
-    import Qualification from '../components/Qualification.vue';
-    import Projects from '../components/Projects.vue';
-    import Message from '../components/Message.vue';
     import Footer from '../components/Footer.vue';
     import PhoneHeader from '../components/PhoneHeader.vue';
+    import Introduction from '../components/FullStackView/Sect1Introduction.vue';
+    import Summary from '../components/FullStackView/Sect2Summary.vue';
+    import Projects from '../components/FullStackView/Sect3Projects.vue';
+    import CaseStudy from '../components/FullStackView/Sect4CaseStudy.vue';
+    import Architecture from '../components/FullStackView/Sect5Architecture.vue';
 
     export default{
-        components: { Header, Home, About, Skills, Qualification, Projects, Message, Footer, PhoneHeader },
+        components: { Header, Introduction, Summary, Projects, CaseStudy, Architecture, Footer, PhoneHeader },
 
         data () {
             return {
@@ -37,12 +36,11 @@
 <template>
     <div ref="container">
         <Header :mode="darkmode" @change="toggleDarkMode"></Header>
-        <Home></Home>
-        <About></About>
-        <Skills></Skills>
+        <Introduction></Introduction>
+        <Summary></Summary>
         <Projects></Projects>
-        <Qualification></Qualification>
-        <Message></Message>
+        <CaseStudy></CaseStudy>
+        <Architecture></Architecture>
         <Footer></Footer>
         <PhoneHeader :mode="darkmode" @change="toggleDarkMode"></PhoneHeader>
     </div>
