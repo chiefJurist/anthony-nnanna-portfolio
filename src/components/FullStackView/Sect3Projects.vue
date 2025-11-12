@@ -1,11 +1,11 @@
     <template>
-    <section id="fullstack-projects" class="py-20 bg-white dark:bg-gray-900 transition-colors">
-        <div class="max-w-6xl mx-auto px-6">
+    <section id="fullstack-projects" class="body-con">
+        <div class="rebrand-wrap-one">
             <!-- Header -->
             <div class="text-center mb-10">
                 <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Featured Full-Stack Projects</h2>
                 <p class="mt-2 text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                    A selection of complete production systems I’ve architected and shipped — from user-facing SPAs to resilient backend platforms.
+                    A selection of complete production systems I’ve architected and shipped, from user-facing SPAs to resilient backend platforms.
                 </p>
             </div>
 
@@ -37,7 +37,7 @@
                         </div>
 
                         <div class="mt-4 flex items-center gap-3">
-                            <a :href="p.link" class="inline-flex items-center px-4 py-2 bg-emerald-400 text-gray-900 font-semibold rounded-lg hover:bg-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-300" :aria-label="`View case study for ${p.title}`" target="_blank" rel="noopener noreferrer">
+                            <a :href="p.link" class="inline-flex items-center px-4 py-2 bg-indigo-700 dark:bg-indigo-800 text-white font-semibold rounded-lg hover:bg-indigo-800 dark:hover:bg-indigo-950 focus:outline-none focus:ring-2 focus:ring-emerald-300" :aria-label="`View case study for ${p.title}`" target="_blank" rel="noopener noreferrer">
                                 {{ p.cta }}
                             </a>
 
@@ -51,7 +51,7 @@
 
             <!-- section footer -->
             <div class="mt-8 text-center text-gray-600 dark:text-gray-400">
-                Want a deeper dive? View full case studies or request an architecture review — I’ll share diagrams, tradeoffs, and code excerpts.
+                Want a deeper dive? View full case studies or request an architecture review.
             </div>
         </div>
 
@@ -91,42 +91,42 @@
 
     const projects = ref([
     {
-        id: 'rekorr',
-        title: 'Rekorr',
-        tagline: 'Smart Job Board + International Payments',
-        image: '/images/projects/rekorr.png', // replace with actual path
+        id: 'truvotrade',
+        title: 'TruvoTrade',
+        tagline: 'Hedge Fund Platform + International Payments',
+        image: '/public/img/TruvoTrade.png',
         role: 'Lead Architect & Full-Stack Engineer',
         tech: ['Laravel', 'Vue.js', 'Tailwind CSS', 'MySQL', 'Redis', 'WebSockets', 'Docker'],
-        problem: 'Recruiters needed a single platform to manage job listings, real-time applicant status, and cross-border payouts — existing tools fragmented the process.',
-        solution: 'Led the full-stack architecture using Laravel for robust APIs, Vue.js for a real-time SPA, and WebSockets for live updates. Implemented a payment orchestration layer to route payouts to local banks.',
-        result: 'Reduced hiring cycle time by 40% and improved operational efficiency by 20%. Sub-300ms API responses under typical load.',
-        link: '/case-studies/rekorr',
+        problem: 'Hedge fund owners needed a single platform to manage trading virtual currencies, real-time investment status, and cross-border payouts — existing tools fragmented the process.',
+        solution: 'Created the full-stack architecture using Laravel for robust APIs, Vue.js for a real-time SPA, and WebSockets for live updates. Implemented a payment orchestration layer to route payouts to local banks.',
+        result: 'Reduced transaction cycle time by 40% and improved operational efficiency by 20%. Sub-300ms API responses under typical load.',
+        link: 'https://truvotrade.com',
         cta: 'View Case Study →',
     },
     {
-        id: 'marketplace-pro',
-        title: 'Marketplace Pro',
-        tagline: 'Scalable eCommerce Platform',
-        image: '/images/projects/marketplace.png',
+        id: 'ruul',
+        title: 'Ruul',
+        tagline: 'Portfolio Platform',
+        image: '/public/img/ruul.png',
         role: 'Senior Full-Stack Engineer (API + Performance)',
         tech: ['Laravel', 'Vue.js', 'Elasticsearch', 'Redis', 'MySQL', 'Docker', 'GitHub Actions'],
-        problem: 'A growing marketplace required multi-tenant isolation, fast catalog queries, and seamless checkout at scale.',
+        problem: 'A growing portfolio marketplace required multi-tenant isolation, fast catalog queries, and seamless checkout at scale.',
         solution: 'Implemented multi-tenant architecture with DB partitioning, optimized product search with indexed queries and Redis caching, and resilient background workers for order processing.',
         result: 'Scaled throughput by 3x and reduced checkout failures to <0.5%. Average page load under 1.8s.',
-        link: '/case-studies/marketplace-pro',
+        link: 'https://ruul.io',
         cta: 'View Case Study →',
     },
     {
-        id: 'adminops-dashboard',
-        title: 'AdminOps Dashboard',
-        tagline: 'Real-Time Ops & Monitoring Console',
-        image: '/images/projects/adminops.png',
+        id: 'koinpark',
+        title: 'Koinpark',
+        tagline: 'Crypto Payment Gateway',
+        image: '/public/img/koinpark.png',
         role: 'Full-Stack Lead (Frontend + Observability)',
         tech: ['Vue.js', 'Tailwind CSS', 'Laravel', 'Prometheus', 'Grafana', 'WebSockets'],
-        problem: 'Operations teams lacked a unified, real-time dashboard to monitor jobs, queues, and critical metrics.',
+        problem: 'Operations teams lacked a unified, real-time dashboard to orderbooks, queues, and critical metrics.',
         solution: 'Built an SPA dashboard in Vue.js with WebSocket streams for live metrics, alert hooks, and role-based access controls backed by Laravel APIs.',
         result: 'Cut MTTD by 60% and incident resolution time by 45%, improving availability.',
-        link: '/case-studies/adminops-dashboard',
+        link: 'https://koinpark.com',
         cta: 'View Case Study →',
     },
     ])

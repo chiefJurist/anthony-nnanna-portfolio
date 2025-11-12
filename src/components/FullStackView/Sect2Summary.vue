@@ -1,19 +1,19 @@
 <template>
-    <section id="stats" class="py-24 bg-gray-50 dark:bg-gray-950 transition-colors duration-500">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-gray-900 dark:text-white">
+    <section id="stats" class="body-con">
+        <div class="rebrand-wrap-one text-center">
+            <h2 class="rebrand-wrap-twenty-eight">
                 Professional Snapshot
             </h2>
-            <p class="text-gray-700 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
+            <p class="rebrand-wrap-twenty-nine">
                 A brief look at my experience and measurable impact across systems, teams, and open-source development.
             </p>
 
-            <div ref="statsSection" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-                <div v-for="(stat, index) in stats" :key="index" class="p-6 rounded-2xl shadow-md bg-white dark:bg-gray-800 transform transition duration-700 hover:-translate-y-2" :class="{ 'opacity-100 translate-y-0': visible, 'opacity-0 translate-y-6': !visible }">
-                    <div class="text-3xl md:text-4xl font-extrabold text-indigo-600 dark:text-indigo-400 mb-2">
+            <div ref="statsSection" class="rebrand-wrap-thirty">
+                <div v-for="(stat, index) in stats" :key="index" class="rebrand-wrap-thirty-one" :class="{ 'opacity-100 translate-y-0': visible, 'opacity-0 translate-y-6': !visible }">
+                    <div class="rebrand-wrap-thirty-two">
                         {{ stat.value }}
                     </div>
-                    <div class="text-gray-900 dark:text-gray-100 font-semibold leading-snug">
+                    <div class="rebrand-wrap-thirty-three">
                         {{ stat.label }}
                     </div>
                 </div>

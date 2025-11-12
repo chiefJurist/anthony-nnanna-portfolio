@@ -7,7 +7,7 @@ export default {
             projects: [
                 {
                     title: "TruvoTrade",
-                    subtitle: "Smart Job Board + International Payments",
+                    subtitle: "Hedge Platform + International Payments",
                     description:
                         "A next-gen platform merging a portfolio investment platform with a seamless global payment system. Users get real-time status updates while users receive payments directly into local banks.",
                     tech: ["Laravel", "Vue.js", "Tailwind", "MySQL", "Docker"],
