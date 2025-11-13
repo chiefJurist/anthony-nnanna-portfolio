@@ -1,11 +1,11 @@
 <template>
-    <section id="rekorr-case" class="py-20 bg-gray-50 dark:bg-gray-900 transition-colors">
+    <section id="rekorr-case" class="py-20 body-con">
         <div class="max-w-5xl mx-auto px-6">
             <!-- Header -->
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Deep Case Study — Rekorr</h2>
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Deep Case Study — Truvo Trade</h2>
                 <p class="mt-2 text-gray-600 dark:text-gray-300">
-                    Smart Job Board with Real-Time Application Tracking and Global Payouts
+                   Hedge Fund Platform with Real-Time Asset Monitoring and Global Payouts
                 </p>
             </div>
 
@@ -42,7 +42,7 @@
 
             <!-- CTA -->
             <div class="mt-12 text-center">
-                <a href="/case-studies/rekorr" class="inline-flex items-center px-6 py-3 bg-emerald-400 text-gray-900 font-semibold rounded-xl hover:bg-emerald-500 focus:ring-2 focus:ring-emerald-300 transition">
+                <a href="https://truvotrade.com" class="inline-flex items-center px-6 py-3 bg-emerald-400 text-gray-900 font-semibold rounded-xl hover:bg-emerald-500 focus:ring-2 focus:ring-emerald-300 transition">
                     Read Full Case Study →
                 </a>
             </div>
@@ -53,18 +53,18 @@
 <script setup>
     const snapshot = {
         Role: 'Lead Architect & Full-Stack Engineer',
-        Duration: '8 months (MVP → full rollout)',
-        Team: '5 developers, 1 designer, 1 DevOps',
+        Duration: '3 months (MVP → full rollout)',
+        Team: '1 developer, 1 designer, 1 DevOps',
         Stack: 'Laravel, Vue.js, Tailwind, MySQL, Redis, WebSockets, Docker',
         Scope: 'API design, real-time systems, CI/CD, scaling, and technical leadership',
-        Outcome: '40% faster hiring cycles, 20% efficiency gain, 300 ms API latency',
+        Outcome: 'Transaction cycle time reduced by 40%, 20% efficiency gain, 300 ms API latency',
     }
 
     const narrative = [
         {
             title: 'Context & Challenge',
             paragraphs: [
-                'Rekorr aimed to unify job application tracking and global payouts. Existing HR tools and finance dashboards were disconnected, leading to inefficiency.',
+                'TruvoTrade aimed to unify portfolio management and global payouts. Existing hedge-fund tools and finance dashboards were disconnected, leading to inefficiency.',
                 'The challenge: build a cohesive, secure system handling thousands of real-time sessions and multi-currency payments.',
             ],
         },
@@ -79,37 +79,37 @@
         },
         {
             title: 'Example API Endpoint (Laravel)',
-            code: `public function payout(Request $request)
-            {
-                $validated = $request->validate([
-                    'user_id' => 'required|exists:users,id',
-                    'amount' => 'required|numeric|min:1',
-                    'currency' => 'required|string|max:3',
-                ]);
-                dispatch(new ProcessPayout($validated));
-                return response()->json(['status' => 'processing']);
-            }`,
+            code: `public function payout(Request $request){
+                            $validated = $request->validate([
+                                'user_id' => 'required|exists:users,id',
+                                'amount' => 'required|numeric|min:1',
+                                'currency' => 'required|string|max:3',
+                            ]);
+
+                            dispatch(new ProcessPayout($validated));
+                            return response()->json(['status' => 'processing']);
+                    }`,
         },
         {
             title: 'Example Vue Component (Live Feed)',
             code: `<script setup>
-                import { ref, onMounted } from 'vue'
-                import { io } from 'socket.io-client'
-                const updates = ref([])
-                const socket = io(import.meta.env.VITE_WS_URL)
-                onMounted(() => {
-                    socket.on('application:update', (data) => updates.value.unshift(data))
-                })
-                <\/script>
+                            import { ref, onMounted } from 'vue'
+                            import { io } from 'socket.io-client'
+                            const updates = ref([])
+                            const socket = io(import.meta.env.VITE_WS_URL)
+                            onMounted(() => {
+                                socket.on('application:update', (data) => updates.value.unshift(data))
+                            })
+                        <\/script>
 
-                <template>
-                <div class='p-4 bg-gray-700 text-white rounded-lg shadow'>
-                    <h3 class='font-semibold text-emerald-400 mb-2'>Live Application Feed</h3>
-                    <ul>
-                        <li v-for='(u,i) in updates' :key='i'>{{ u.message }}</li>
-                    </ul>
-                </div>
-                </template>`,
+                        <template>
+                            <div class='p-4 bg-gray-700 text-white rounded-lg shadow'>
+                                <h3 class='font-semibold text-emerald-400 mb-2'>Live Application Feed</h3>
+                                <ul>
+                                    <li v-for='(u,i) in updates' :key='i'>{{ u.message }}</li>
+                                </ul>
+                            </div>
+                        </template>`,
         },
         {
             title: 'Monitoring & Results',

@@ -1,6 +1,6 @@
 <template>
-    <section id="architecture" class="py-20 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
-        <div class="max-w-6xl mx-auto px-6">
+    <section id="architecture" class="body-con">
+        <div class="rebrand-wrap-one">
             <!-- Section Title -->
             <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center">
                 Architecture & Patterns

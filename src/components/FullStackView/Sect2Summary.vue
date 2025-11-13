@@ -1,19 +1,19 @@
 <template>
     <section id="stats" class="body-con">
         <div class="rebrand-wrap-one text-center">
-            <h2 class="rebrand-wrap-twenty-eight">
+            <h2 class="rebrand-wrap-twenty-six">
                 Professional Snapshot
             </h2>
-            <p class="rebrand-wrap-twenty-nine">
+            <p class="rebrand-wrap-twenty-seven">
                 A brief look at my experience and measurable impact across systems, teams, and open-source development.
             </p>
 
-            <div ref="statsSection" class="rebrand-wrap-thirty">
-                <div v-for="(stat, index) in stats" :key="index" class="rebrand-wrap-thirty-one" :class="{ 'opacity-100 translate-y-0': visible, 'opacity-0 translate-y-6': !visible }">
-                    <div class="rebrand-wrap-thirty-two">
+            <div ref="statsSection" class="rebrand-wrap-twenty-eight">
+                <div v-for="(stat, index) in stats" :key="index" class="rebrand-wrap-twenty-nine" :class="{ 'opacity-100 translate-y-0': visible, 'opacity-0 translate-y-6': !visible }">
+                    <div class="rebrand-wrap-thirty">
                         {{ stat.value }}
                     </div>
-                    <div class="rebrand-wrap-thirty-three">
+                    <div class="rebrand-wrap-thirty-one">
                         {{ stat.label }}
                     </div>
                 </div>

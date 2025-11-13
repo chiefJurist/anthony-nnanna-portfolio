@@ -11,7 +11,7 @@
 
             <!-- Grid -->
             <div class="grid gap-8 md:grid-cols-2">
-                <article v-for="(p, i) in projects" :key="p.id" ref="cards" class="bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-sm hover:shadow-lg transition transform duration-400 focus-within:ring-2 focus-within:ring-emerald-400 overflow-hidden">
+                <article v-for="(p, i) in projects" :key="p.id" ref="cards" class="bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-sm hover:shadow-lg transition transform duration-500 focus-within:ring-2 focus-within:ring-emerald-400 overflow-hidden">
                     <!-- image / visual -->
                     <div class="h-48 md:h-56 w-full overflow-hidden bg-gray-200 dark:bg-gray-700">
                         <img :src="p.image" :alt="p.title + ' screenshot'" class="w-full h-full object-cover" loading="lazy"/>
