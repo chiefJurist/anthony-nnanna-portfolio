@@ -42,7 +42,7 @@
 
             <!-- CTA -->
             <div class="mt-12 text-center">
-                <a href="https://truvotrade.com" class="inline-flex items-center px-6 py-3 bg-indigo-700 text-gray-900 font-semibold rounded-xl hover:bg-indigo-600 focus:ring-2 focus:ring-indigo-400 transition">
+                <a href="https://truvotrade.com" class="inline-flex items-center px-6 py-3 bg-indigo-700 text-gray-300 font-semibold rounded-xl hover:bg-indigo-600 focus:ring-2 focus:ring-indigo-400 transition">
                     Read Full Case Study →
                 </a>
             </div>
