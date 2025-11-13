@@ -7,9 +7,10 @@
     import Projects from '../components/FullStackView/Sect3Projects.vue';
     import CaseStudy from '../components/FullStackView/Sect4CaseStudy.vue';
     import Architecture from '../components/FullStackView/Sect5Architecture.vue';
+    import Apis from '../components/FullStackView/Sect6Apis.vue';
 
     export default{
-        components: { Header, Introduction, Summary, Projects, CaseStudy, Architecture, Footer, PhoneHeader },
+        components: { Header, Introduction, Summary, Projects, CaseStudy, Architecture, Apis, Footer, PhoneHeader },
 
         data () {
             return {
@@ -41,6 +42,7 @@
         <Projects></Projects>
         <CaseStudy></CaseStudy>
         <Architecture></Architecture>
+        <Apis></Apis>
         <Footer></Footer>
         <PhoneHeader :mode="darkmode" @change="toggleDarkMode"></PhoneHeader>
     </div>
