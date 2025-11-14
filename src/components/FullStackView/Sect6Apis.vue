@@ -105,16 +105,16 @@
                 <h4 class="font-semibold mb-3">Third-Party Integrations</h4>
                 <ul class="list-disc pl-5 text-sm text-gray-600 dark:text-gray-300">
                     <li>
-                        <strong>Payments : </strong> Paystack / Flutterwave — server-side signed requests, idempotency keys, webhook validation.
+                        <strong>Payments : </strong> Paystack / Flutterwave for server-side signed requests, idempotency keys, webhook validation.
                     </li>
                     <li>
-                        <strong>Email : </strong> Mailgun / SendGrid — send via queued jobs with retry and fallback logging.
+                        <strong>Email : </strong> Mailgun / SendGrid to send via queued jobs with retry and fallback logging.
                     </li>
                     <li>
-                        <strong>Storage : </strong> S3-compatible storage — presigned uploads and server-side validation.
+                        <strong>Storage : </strong> S3-compatible storage for presigned uploads and server-side validation.
                     </li>
                     <li>
-                        <strong>OAuth : </strong> Google / GitHub — server-side token storage and refresh handling.
+                        <strong>OAuth : </strong> Google / GitHub for server-side token storage and refresh handling.
                     </li>
                 </ul>
             </div>
@@ -126,7 +126,7 @@
                 <li>Version public APIs and guarantee backward compatibility.</li>
                 <li>Use idempotency keys for external calls and webhook processing.</li>
                 <li>Apply per-client rate limits and protect endpoints with throttling strategies.</li>
-                <li>Store secrets in a secrets manager (Vault, AWS Secrets Manager) — never in repo.</li>
+                <li>Store secrets in a secrets manager (Vault, AWS Secrets Manager) and never in repo.</li>
                 <li>Test integrations against sandbox/testnet environments and include automated contract tests where relevant.</li>
                 </ul>
             </div>

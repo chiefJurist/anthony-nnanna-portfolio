@@ -3,9 +3,9 @@
         <div class="max-w-5xl mx-auto px-6">
             <!-- Header -->
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Deep Case Study — Truvo Trade</h2>
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Deep Case Study of Truvo Trade</h2>
                 <p class="mt-2 text-gray-600 dark:text-gray-300">
-                   Hedge Fund Platform with Real-Time Asset Monitoring and Global Payouts
+                    Hedge Fund Platform with Real-Time Asset Monitoring and Global Payouts
                 </p>
             </div>
 

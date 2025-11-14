@@ -8,9 +8,11 @@
     import CaseStudy from '../components/FullStackView/Sect4CaseStudy.vue';
     import Architecture from '../components/FullStackView/Sect5Architecture.vue';
     import Apis from '../components/FullStackView/Sect6Apis.vue';
+    import Performance from '../components/FullStackView/Sect7Performance.vue';
+    import Testing from '../components/FullStackView/Sect8Testing.vue';
 
     export default{
-        components: { Header, Introduction, Summary, Projects, CaseStudy, Architecture, Apis, Footer, PhoneHeader },
+        components: { Header, Introduction, Summary, Projects, CaseStudy, Architecture, Apis, Performance, Testing, Footer, PhoneHeader },
 
         data () {
             return {
@@ -43,6 +45,8 @@
         <CaseStudy></CaseStudy>
         <Architecture></Architecture>
         <Apis></Apis>
+        <Performance></Performance>
+        <Testing></Testing>
         <Footer></Footer>
         <PhoneHeader :mode="darkmode" @change="toggleDarkMode"></PhoneHeader>
     </div>

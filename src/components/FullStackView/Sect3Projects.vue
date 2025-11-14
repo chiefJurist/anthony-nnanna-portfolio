@@ -97,7 +97,7 @@
         image: '/public/img/TruvoTrade.png',
         role: 'Lead Architect & Full-Stack Engineer',
         tech: ['Laravel', 'Vue.js', 'Tailwind CSS', 'MySQL', 'Redis', 'WebSockets', 'Docker'],
-        problem: 'Hedge fund owners needed a single platform to manage trading virtual currencies, real-time investment status, and cross-border payouts — existing tools fragmented the process.',
+        problem: 'Hedge fund owners needed a single platform to manage trading virtual currencies, real-time investment status, and cross-border payouts. Existing tools fragmented the process.',
         solution: 'Created the full-stack architecture using Laravel for robust APIs, Vue.js for a real-time SPA, and WebSockets for live updates. Implemented a payment orchestration layer to route payouts to local banks.',
         result: 'Reduced transaction cycle time by 40% and improved operational efficiency by 20%. Sub-300ms API responses under typical load.',
         link: 'https://truvotrade.com',

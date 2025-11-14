@@ -7,9 +7,9 @@
             </h2>
 
             <!-- Intro -->
-            <p class="text-lg text-center mb-12 max-w-3xl mx-auto">
+            <p class="text-center mb-12 max-w-3xl mx-auto">
                 I design systems that balance clarity, resilience, and performance.
-                My goal is to make complex architectures predictable — ensuring features scale cleanly without turning into technical debt.
+                My goal is to make complex architectures predictable, ensuring features scale cleanly without turning into technical debt.
             </p>
 
             <!-- Patterns Grid -->
@@ -45,8 +45,8 @@
             </div>
 
             <!-- Closing Line -->
-            <p class="text-center text-lg mt-12 italic text-gray-700 dark:text-gray-300">
-                “Good architecture reduces developer friction — every layer should make the next developer’s work easier.”
+            <p class="text-center mt-12 italic text-gray-700 dark:text-gray-300">
+                “Good architecture reduces developer friction. Every layer should make the next developer’s work easier.”
             </p>
         </div>
     </section>

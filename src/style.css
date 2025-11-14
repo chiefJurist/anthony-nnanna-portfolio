@@ -293,3 +293,12 @@ layer(base);
 .rebrand-wrap-thirty-four {
     @apply mt-10 bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm duration-500;
 }
+.rebrand-wrap-thirty-five {
+    @apply shadow-sm duration-500 p-6 bg-gray-100 dark:bg-gray-800 rounded-2xl text-center;
+}
+.rebrand-wrap-thirty-six{
+    @apply bg-white dark:bg-gray-800 rounded-2xl p-6 text-center shadow-sm duration-500;
+}
+.rebrand-wrap-thirty-seven{
+    @apply bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm duration-500;
+}
