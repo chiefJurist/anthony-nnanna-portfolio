@@ -12,9 +12,10 @@
     import Testing from '../components/FullStackView/Sect8Testing.vue';
     import CodeQuality from '../components/FullStackView/sect9CodeQuality.vue';
     import DesignSystem from '../components/FullStackView/sect10DesignSystem.vue';
+    import SecurityPractices from '../components/FullStackView/sect11SecurityPractices.vue';
 
     export default{
-        components: { Header, Introduction, Summary, Projects, CaseStudy, Architecture, Apis, Performance, Testing, CodeQuality, DesignSystem, Footer, PhoneHeader },
+        components: { Header, Introduction, Summary, Projects, CaseStudy, Architecture, Apis, Performance, Testing, CodeQuality, DesignSystem, SecurityPractices, Footer, PhoneHeader },
 
         data () {
             return {
@@ -51,6 +52,7 @@
         <Testing></Testing>
         <CodeQuality></CodeQuality>
         <DesignSystem></DesignSystem>
+        <SecurityPractices></SecurityPractices>
         <Footer></Footer>
         <PhoneHeader :mode="darkmode" @change="toggleDarkMode"></PhoneHeader>
     </div>
