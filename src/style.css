@@ -302,3 +302,9 @@ layer(base);
 .rebrand-wrap-thirty-seven{
     @apply bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm duration-500;
 }
+.rebrand-wrap-thirty-eight{
+    @apply bg-white dark:bg-gray-800 rounded-2xl p-6 text-center shadow-sm duration-500;
+}
+.rebrand-wrap-thirty-nine{
+    @apply bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 hover:scale-[1.02] transition-transform duration-500;
+}
