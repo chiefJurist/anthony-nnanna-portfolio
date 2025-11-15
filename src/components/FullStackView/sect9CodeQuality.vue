@@ -60,14 +60,14 @@
         └── docker-compose.yml
                 </pre>
                 <p class="text-gray-700 dark:text-gray-300 mt-3">
-                    Clear modular boundaries — service-driven Laravel backend and component-based Vue frontend. This structure enforces clarity and reduces cognitive load for new contributors.
+                    Clear modular boundaries, service-driven Laravel backend and component-based Vue frontend. This structure enforces clarity and reduces cognitive load for new contributors.
                 </p>
             </div>
 
             <!-- Sample Backend Snippet -->
             <div class="grid md:grid-cols-2 gap-10 mb-16">
                 <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm duration-500">
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Backend Example — Payment Service</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Backend Example - Payment Service</h3>
                     <pre class="bg-gray-900 text-gray-200 text-sm p-4 rounded-xl overflow-x-auto">
             &lt;?php
 
@@ -93,7 +93,7 @@
 
                 <!-- Sample Frontend Snippet -->
                 <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm">
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Frontend Example — User Card</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Frontend Example - User Card</h3>
                     <pre v-pre class="bg-gray-900 text-gray-200 text-sm p-4 rounded-xl overflow-x-auto">
             &lt;template&gt;
             &lt;div class="p-4 bg-gray-100 dark:bg-gray-700 rounded-lg shadow"&gt;
@@ -147,7 +147,7 @@
             <!-- Closing Reflection -->
             <div class="text-center mt-10">
                 <blockquote class="text-xl italic font-medium text-gray-800 dark:text-gray-200">
-                    “Readable code is scalable code — future teams should thank you, not curse you.”
+                    “Readable code is scalable code. Future teams should thank you, not curse you.”
                 </blockquote>
             </div>
 

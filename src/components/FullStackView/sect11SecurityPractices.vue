@@ -200,7 +200,7 @@ class WebhookController extends Controller
 
             <!-- CTA -->
             <div class="mt-8 text-center">
-                <a href="/security-checklist" class="inline-flex items-center px-6 py-3 bg-indigo-600 text-gray-200 font-semibold rounded-lg hover:bg-indigo-700 transition">
+                <a href="/security-checklist" class="inline-flex items-center px-6 py-3 bg-indigo-950 text-gray-200 font-semibold rounded-lg hover:bg-indigo-700 transition">
                     Request my security checklist →
                 </a>
             </div>

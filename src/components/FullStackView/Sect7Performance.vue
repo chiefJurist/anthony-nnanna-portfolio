@@ -13,19 +13,19 @@
             <!-- Key Metrics -->
             <div class="grid md:grid-cols-4 sm:grid-cols-2 gap-6 mb-12">
                 <div class="rebrand-wrap-thirty-five">
-                    <h3 class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">40%</h3>
+                    <h3 class="text-2xl font-bold text-indigo-950 dark:text-indigo-400">40%</h3>
                     <p class="text-gray-700 dark:text-gray-300">Reduction in API latency</p>
                 </div>
                 <div class="rebrand-wrap-thirty-five">
-                    <h3 class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">3×</h3>
+                    <h3 class="text-2xl font-bold text-indigo-950 dark:text-indigo-400">3×</h3>
                     <p class="text-gray-700 dark:text-gray-300">Increase in concurrent requests</p>
                 </div>
                 <div class="rebrand-wrap-thirty-five">
-                    <h3 class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">25%</h3>
+                    <h3 class="text-2xl font-bold text-indigo-950 dark:text-indigo-400">25%</h3>
                     <p class="text-gray-700 dark:text-gray-300">Frontend bundle size reduction</p>
                 </div>
                 <div class="rebrand-wrap-thirty-five">
-                    <h3 class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">99.98%</h3>
+                    <h3 class="text-2xl font-bold text-indigo-950 dark:text-indigo-400">99.98%</h3>
                     <p class="text-gray-700 dark:text-gray-300">Uptime maintained post scaling</p>
                 </div>
             </div>
@@ -38,11 +38,11 @@
                         Backend Optimizations
                     </h3>
                     <ul class="space-y-3 text-gray-700 dark:text-gray-300 list-disc list-inside">
-                    <li>Database indexing & query optimization using <strong>Laravel Telescope</strong> insights.</li>
-                    <li>Introduced <strong>Redis caching</strong> for hot endpoints, reducing response time from 450ms to 270ms.</li>
-                    <li>Queued non-critical jobs with <strong>Laravel Horizon</strong>, freeing main threads.</li>
-                    <li>Optimized Nginx config + PHP-FPM workers for 3× request throughput.</li>
-                    <li>Implemented horizontal scaling via load-balanced containers on <strong>Docker + Nginx</strong>.</li>
+                        <li>Database indexing & query optimization using <strong>Laravel Telescope</strong> insights.</li>
+                        <li>Introduced <strong>Redis caching</strong> for hot endpoints, reducing response time from 450ms to 270ms.</li>
+                        <li>Queued non-critical jobs with <strong>Laravel Horizon</strong>, freeing main threads.</li>
+                        <li>Optimized Nginx config + PHP-FPM workers for 3× request throughput.</li>
+                        <li>Implemented horizontal scaling via load-balanced containers on <strong>Docker + Nginx</strong>.</li>
                     </ul>
                 </div>
 
@@ -56,7 +56,7 @@
                         <li>Tailwind CSS purge & minification reduced bundle size by 25%.</li>
                         <li>Integrated <strong>Vite</strong> for faster hot module replacement during dev.</li>
                         <li>Preloaded critical assets with proper caching headers for long-term speed.</li>
-                        <li>Measured with <strong>Lighthouse: </strong> improved performance score from 78 to 96.</li>
+                        <li>Measured with <strong>Lighthouse. </strong>Improved performance score from 78 to 96.</li>
                     </ul>
                 </div>
             </div>

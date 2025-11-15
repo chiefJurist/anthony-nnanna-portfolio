@@ -33,7 +33,7 @@
                         <div class="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed">
                             <p class="mb-2"><strong>Problem:</strong> {{ p.problem }}</p>
                             <p class="mb-2"><strong>Solution:</strong> {{ p.solution }}</p>
-                            <p class="mb-2 text-emerald-400"><strong>Result:</strong> {{ p.result }}</p>
+                            <p class="mb-2 text-indigo-400"><strong>Result:</strong> {{ p.result }}</p>
                         </div>
 
                         <div class="mt-4 flex items-center gap-3">

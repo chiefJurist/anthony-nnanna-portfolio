@@ -10,10 +10,10 @@
                     Senior Full-Stack Engineer (Vue + Laravel + PHP)
                 </h2>
                 <p class="rebrand-wrap-twenty-two mb-3">
-                    I design and build scalable, maintainable, and high-performing web systems that balance elegant front-end experiences with robust back-end architecture. My code powers products that stay fast under pressure — from startups shipping daily to enterprises serving millions.
+                    I design and build scalable, maintainable, and high-performing web systems that balance elegant front-end experiences with robust back-end architecture. My code powers products that stay fast under pressure, from startups shipping daily to enterprises serving millions.
                 </p>
                 <p class="rebrand-wrap-twenty-two mb-8">
-                    With over 5 years of full-stack experience, I’ve led cross-functional teams, optimized app performance by 20%+, and delivered reliable systems using Vue.js, Laravel, and modern CI/CD pipelines.
+                    With over 5 years of full-stack experience, I’ve led cross-functional teams, optimized app performance by over 20%, and delivered reliable systems using Vue.js, Laravel, and modern CI/CD pipelines.
                 </p>
 
                 <!-- CTA Buttons -->

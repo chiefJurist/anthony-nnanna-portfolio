@@ -32,7 +32,7 @@
             <!-- Narrative -->
             <div class="mt-10 space-y-8 text-gray-700 dark:text-gray-300 leading-relaxed">
                 <section v-for="(item, i) in narrative" :key="i">
-                    <h3 class="text-xl font-semibold text-emerald-400 mb-2">{{ item.title }}</h3>
+                    <h3 class="text-xl font-semibold text-indigo-500 mb-2">{{ item.title }}</h3>
                     <p v-for="(p, j) in item.paragraphs" :key="j" class="mb-3">{{ p }}</p>
                     <pre v-if="item.code" class="bg-gray-900 text-gray-100 rounded-xl p-4 text-sm overflow-x-auto">
                         <code>{{ item.code }}</code>

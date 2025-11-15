@@ -25,7 +25,7 @@
                     <div class="text-indigo-500 dark:text-indigo-400 text-3xl mb-3">⚙️</div>
                     <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Build</h3>
                     <p class="text-gray-700 dark:text-gray-300">
-                    Continuous integration on GitHub Actions runs linting, unit tests,
+                    Continuous integration on GitHub Actions. Runs linting, unit tests,
                     and production builds for both Laravel and Vue pipelines.
                     </p>
                 </div>
