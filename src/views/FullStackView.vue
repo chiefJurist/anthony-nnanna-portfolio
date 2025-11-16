@@ -15,9 +15,10 @@
     import SecurityPractices from '../components/FullStackView/sect11SecurityPractices.vue';
     import OperationalMonitoring from '../components/FullStackView/Sect12OperationalMonitoring.vue';
     import Contributions from '../components/FullStackView/Sect13Contributions.vue';
+    import Testimonials from '../components/FullStackView/sect14Testimonials.vue';
 
     export default{
-        components: { Header, Introduction, Summary, Projects, CaseStudy, Architecture, Apis, Performance, Testing, CodeQuality, DesignSystem, SecurityPractices, OperationalMonitoring, Contributions, Footer, PhoneHeader },
+        components: { Header, Introduction, Summary, Projects, CaseStudy, Architecture, Apis, Performance, Testing, CodeQuality, DesignSystem, SecurityPractices, OperationalMonitoring, Contributions, Testimonials, Footer, PhoneHeader },
 
         data () {
             return {
@@ -57,6 +58,7 @@
         <SecurityPractices></SecurityPractices>
         <OperationalMonitoring></OperationalMonitoring>
         <Contributions></Contributions>
+        <Testimonials></Testimonials>
         <Footer></Footer>
         <PhoneHeader :mode="darkmode" @change="toggleDarkMode"></PhoneHeader>
     </div>
