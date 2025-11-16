@@ -17,9 +17,11 @@
     import Contributions from '../components/FullStackView/Sect13Contributions.vue';
     import Testimonials from '../components/FullStackView/sect14Testimonials.vue';
     import Downloads from '../components/FullStackView/Sect15Downloads.vue';
+    import CallToAction from '../components/FullStackView/Sect16CallToAction.vue';
+    import Footer2 from '../components/FullStackView/Footer.vue';
 
     export default{
-        components: { Header, Introduction, Summary, Projects, CaseStudy, Architecture, Apis, Performance, Testing, CodeQuality, DesignSystem, SecurityPractices, OperationalMonitoring, Contributions, Testimonials, Downloads, Footer, PhoneHeader },
+        components: { Header, Introduction, Summary, Projects, CaseStudy, Architecture, Apis, Performance, Testing, CodeQuality, DesignSystem, SecurityPractices, OperationalMonitoring, Contributions, Testimonials, Downloads, CallToAction, Footer2, Footer, PhoneHeader },
 
         data () {
             return {
@@ -61,6 +63,8 @@
         <Contributions></Contributions>
         <Testimonials></Testimonials>
         <Downloads></Downloads>
+        <CallToAction></CallToAction>
+        <Footer2></Footer2>
         <Footer></Footer>
         <PhoneHeader :mode="darkmode" @change="toggleDarkMode"></PhoneHeader>
     </div>

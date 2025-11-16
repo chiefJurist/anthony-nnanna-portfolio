@@ -1,6 +1,6 @@
 <template>
-    <section id="downloads-links" class="py-20 bg-gray-50 dark:bg-gray-900 transition-colors">
-        <div class="max-w-6xl mx-auto px-6">
+    <section id="downloads-links" class="body-con">
+        <div class="rebrand-wrap-one">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-gray-900 dark:text-gray-100">
                     Downloads and Links
