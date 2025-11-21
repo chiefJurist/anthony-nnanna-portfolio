@@ -31,7 +31,7 @@
 
                     <a
                         :href="item.link"
-                        class="inline-block w-full text-center py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition"
+                        class="inline-block w-full text-center py-2 rounded-lg bg-indigo-600 text-white hover:bg-indigo-700 transition"
                     >
                         Download
                     </a>
@@ -73,14 +73,14 @@ export default {
                     link: "/downloads/senior-resume.pdf"
                 },
                 {
-                    title: "Rekorr System Architecture Summary",
+                    title: "TruvoTrade System Architecture Summary",
                     description: "High-level architecture breakdown of the Rekorr platform.",
                     type: "PDF",
                     size: "600 KB",
                     link: "/downloads/rekorr-architecture-summary.pdf"
                 },
                 {
-                    title: "Rekorr API Reference Overview",
+                    title: "TruvoTrade API Reference Overview",
                     description: "Developer-facing documentation summary covering endpoints and usage patterns.",
                     type: "PDF",
                     size: "420 KB",

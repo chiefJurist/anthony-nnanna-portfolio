@@ -5,8 +5,7 @@
             <div class="text-center mb-10">
                 <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Security Practices</h2>
                 <p class="mt-3 text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                    Security is a first-class concern in every system I build. I design services to be secure by default —
-                    from input validation and secure auth flows to secrets management, dependency scans, and robust webhook handling.
+                    Security is a first-class concern in every system I build. I design services to be secure by default. From input validation and secure auth flows to secrets management, dependency scans, and robust webhook handling.
                 </p>
             </div>
 
